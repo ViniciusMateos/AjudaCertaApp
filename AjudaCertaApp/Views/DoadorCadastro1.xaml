@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AjudaCertaApp.Views.DoadorCadastro1"
+             Title="DoadorCadastro1"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid
+        BackgroundColor="#F4DFC9">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <ImageButton
+            Grid.Column="0"
+            Source="setavoltar.svg"
+            HeightRequest="25"
+            Margin="4,0,0,0"
+            HorizontalOptions="Start"
+        />
+
+        <Image 
+            Grid.Row="1"
+            Source="icondoador.svg"
+            VerticalOptions="End"
+            BackgroundColor="#F4DFC9"
+            HeightRequest="80"/>
+
+        <Label
+            Grid.Row="2"
+            FontFamily="Inter"
+	        HorizontalTextAlignment="Center"
+            VerticalOptions="Start"
+	        FontSize="40"
+	        TextColor="#000000"
+            Text="Doador"/>
+
+        <BoxView 
+            Color="#F5A24A"
+            Grid.Row="3"
+            BackgroundColor="#F4DFC9"
+            CornerRadius="88,88,0,0"
+            />
+
+        <Grid
+            Grid.Row="3"
+            Padding="40,60,40,20"
+            >
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+
+            <Grid
+                Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label
+                    Grid.Row="0"
+                    Text="Nome completo:"
+                    FontFamily="Inter"
+	                HorizontalTextAlignment="Start"
+                    VerticalTextAlignment="End"
+	                FontSize="14"
+	                TextColor="#FFFFFF"/>
+
+                <Entry
+                    Grid.Row="1"
+                    HeightRequest="40"
+                    VerticalOptions="Center"
+                    BackgroundColor="White"
+                    Placeholder="nome"/>
+
+            </Grid>
+
+            <Grid
+                Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label
+                    Grid.Row="0"
+                    Text="Usuário:"
+                    FontFamily="Inter"
+	                HorizontalTextAlignment="Start"
+                    VerticalTextAlignment="End"
+	                FontSize="14"
+	                TextColor="#FFFFFF"/>
+
+                <Entry
+                    Grid.Row="1"
+                    HeightRequest="40"
+                    VerticalOptions="Center"
+                    BackgroundColor="White"
+                    Placeholder="@exemplo"/>
+
+            </Grid>
+
+            <Grid
+                Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label
+                    Grid.Row="0"
+                    Text="E-mail:"
+                    FontFamily="Inter"
+	                HorizontalTextAlignment="Start"
+                    VerticalTextAlignment="End"
+	                FontSize="14"
+	                TextColor="#FFFFFF"/>
+
+                <Entry
+                    Grid.Row="1"
+                    HeightRequest="40"
+                    VerticalOptions="Center"
+                    BackgroundColor="White"
+                    Placeholder="exemplo@exemplo.com"/>
+
+            </Grid>
+
+            <Grid
+                Grid.Row="3"
+                ColumnSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Data de nascimento:"
+                    FontFamily="Inter"
+	                HorizontalTextAlignment="Start"
+                    VerticalTextAlignment="End"
+	                FontSize="14"
+	                TextColor="#FFFFFF"/>
+
+                <DatePicker
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    HeightRequest="40"
+                    BackgroundColor="White"/>
+
+
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Text="CPF:"
+                    FontFamily="Inter"
+	                HorizontalTextAlignment="Start"
+                    VerticalTextAlignment="End"
+	                FontSize="14"
+	                TextColor="#FFFFFF"/>
+
+                <Entry
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    HeightRequest="40"
+                    VerticalOptions="Center"
+                    BackgroundColor="White"
+                    Placeholder="xxx.xxx.xxx.xx"
+                    />
+
+            </Grid>
+
+            <Grid
+                Grid.Row="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label
+                    Grid.Row="0"
+                    Text="Telefone:"
+                    FontFamily="Inter"
+	                HorizontalTextAlignment="Start"
+                    VerticalTextAlignment="End"
+	                FontSize="14"
+	                TextColor="#FFFFFF"/>
+
+                <Entry
+                    Grid.Row="1"
+                    HeightRequest="40"
+                    VerticalOptions="Center"
+                    BackgroundColor="White"
+                    Placeholder="(xx)xxxxx.xxxx"/>
+
+            </Grid>
+
+            <Button
+                Grid.Row="5"
+                Text="Doar"
+                FontSize="24"
+                VerticalOptions="End"
+                BackgroundColor="#DF6234"
+                CornerRadius="20"
+                WidthRequest="200"
+                HeightRequest="60"                
+                />
+
+        </Grid>
+
+    </Grid>
+</ContentPage>

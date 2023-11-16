@@ -11,6 +11,9 @@
     <MauiXaml Update="Views\CadastroEscolha.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\DoadorCadastro1.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\Inicial.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

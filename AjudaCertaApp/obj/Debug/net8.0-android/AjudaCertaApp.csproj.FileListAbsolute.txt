@@ -1066,7 +1066,6 @@ G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
-G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\icondoador.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\icondoador.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\icondoador.png
@@ -1077,3 +1076,4 @@ G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\iconbeneficiario.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\iconbeneficiario.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconbeneficiario.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll

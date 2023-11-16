@@ -48,6 +48,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Cadast
 build_metadata.AdditionalFiles.TargetPath = Views\CadastroEscolha.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\CadastroEscolha.xaml
 
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/AjudaCertaApp/Views/DoadorCadastro1.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.DoadorCadastro1.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DoadorCadastro1.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DoadorCadastro1.xaml
+
 [G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/AjudaCertaApp/Views/Inicial.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Inicial.xaml

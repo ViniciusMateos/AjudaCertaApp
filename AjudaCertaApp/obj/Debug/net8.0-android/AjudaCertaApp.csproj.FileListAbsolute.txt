@@ -1077,3 +1077,8 @@ G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\iconbeneficiario.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconbeneficiario.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\setabotao.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\setabotao.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\setabotao.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\setabotao.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\setabotao.png

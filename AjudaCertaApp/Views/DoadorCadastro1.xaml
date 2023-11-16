@@ -209,16 +209,24 @@
 
             </Grid>
 
-            <Button
-                Grid.Row="5"
-                Text="Doar"
+            <Grid
+                Grid.Row="5">
+
+                <Button
                 FontSize="24"
-                VerticalOptions="End"
+                VerticalOptions="Center"
                 BackgroundColor="#DF6234"
                 CornerRadius="20"
                 WidthRequest="200"
                 HeightRequest="60"                
                 />
+
+                <Image
+                 Source="setabotao.svg"
+                 VerticalOptions="Center"
+                 HorizontalOptions="Center"/>
+
+            </Grid>
 
         </Grid>
 

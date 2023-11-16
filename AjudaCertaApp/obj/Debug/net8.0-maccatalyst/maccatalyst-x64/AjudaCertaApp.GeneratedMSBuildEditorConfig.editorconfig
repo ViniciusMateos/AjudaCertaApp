@@ -58,6 +58,18 @@ build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Doador
 build_metadata.AdditionalFiles.TargetPath = Views\DoadorCadastro1.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\DoadorCadastro1.xaml
 
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/AjudaCertaApp/Views/DoadorCadastro2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.DoadorCadastro2.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DoadorCadastro2.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DoadorCadastro2.xaml
+
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/AjudaCertaApp/Views/DoadorCadastro3.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.DoadorCadastro3.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DoadorCadastro3.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DoadorCadastro3.xaml
+
 [G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/AjudaCertaApp/Views/Inicial.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Inicial.xaml

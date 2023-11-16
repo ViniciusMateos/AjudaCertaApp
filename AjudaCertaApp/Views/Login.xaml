@@ -104,7 +104,7 @@
 
             <Button
                 Grid.Row="3"
-                Text="Doar"
+                Text="ENTRAR"
                 FontSize="24"
                 BackgroundColor="#DF6234"
                 CornerRadius="20"

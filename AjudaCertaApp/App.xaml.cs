@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Views.DoadorCadastro1());
+            MainPage = new NavigationPage(new Views.DoadorCadastro3());
         }
     }
 }

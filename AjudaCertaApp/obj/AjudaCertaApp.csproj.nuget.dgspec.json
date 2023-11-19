@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Vinicin\\AjudaCertaTCC\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj": {}
+    "C:\\Projetos\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj": {}
   },
   "projects": {
-    "G:\\Vinicin\\AjudaCertaTCC\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj": {
+    "C:\\Projetos\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Vinicin\\AjudaCertaTCC\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
+        "projectUniqueName": "C:\\Projetos\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
         "projectName": "AjudaCertaApp",
-        "projectPath": "G:\\Vinicin\\AjudaCertaTCC\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
-        "packagesPath": "C:\\Users\\Patrick\\.nuget\\packages\\",
-        "outputPath": "G:\\Vinicin\\AjudaCertaTCC\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp\\obj\\",
+        "projectPath": "C:\\Projetos\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
+        "packagesPath": "C:\\Users\\jvsrd\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\AjudaCertaApp\\AjudaCertaApp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
-          "E:\\Visual Studio\\ProgramFiles (x86)\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Patrick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jvsrd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -78,6 +78,10 @@
               "target": "Package",
               "version": "[8.0.0, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -121,6 +125,10 @@
               "target": "Package",
               "version": "[8.0.0, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -164,6 +172,10 @@
               "target": "Package",
               "version": "[8.0.0, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -202,6 +214,10 @@
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
               "version": "[8.0.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

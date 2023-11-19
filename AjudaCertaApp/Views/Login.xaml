@@ -56,7 +56,7 @@
                     Grid.Row="1"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    Placeholder="nome / cpf / usuário"/>
+                    Placeholder="Digite seu email"/>
 
             </Grid>
 
@@ -79,7 +79,7 @@
                     Grid.Row="1"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    Placeholder="senha"/>
+                    Placeholder="Digite sua senha"/>
 
             </Grid>
 
@@ -92,14 +92,17 @@
                     FontSize="14"
                     TextColor="#FFFFFF"
                     Text="Não possui cadastro? "/>
-                <Label
+                <Label 
                     FontFamily="Inter"
                     FontSize="14"
                     TextColor="#FFFFFF"
                     Text="Cadastre-se aqui"
                     TextDecorations="Underline"
-                    FontAttributes="Bold"
-                    BindingContext=""/> 
+                    FontAttributes="Bold">
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding DirecionarCadastroCommand}" />
+                    </Label.GestureRecognizers>
+                </Label>
             </HorizontalStackLayout>
 
             <Button

@@ -20,6 +20,7 @@
             HeightRequest="25"
             Margin="4,0,0,0"
             HorizontalOptions="Start"
+            Command="{Binding VoltarCommand}"
         />
 
         <Image 
@@ -72,7 +73,8 @@
 	                HorizontalTextAlignment="Start"
                     VerticalTextAlignment="End"
 	                FontSize="14"
-	                TextColor="#FFFFFF"/>
+	                TextColor="#FFFFFF"
+                    />
 
                 <Entry
                     Grid.Row="1"
@@ -162,34 +164,41 @@
                     HeightRequest="40"
                     BackgroundColor="White"/>
 
-
                 <Label
                     Grid.Row="0"
                     Grid.Column="1"
-                    Text="CPF:"
+                    Text="PF/PJ:"
                     FontFamily="Inter"
-	                HorizontalTextAlignment="Start"
+                    HorizontalTextAlignment="Start"
                     VerticalTextAlignment="End"
-	                FontSize="14"
-	                TextColor="#FFFFFF"/>
-
-                <Entry
-                    Grid.Row="1"
+                    FontSize="14"
+                    TextColor="#FFFFFF"/>
+                
+                <Picker
                     Grid.Column="1"
-                    HeightRequest="40"
-                    VerticalOptions="Center"
+                    Grid.Row="1"
                     BackgroundColor="White"
-                    Placeholder="xxx.xxx.xxx.xx"
-                    />
-
+                    Title="---Selecione---" 
+                    ItemsSource="{Binding ListaFisicaJuridica}" 
+                    ItemDisplayBinding="{Binding Descricao}" 
+                    SelectedItem="{Binding FisicaJuridicaSelecionado}"
+                    SelectedIndexChanged="pfpj_SelectedIndexChanged"
+                    x:Name="pfpj"/>
             </Grid>
 
             <Grid
-                Grid.Row="4">
+                Grid.Row="4"
+                ColumnSpacing="20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition>
+                    </ColumnDefinition>
+                    <ColumnDefinition>
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
 
                 <Label
                     Grid.Row="0"
@@ -202,10 +211,33 @@
 
                 <Entry
                     Grid.Row="1"
+                    Grid.Column="0"
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
                     Placeholder="(xx)xxxxx.xxxx"/>
+
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Text="CPF:"
+                    FontFamily="Inter"
+                    HorizontalTextAlignment="Start"
+                    VerticalTextAlignment="End"
+                    FontSize="14"
+                    IsVisible="false"
+                    TextColor="#FFFFFF"
+                    x:Name="lblCpf"/>
+
+                <Entry
+                    IsVisible="false"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    HeightRequest="40"
+                    VerticalOptions="Center"
+                    BackgroundColor="White"
+                    Placeholder="xxx.xxx.xxx.xx"
+                    x:Name="etCpf"/>
 
             </Grid>
 

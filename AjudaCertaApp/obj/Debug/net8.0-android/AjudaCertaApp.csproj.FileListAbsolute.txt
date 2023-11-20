@@ -1403,7 +1403,6 @@ C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Numerics.dll
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Numerics.Vectors.dll
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.ObjectModel.dll
-C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.DataContractSerialization.dll
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.Uri.dll
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.Xml.dll
@@ -2167,3 +2166,4 @@ C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\stamp\_ConvertR
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll

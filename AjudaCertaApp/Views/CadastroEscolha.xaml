@@ -19,6 +19,7 @@
             HeightRequest="25"
             Margin="4,0,0,0"
             HorizontalOptions="Start"
+            Command="{Binding VoltarCommand}"
         />
         
         <Image 
@@ -68,7 +69,11 @@
                     Grid.ColumnSpan="2"
                     CornerRadius="20"
                     Color="#F5E4D3"
-                    Background="#F5A24A"/>
+                    Background="#F5A24A">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding DirecionarCadastroDoador1Command}"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
 
                 <Grid
                     Grid.Column="0"

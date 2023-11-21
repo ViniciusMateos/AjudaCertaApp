@@ -51,6 +51,7 @@
 	                HorizontalTextAlignment="Start"
                     VerticalTextAlignment="End"
 	                FontSize="14"
+                    Padding="5,0"
 	                TextColor="#FFFFFF"/>
 
                 <sf:SfTextInputLayout 
@@ -75,6 +76,7 @@
 
                 <Label
                     Text="Senha:"
+                    Padding="5,0"
                     FontFamily="Inter"
                     HorizontalTextAlignment="Start"
                     VerticalTextAlignment="End"

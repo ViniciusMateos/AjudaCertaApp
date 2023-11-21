@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sf="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
              x:Class="AjudaCertaApp.Views.DoadorCadastro2"
              Title="DoadorCadastro2"
              NavigationPage.HasNavigationBar="False"
@@ -67,8 +68,15 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
 
-                <Label
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+   
+                    <Label
                     Grid.Row="0"
+                    Grid.Column="0"
                     Text="CEP:"
                     FontFamily="Inter"
 	                HorizontalTextAlignment="Start"
@@ -78,10 +86,23 @@
 
                 <Entry
                     Grid.Row="1"
+                    Grid.Column="0"
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    Placeholder="xxxxx.xxx"/>
+/>
+
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    FontSize="15"
+                    VerticalOptions="Center"
+                    HorizontalOptions="End"
+                    Text="Consultar"
+                    BackgroundColor="#DF6234"
+                    CornerRadius="10"
+                    WidthRequest="120"
+                    HeightRequest="40"/>
 
             </Grid>
 
@@ -106,7 +127,7 @@
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    Placeholder="Avenida São João"/>
+                    IsEnabled="False"/>
 
             </Grid>
 
@@ -139,7 +160,7 @@
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    Placeholder="10"
+                    IsEnabled="False"
                     />
 
 
@@ -159,7 +180,7 @@
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    Placeholder="Apartamento 1"
+                    IsEnabled="False"
                     />
 
             </Grid>
@@ -185,7 +206,7 @@
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    Placeholder="Jardins"/>
+                    IsEnabled="False"/>
 
             </Grid>
 
@@ -218,7 +239,7 @@
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    Placeholder="SP"
+                    IsEnabled="False"
                     />
 
 
@@ -238,7 +259,7 @@
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    Placeholder="São Paulo"
+                    IsEnabled="False"
                     />
 
             </Grid>
@@ -252,7 +273,8 @@
                 BackgroundColor="#DF6234"
                 CornerRadius="20"
                 WidthRequest="200"
-                HeightRequest="60"                
+                HeightRequest="60"
+                Command="{Binding DirecionarCadastroDoador3Command}"
                 />
 
                 <Image

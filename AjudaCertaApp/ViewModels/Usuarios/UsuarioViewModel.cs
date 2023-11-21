@@ -22,6 +22,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
         public ICommand DirecionarLoginCommand { get; set; }
         public ICommand DirecionarCadastroDoador1Command { get; set; }
         public ICommand DirecionarCadastroDoador2Command { get; set; }
+        public ICommand DirecionarCadastroDoador3Command { get; set; }
         public ICommand VoltarCommand { get; set; }
         public UsuarioViewModel()
         {
@@ -37,6 +38,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
             DirecionarLoginCommand = new Command(async () => await DirecionarParaLogin());
             DirecionarCadastroDoador1Command = new Command(async () => await DirecionarParaCadastroDoador1());
             DirecionarCadastroDoador2Command = new Command(async () => await DirecionarParaCadastroDoador2());
+            DirecionarCadastroDoador3Command = new Command(async () => await DirecionarParaCadastroDoador3());
             VoltarCommand = new Command(async () => await Voltar());
         }
 
@@ -301,44 +303,44 @@ namespace AjudaCertaApp.ViewModels.Usuarios
                 Usuario u = new Usuario();
                 u.Email = Email;
 
-                #region Validações
-                if (Nome == string.Empty)
-                {
-                    await Application.Current.MainPage
-                    .DisplayAlert("Atenção", "Preencha o campo nome.", "Ok");
-                }
-                else if (Username == string.Empty)
-                {
-                    await Application.Current.MainPage
-                    .DisplayAlert("Atenção", "Preencha o campo usuário.", "Ok");
-                }
-                else if (Email == string.Empty)
-                {
-                    await Application.Current.MainPage
-                    .DisplayAlert("Atenção", "Preencha o campo nome.", "Ok");
-                }
-                else if (Telefone == string.Empty)
-                {
-                    await Application.Current.MainPage
-                    .DisplayAlert("Atenção", "Preencha o campo nome.", "Ok");
-                }
-                else if (Datanasc == DateTime.Now)
-                {
-                    await Application.Current.MainPage
-                    .DisplayAlert("Atenção", "Escolha sua data de nascimento.", "Ok");
-                }
-                else if (Telefone == string.Empty)
-                {
-                    await Application.Current.MainPage
-                    .DisplayAlert("Atenção", "Preencha o campo nome.", "Ok");
-                }
-                else if (Cpf == string.Empty && Cnpj == string.Empty)
-                {
-                    await Application.Current.MainPage
-                    .DisplayAlert("Atenção", "É necessário informar seu CPF/CNPJ.", "Ok");
-                }
-                else
-                #endregion
+                //#region Validações
+                //if (Nome == string.Empty)
+                //{
+                //    await Application.Current.MainPage
+                //    .DisplayAlert("Atenção", "Preencha o campo nome.", "Ok");
+                //}
+                //else if (Username == string.Empty)
+                //{
+                //    await Application.Current.MainPage
+                //    .DisplayAlert("Atenção", "Preencha o campo usuário.", "Ok");
+                //}
+                //else if (Email == string.Empty)
+                //{
+                //    await Application.Current.MainPage
+                //    .DisplayAlert("Atenção", "Preencha o campo nome.", "Ok");
+                //}
+                //else if (Telefone == string.Empty)
+                //{
+                //    await Application.Current.MainPage
+                //    .DisplayAlert("Atenção", "Preencha o campo nome.", "Ok");
+                //}
+                //else if (Datanasc == DateTime.Now)
+                //{
+                //    await Application.Current.MainPage
+                //    .DisplayAlert("Atenção", "Escolha sua data de nascimento.", "Ok");
+                //}
+                //else if (Telefone == string.Empty)
+                //{
+                //    await Application.Current.MainPage
+                //    .DisplayAlert("Atenção", "Preencha o campo nome.", "Ok");
+                //}
+                //else if (Cpf == string.Empty && Cnpj == string.Empty)
+                //{
+                //    await Application.Current.MainPage
+                //    .DisplayAlert("Atenção", "É necessário informar seu CPF/CNPJ.", "Ok");
+                //}
+                //else
+                //#endregion
 
                 await Application.Current.MainPage
                     .Navigation.PushAsync(new Views.DoadorCadastro2(p, u));
@@ -349,7 +351,21 @@ namespace AjudaCertaApp.ViewModels.Usuarios
                     .DisplayAlert("Informação", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
             }
         }
-        
+
+        public async Task DirecionarParaCadastroDoador3()
+        {
+            try
+            {
+                await Application.Current.MainPage
+                    .Navigation.PushAsync(new Views.DoadorCadastro3());
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Informação", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
         public async Task PreencherEndereço()
         {
             try

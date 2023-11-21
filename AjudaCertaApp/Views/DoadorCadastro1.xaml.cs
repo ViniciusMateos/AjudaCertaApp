@@ -20,15 +20,35 @@ public partial class DoadorCadastro1 : ContentPage
         {
             etCpf.IsVisible = true;
             lblCpf.IsVisible = true;
+
             etCnpj.IsVisible = false;
             lblCnpj.IsVisible = false;
+
+            lblNome.Text = "Nome completo:";
+
+            lblDataNasc.IsVisible = true;
+            dtpDataNasc.IsVisible = true;
+
+            lblGenero.IsVisible = true;
+            generopika.IsVisible = true;
+
         }
         else if(pfpj.SelectedIndex == 1)
         {
             etCpf.IsVisible = false;
             lblCpf.IsVisible = false;
+
             etCnpj.IsVisible = true;
             lblCnpj.IsVisible = true;
+
+            lblNome.Text = "Nome da Empresa:";
+
+            lblDataNasc.IsVisible = false;
+            dtpDataNasc.IsVisible = false;
+
+            lblGenero.IsVisible = false;
+            generopika.IsVisible = false;
         }
+
     }
 }

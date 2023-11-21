@@ -19,6 +19,7 @@
             HeightRequest="25"
             Margin="4,0,0,0"
             HorizontalOptions="Start"
+            Command="{Binding VoltarCommand}"
         />
 
         <BoxView 
@@ -54,11 +55,11 @@
 
             <Label
                 Grid.Row="2"
-                Text="Quase lá! 
-                Falta só sua senha segura."
+                Text="Quase lá!
+                Falta só definir sua senha."
                 FontFamily="Inter"
 	            HorizontalTextAlignment="Center"
-                WidthRequest="250"
+                WidthRequest="260"
                 TextColor="#DF6234"
 	            FontSize="30"/>
         </Grid>
@@ -105,10 +106,8 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
 
-
-
                 <Label
-                    Text="Senha:"
+                    Text="Confirmar senha:"
                     FontFamily="Inter"
 	                HorizontalTextAlignment="Start"
                     VerticalTextAlignment="End"

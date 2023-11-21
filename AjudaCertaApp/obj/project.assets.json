@@ -34249,24 +34249,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jvsrd\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Patrick\\.nuget\\packages\\": {},
+    "E:\\Visual Studio\\ProgramFiles (x86)\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
+      "projectUniqueName": "G:\\Vinicin\\AjudaCertaTCC\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
       "projectName": "AjudaCertaApp",
-      "projectPath": "C:\\Projetos\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
-      "packagesPath": "C:\\Users\\jvsrd\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\AjudaCertaApp\\AjudaCertaApp\\obj\\",
+      "projectPath": "G:\\Vinicin\\AjudaCertaTCC\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
+      "packagesPath": "C:\\Users\\Patrick\\.nuget\\packages\\",
+      "outputPath": "G:\\Vinicin\\AjudaCertaTCC\\AjudaCertaApp\\AjudaCertaApp\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "E:\\Visual Studio\\ProgramFiles (x86)\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\jvsrd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Patrick\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

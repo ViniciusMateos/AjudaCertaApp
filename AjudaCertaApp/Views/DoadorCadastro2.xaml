@@ -21,6 +21,7 @@
             HeightRequest="25"
             Margin="4,0,0,0"
             HorizontalOptions="Start"
+            Command="{Binding VoltarCommand}"
         />
 
         <Image 

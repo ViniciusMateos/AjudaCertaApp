@@ -1,9 +1,11 @@
 ﻿using AjudaCertaApp.Models;
 using AjudaCertaApp.Models.Enuns;
+using AjudaCertaApp.Services;
 using AjudaCertaApp.Services.Pessoas;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -15,6 +17,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
     public class UsuarioViewModel : BaseViewModel
     {
         private PessoaService pService;
+        private ViaCEPServices vcService;
         public ICommand DirecionarCadastroCommand { get; set; }
         public ICommand DirecionarLoginCommand { get; set; }
         public ICommand DirecionarCadastroDoador1Command { get; set; }
@@ -23,6 +26,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
         public UsuarioViewModel()
         {
             pService = new PessoaService();
+            vcService = new ViaCEPServices();
             InicializarCommands();
             _ = ObterFisicaJuridica();
         }
@@ -32,6 +36,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
             DirecionarCadastroCommand = new Command(async () => await DirecionarParaCadastro());
             DirecionarLoginCommand = new Command(async () => await DirecionarParaLogin());
             DirecionarCadastroDoador1Command = new Command(async () => await DirecionarParaCadastroDoador1());
+            DirecionarCadastroDoador2Command = new Command(async () => await DirecionarParaCadastroDoador2());
             VoltarCommand = new Command(async () => await Voltar());
         }
 
@@ -119,7 +124,87 @@ namespace AjudaCertaApp.ViewModels.Usuarios
             }
                 }
         
-        //fazer props cpf e cnpj
+        private string cpf = string.Empty;
+        public string Cpf
+        {
+            get { return cpf; }
+            set 
+            { 
+                cpf = value; 
+                OnPropertyChanged(); 
+            }
+        }
+
+        private string cnpj = string.Empty;
+        public string Cnpj
+        {
+            get { return cnpj; }
+            set
+            {
+                cnpj = value;
+                OnPropertyChanged();
+            }
+        }
+        
+        private string telefone = string.Empty;
+        public string Telefone
+        {
+            get { return telefone; }
+            set
+            {
+                telefone = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private string cep = string.Empty;
+        public string Cep { get { return cep; }
+            set 
+            {
+                cep = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private string rua = string.Empty;
+        public string Rua { get { return rua; }
+        set 
+            {
+                rua = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private string bairro = string.Empty;
+        public string Bairro { get { return bairro; }
+            set 
+            {
+                bairro = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private string cidade = string.Empty;
+        public string Cidade { get { return cidade; }
+            set 
+            {
+                cidade = value;
+                OnPropertyChanged();
+            }
+        }
+        
+        private string estado = string.Empty;
+        public string Estado
+        {
+            get { return estado; }
+            set
+            {
+                estado = value;
+                OnPropertyChanged();
+            }
+        }
+
+
         #endregion
 
         #region Métodos
@@ -206,14 +291,86 @@ namespace AjudaCertaApp.ViewModels.Usuarios
                 p.Username = Username;
                 if(fisicaJuridicaSelecionado.Id == 1)
                 {
-                    
+                    p.Documento = Cpf;
+                }
+                else if(fisicaJuridicaSelecionado.Id == 2)
+                {
+                    p.Documento = Cnpj;
                 }
 
                 Usuario u = new Usuario();
                 u.Email = Email;
 
+                #region Validações
+                if (Nome == string.Empty)
+                {
+                    await Application.Current.MainPage
+                    .DisplayAlert("Atenção", "Preencha o campo nome.", "Ok");
+                }
+                else if (Username == string.Empty)
+                {
+                    await Application.Current.MainPage
+                    .DisplayAlert("Atenção", "Preencha o campo usuário.", "Ok");
+                }
+                else if (Email == string.Empty)
+                {
+                    await Application.Current.MainPage
+                    .DisplayAlert("Atenção", "Preencha o campo nome.", "Ok");
+                }
+                else if (Telefone == string.Empty)
+                {
+                    await Application.Current.MainPage
+                    .DisplayAlert("Atenção", "Preencha o campo nome.", "Ok");
+                }
+                else if (Datanasc == DateTime.Now)
+                {
+                    await Application.Current.MainPage
+                    .DisplayAlert("Atenção", "Escolha sua data de nascimento.", "Ok");
+                }
+                else if (Telefone == string.Empty)
+                {
+                    await Application.Current.MainPage
+                    .DisplayAlert("Atenção", "Preencha o campo nome.", "Ok");
+                }
+                else if (Cpf == string.Empty && Cnpj == string.Empty)
+                {
+                    await Application.Current.MainPage
+                    .DisplayAlert("Atenção", "É necessário informar seu CPF/CNPJ.", "Ok");
+                }
+                else
+                #endregion
+
                 await Application.Current.MainPage
                     .Navigation.PushAsync(new Views.DoadorCadastro2(p, u));
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Informação", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+        
+        public async Task PreencherEndereço()
+        {
+            try
+            {
+                // inserir mascara no textinputlayout do cep "xxxxx-xxx"
+                string cepDigitado = Cep.Trim( new Char[] {'-'});
+                if(cepDigitado.Length != 8) 
+                {
+                    int ceep = Convert.ToInt32(cepDigitado);
+                    ViaCEPModel objectResult = Search.ByZipCode(ceep);
+                    if (objectResult != null)
+                    {
+                        Rua = objectResult.Address1;
+                        Bairro = objectResult.Neighborhood;
+                        Cidade = objectResult.City;
+                        Estado = objectResult.State;
+                    }
+                }
+                else
+                    await Application.Current.MainPage
+                        .DisplayAlert("Atenção", "O CEP digitado não é válido.", "Ok");
             }
             catch (Exception ex)
             {

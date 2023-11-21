@@ -81,7 +81,8 @@
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    Placeholder="nome"/>
+                    Placeholder="Nome"
+                    BindingContext="{Binding Nome}"/>
 
             </Grid>
 
@@ -106,7 +107,8 @@
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    Placeholder="@exemplo"/>
+                    Placeholder="@exemplo"
+                    BindingContext="{Binding Username}"/>
 
             </Grid>
 
@@ -131,7 +133,8 @@
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    Placeholder="exemplo@exemplo.com"/>
+                    Placeholder="exemplo@exemplo.com"
+                    BindingContext="{Binding Email}"/>
 
             </Grid>
 
@@ -159,6 +162,7 @@
 	                TextColor="#FFFFFF"/>
 
                 <DatePicker
+                    BindingContext="{Binding Datanasc}"
                     Grid.Row="1"
                     Grid.Column="0"
                     HeightRequest="40"
@@ -213,6 +217,7 @@
                     Grid.Row="1"
                     Grid.Column="0"
                     HeightRequest="40"
+                    BindingContext="{Binding Telefone}"
                     VerticalOptions="Center"
                     BackgroundColor="White"
                     Placeholder="(xx)xxxxx.xxxx"/>
@@ -233,6 +238,7 @@
                     IsVisible="false"
                     Grid.Row="1"
                     Grid.Column="1"
+                    BindingContext="{Binding Cpf}"
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
@@ -255,6 +261,7 @@
                     IsVisible="false"
                     Grid.Row="1"
                     Grid.Column="1"
+                    BindingContext="{Binding Cnpj}"
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
@@ -272,7 +279,8 @@
                 BackgroundColor="#DF6234"
                 CornerRadius="20"
                 WidthRequest="200"
-                HeightRequest="60"                
+                HeightRequest="60"
+                Command="{Binding DirecionarCadastroDoador2Command}"
                 />
 
                 <Image

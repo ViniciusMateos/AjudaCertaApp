@@ -59,6 +59,7 @@
                     OutlineCornerRadius="30"
                     ContainerBackground="White"
                     InputViewPadding="20,5,0,5"
+                    Stroke="#F5A24A"
                     >
                     <Entry
                         VerticalOptions="Center"/>
@@ -86,7 +87,8 @@
                     InputViewPadding="20,5,0,5"
                     EnablePasswordVisibilityToggle="True"
                     OutlineCornerRadius="30"
-                    ContainerBackground="White">
+                    ContainerBackground="White"
+                    Stroke="#F5A24A">
                     <Entry
                         VerticalOptions="Center"/>
                 </sf:SfTextInputLayout>

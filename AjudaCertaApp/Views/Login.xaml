@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sf="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
              x:Class="AjudaCertaApp.Views.Login"
              Title="Login"
              NavigationPage.HasNavigationBar="False">
@@ -52,12 +53,16 @@
 	                FontSize="14"
 	                TextColor="#FFFFFF"/>
 
-                <Entry
-                    Grid.Row="1"
-                    VerticalOptions="Center"
-                    BackgroundColor="White"
-                    Placeholder="Digite seu email"/>
-
+                <sf:SfTextInputLayout 
+                    Grid.Row="1" 
+                    ContainerType="Outlined"
+                    OutlineCornerRadius="30"
+                    ContainerBackground="White"
+                    InputViewPadding="20,5,0,5"
+                    >
+                    <Entry
+                        VerticalOptions="Center"/>
+                </sf:SfTextInputLayout>
             </Grid>
 
             <Grid
@@ -75,12 +80,16 @@
                     FontSize="14"
                     TextColor="#FFFFFF"/>
 
-                <Entry
+                <sf:SfTextInputLayout
                     Grid.Row="1"
-                    VerticalOptions="Center"
-                    BackgroundColor="White"
-                    Placeholder="Digite sua senha"/>
-
+                    ContainerType="Outlined"
+                    InputViewPadding="20,5,0,5"
+                    EnablePasswordVisibilityToggle="True"
+                    OutlineCornerRadius="30"
+                    ContainerBackground="White">
+                    <Entry
+                        VerticalOptions="Center"/>
+                </sf:SfTextInputLayout>
             </Grid>
 
             <HorizontalStackLayout

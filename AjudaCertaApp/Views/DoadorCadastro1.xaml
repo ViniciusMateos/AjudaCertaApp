@@ -239,6 +239,28 @@
                     Placeholder="xxx.xxx.xxx.xx"
                     x:Name="etCpf"/>
 
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Text="CNPJ:"
+                    FontFamily="Inter"
+                    HorizontalTextAlignment="Start"
+                    VerticalTextAlignment="End"
+                    FontSize="14"
+                    IsVisible="false"
+                    TextColor="#FFFFFF"
+                    x:Name="lblCnpj"/>
+
+                <Entry
+                    IsVisible="false"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    HeightRequest="40"
+                    VerticalOptions="Center"
+                    BackgroundColor="White"
+                    Placeholder="xx.xxx.xxx/xxxx-xx"
+                    x:Name="etCnpj"/>
+
             </Grid>
 
             <Grid

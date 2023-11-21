@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -17,6 +18,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
         public ICommand DirecionarCadastroCommand { get; set; }
         public ICommand DirecionarLoginCommand { get; set; }
         public ICommand DirecionarCadastroDoador1Command { get; set; }
+        public ICommand DirecionarCadastroDoador2Command { get; set; }
         public ICommand VoltarCommand { get; set; }
         public UsuarioViewModel()
         {
@@ -97,6 +99,27 @@ namespace AjudaCertaApp.ViewModels.Usuarios
             }
         }
 
+        private string username = string.Empty;
+
+        public string Username { get { return username;  }
+            set 
+            {
+                username = value;
+                OnPropertyChanged();
+            }
+                }
+
+        private string email = string.Empty;
+
+        public string Email { get { return email; }
+            set 
+            {
+                email = value; 
+                OnPropertyChanged(); 
+            }
+                }
+        
+        //fazer props cpf e cnpj
         #endregion
 
         #region Métodos
@@ -163,6 +186,34 @@ namespace AjudaCertaApp.ViewModels.Usuarios
             {
                 await Application.Current.MainPage
                     .Navigation.PushAsync(new Views.DoadorCadastro1());
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Informação", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
+        public async Task DirecionarParaCadastroDoador2()
+        {
+            try
+            {
+                Pessoa p = new Pessoa();
+                p.Nome = Nome;
+                p.DataNasc = Convert.ToDateTime(Datanasc);
+                p.fisicaJuridica = (FisicaJuridicaEnum)fisicaJuridicaSelecionado.Id;
+                p.Tipo = TipoPessoaEnum.DOADOR;
+                p.Username = Username;
+                if(fisicaJuridicaSelecionado.Id == 1)
+                {
+                    
+                }
+
+                Usuario u = new Usuario();
+                u.Email = Email;
+
+                await Application.Current.MainPage
+                    .Navigation.PushAsync(new Views.DoadorCadastro2(p, u));
             }
             catch (Exception ex)
             {

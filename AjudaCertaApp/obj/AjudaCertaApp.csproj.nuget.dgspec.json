@@ -82,6 +82,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Syncfusion.Maui.Core": {
+              "target": "Package",
+              "version": "[23.2.4, )"
             }
           },
           "imports": [
@@ -129,6 +133,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Syncfusion.Maui.Core": {
+              "target": "Package",
+              "version": "[23.2.4, )"
             }
           },
           "imports": [
@@ -176,6 +184,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Syncfusion.Maui.Core": {
+              "target": "Package",
+              "version": "[23.2.4, )"
             }
           },
           "imports": [
@@ -218,6 +230,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Syncfusion.Maui.Core": {
+              "target": "Package",
+              "version": "[23.2.4, )"
             }
           },
           "imports": [

@@ -20,6 +20,8 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Maui.Essentials.dll",
 		"Microsoft.Maui.Graphics.dll",
 		"Newtonsoft.Json.dll",
+		"Syncfusion.Licensing.dll",
+		"Syncfusion.Maui.Core.dll",
 		"Xamarin.Android.Glide.dll",
 		"Xamarin.Android.Glide.Annotations.dll",
 		"Xamarin.Android.Glide.DiskLruCache.dll",

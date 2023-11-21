@@ -16,16 +16,19 @@ public partial class DoadorCadastro1 : ContentPage
 
     private void pfpj_SelectedIndexChanged(object sender, EventArgs e)
     {
-        FisicaJuridica fj = new FisicaJuridica() { Id = 1, Descricao = "Pessoa Física" };
         if (pfpj.SelectedIndex == 0)
         {
             etCpf.IsVisible = true;
             lblCpf.IsVisible = true;
+            etCnpj.IsVisible = false;
+            lblCnpj.IsVisible = false;
         }
-        else
+        else if(pfpj.SelectedIndex == 1)
         {
             etCpf.IsVisible = false;
             lblCpf.IsVisible = false;
+            etCnpj.IsVisible = true;
+            lblCnpj.IsVisible = true;
         }
     }
 }

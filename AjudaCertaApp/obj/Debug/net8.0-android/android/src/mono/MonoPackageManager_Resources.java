@@ -22,6 +22,10 @@ public class MonoPackageManager_Resources {
 		"Newtonsoft.Json.dll",
 		"Syncfusion.Licensing.dll",
 		"Syncfusion.Maui.Core.dll",
+		"Syncfusion.Maui.DataSource.dll",
+		"Syncfusion.Maui.GridCommon.dll",
+		"Syncfusion.Maui.Inputs.dll",
+		"Syncfusion.Maui.ListView.dll",
 		"Xamarin.Android.Glide.dll",
 		"Xamarin.Android.Glide.Annotations.dll",
 		"Xamarin.Android.Glide.DiskLruCache.dll",
@@ -139,6 +143,7 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Maui.Controls.resources.dll",
 		"Microsoft.Maui.Controls.resources.dll",
 		"Microsoft.Maui.Controls.resources.dll",
+		"Syncfusion.Maui.ListView.resources.dll",
 		"_Microsoft.Android.Resource.Designer.dll",
 	};
 	public static String[] Dependencies = new String[]{

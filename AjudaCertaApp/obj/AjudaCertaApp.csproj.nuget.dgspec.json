@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Vinicin\\AjudaCertaTCC\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj": {}
+    "C:\\Projetos\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj": {}
   },
   "projects": {
-    "G:\\Vinicin\\AjudaCertaTCC\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj": {
+    "C:\\Projetos\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Vinicin\\AjudaCertaTCC\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
+        "projectUniqueName": "C:\\Projetos\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
         "projectName": "AjudaCertaApp",
-        "projectPath": "G:\\Vinicin\\AjudaCertaTCC\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
-        "packagesPath": "C:\\Users\\Patrick\\.nuget\\packages\\",
-        "outputPath": "G:\\Vinicin\\AjudaCertaTCC\\AjudaCertaApp\\AjudaCertaApp\\obj\\",
+        "projectPath": "C:\\Projetos\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
+        "packagesPath": "C:\\Users\\jvsrd\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\AjudaCertaApp\\AjudaCertaApp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
-          "E:\\Visual Studio\\ProgramFiles (x86)\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Patrick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jvsrd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -86,6 +86,10 @@
             "Syncfusion.Maui.Core": {
               "target": "Package",
               "version": "[23.2.4, )"
+            },
+            "Syncfusion.Maui.Inputs": {
+              "target": "Package",
+              "version": "[23.2.4, )"
             }
           },
           "imports": [
@@ -135,6 +139,10 @@
               "version": "[13.0.3, )"
             },
             "Syncfusion.Maui.Core": {
+              "target": "Package",
+              "version": "[23.2.4, )"
+            },
+            "Syncfusion.Maui.Inputs": {
               "target": "Package",
               "version": "[23.2.4, )"
             }
@@ -188,6 +196,10 @@
             "Syncfusion.Maui.Core": {
               "target": "Package",
               "version": "[23.2.4, )"
+            },
+            "Syncfusion.Maui.Inputs": {
+              "target": "Package",
+              "version": "[23.2.4, )"
             }
           },
           "imports": [
@@ -232,6 +244,10 @@
               "version": "[13.0.3, )"
             },
             "Syncfusion.Maui.Core": {
+              "target": "Package",
+              "version": "[23.2.4, )"
+            },
+            "Syncfusion.Maui.Inputs": {
               "target": "Package",
               "version": "[23.2.4, )"
             }

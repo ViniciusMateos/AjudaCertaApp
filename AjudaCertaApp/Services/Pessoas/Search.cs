@@ -18,7 +18,7 @@ namespace AjudaCertaApp.Services.Pessoas
         /// <param name="type">The type to search address. Use ViaCEPTypes object to help. Possible values include: 'json', 'xml', 'piped' and 'querty'</param>
         /// <returns>String with result in type selected</returns>
         /// 
-        public static string ByZipCode(int zipCode, string type)
+        public static string ByZipCode(string zipCode, string type)
         {
             try
             {
@@ -41,7 +41,7 @@ namespace AjudaCertaApp.Services.Pessoas
         /// </summary>
         /// <param name="zipCode">Zip code value</param>
         /// <returns>Object with address result</returns>
-        public static ViaCEPModel ByZipCode(int zipCode)
+        public static ViaCEPModel ByZipCode(string zipCode)
         {
             try
             {

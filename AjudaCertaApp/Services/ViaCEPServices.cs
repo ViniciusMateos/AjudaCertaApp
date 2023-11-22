@@ -10,7 +10,7 @@ namespace AjudaCertaApp.Services
 {
     public class ViaCEPServices
     {
-        public static string GetAddressByCEP(int cep, string type)
+        public static string GetAddressByCEP(string cep, string type)
         {
             try
             {

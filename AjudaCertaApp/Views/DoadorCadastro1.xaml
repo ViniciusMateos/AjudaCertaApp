@@ -257,7 +257,6 @@
                 </Grid.ColumnDefinitions>
 
 
-                <!--COLOCAR GENERO COMO PICKER-->
                 <Label
                     Grid.Row="0"
                     Text="Gênero:"
@@ -269,13 +268,17 @@
                     x:Name="lblGenero"
                     IsVisible="false"/>
 
-                <Entry
+                <Picker
                     Grid.Row="1"
                     Grid.Column="0"
                     HeightRequest="40"
                     VerticalOptions="Center"
+                    Title="---Selecione---" 
+                    ItemsSource="{Binding ListaGenero}" 
+                    ItemDisplayBinding="{Binding Descricao}" 
+                    SelectedItem="{Binding ListaGeneroSelecionado}"
                     BackgroundColor="White"
-                    x:Name="generopika"
+                    x:Name="pckGenero"
                     IsVisible="false"/>
 
                 <Label

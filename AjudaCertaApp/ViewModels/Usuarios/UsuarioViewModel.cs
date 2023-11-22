@@ -23,8 +23,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
         public ICommand DirecionarCadastroDoador1Command { get; set; }
         public ICommand DirecionarCadastroDoador2Command { get; set; }
         public ICommand DirecionarCadastroDoador3Command { get; set; }
-
-
+        public ICommand PreencherEnderecoCommand { get; set; }
         public ICommand DirecionarCadastroBeneficiario1Command { get; set; }
         public ICommand DirecionarCadastroBeneficiario2Command { get; set; }
         public ICommand DirecionarCadastroBeneficiario3Command { get; set; }
@@ -35,6 +34,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
             vcService = new ViaCEPServices();
             InicializarCommands();
             _ = ObterFisicaJuridica();
+            _ = ObterGenero();
         }
 
         public void InicializarCommands()
@@ -44,7 +44,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
             DirecionarCadastroDoador1Command = new Command(async () => await DirecionarParaCadastroDoador1());
             DirecionarCadastroDoador2Command = new Command(async () => await DirecionarParaCadastroDoador2());
             DirecionarCadastroDoador3Command = new Command(async () => await DirecionarParaCadastroDoador3());
-
+            PreencherEnderecoCommand = new Command(async () => await PreencherEndereço());
             DirecionarCadastroBeneficiario1Command = new Command(async () => await DirecionarParaCadastroBeneficiario1());
             DirecionarCadastroBeneficiario2Command = new Command(async () => await DirecionarParaCadastroBeneficiario2());
             DirecionarCadastroBeneficiario3Command = new Command(async () => await DirecionarParaCadastroBeneficiario3());
@@ -114,6 +114,35 @@ namespace AjudaCertaApp.ViewModels.Usuarios
                 }
             }
         }
+
+        private ObservableCollection<Genero> listaGenero;
+        public ObservableCollection<Genero> ListaGenero
+        {
+            get { return listaGenero; }
+            set
+            {
+                if (value != null)
+                {
+                    listaGenero = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        private Genero listaGeneroSelecionado;
+        public Genero ListaGeneroSelecionado
+        {
+            get { return listaGeneroSelecionado; }
+            set
+            {
+                if (value != null)
+                {
+                    listaGeneroSelecionado = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
 
         private string username = string.Empty;
 
@@ -227,6 +256,24 @@ namespace AjudaCertaApp.ViewModels.Usuarios
                 ListaFisicaJuridica.Add(new FisicaJuridica() { Id = 1, Descricao = "Pessoa Física" });
                 ListaFisicaJuridica.Add(new FisicaJuridica() { Id = 2, Descricao = "Pessoa Jurídica" });
                 OnPropertyChanged(nameof(ListaFisicaJuridica));
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
+        public async Task ObterGenero()
+        {
+            try
+            {
+                ListaGenero = new ObservableCollection<Genero>();
+                ListaGenero.Add(new Genero() { Id = 1, Descricao = "Masculino" });
+                ListaGenero.Add(new Genero() { Id = 2, Descricao = "Feminino" });
+                ListaGenero.Add(new Genero() { Id = 3, Descricao = "Outros" });
+                ListaGenero.Add(new Genero() { Id = 4, Descricao = "Prefiro não informar" });
+                OnPropertyChanged(nameof(ListaGenero));
             }
             catch (Exception ex)
             {
@@ -424,11 +471,10 @@ namespace AjudaCertaApp.ViewModels.Usuarios
             try
             {
                 // inserir mascara no textinputlayout do cep "xxxxx-xxx"
-                string cepDigitado = Cep.Trim( new Char[] {'-'});
-                if(cepDigitado.Length != 8) 
+                string cepDigitado = Cep;
+                if(cepDigitado.Length == 8) 
                 {
-                    int ceep = Convert.ToInt32(cepDigitado);
-                    ViaCEPModel objectResult = Search.ByZipCode(ceep);
+                    ViaCEPModel objectResult = Search.ByZipCode(cepDigitado);
                     if (objectResult != null)
                     {
                         Rua = objectResult.Address1;

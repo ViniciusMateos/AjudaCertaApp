@@ -30,7 +30,7 @@ public partial class DoadorCadastro1 : ContentPage
             dtpDataNasc.IsVisible = true;
 
             lblGenero.IsVisible = true;
-            generopika.IsVisible = true;
+            pckGenero.IsVisible = true;
 
         }
         else if(pfpj.SelectedIndex == 1)
@@ -47,7 +47,7 @@ public partial class DoadorCadastro1 : ContentPage
             dtpDataNasc.IsVisible = false;
 
             lblGenero.IsVisible = false;
-            generopika.IsVisible = false;
+            pckGenero.IsVisible = false;
         }
 
     }

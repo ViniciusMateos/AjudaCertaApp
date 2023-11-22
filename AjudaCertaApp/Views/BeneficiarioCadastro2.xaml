@@ -274,7 +274,7 @@
                 CornerRadius="20"
                 WidthRequest="200"
                 HeightRequest="60"
-                Command="{Binding DirecionarCadastroDoador3Command}"
+                Command="{Binding DirecionarCadastroBeneficiario3Command}"
                 />
 
                 <Image

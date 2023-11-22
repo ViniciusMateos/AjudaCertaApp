@@ -112,7 +112,11 @@
                     Grid.ColumnSpan="2"
                     CornerRadius="20"
                     Color="#F5E4D3"
-                    Background="#F5A24A"/>
+                    Background="#F5A24A">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding DirecionarCadastroBeneficiario1Command}"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
 
                 <Grid
                     Grid.Column="0"

@@ -23,6 +23,11 @@ namespace AjudaCertaApp.ViewModels.Usuarios
         public ICommand DirecionarCadastroDoador1Command { get; set; }
         public ICommand DirecionarCadastroDoador2Command { get; set; }
         public ICommand DirecionarCadastroDoador3Command { get; set; }
+
+
+        public ICommand DirecionarCadastroBeneficiario1Command { get; set; }
+        public ICommand DirecionarCadastroBeneficiario2Command { get; set; }
+        public ICommand DirecionarCadastroBeneficiario3Command { get; set; }
         public ICommand VoltarCommand { get; set; }
         public UsuarioViewModel()
         {
@@ -39,6 +44,10 @@ namespace AjudaCertaApp.ViewModels.Usuarios
             DirecionarCadastroDoador1Command = new Command(async () => await DirecionarParaCadastroDoador1());
             DirecionarCadastroDoador2Command = new Command(async () => await DirecionarParaCadastroDoador2());
             DirecionarCadastroDoador3Command = new Command(async () => await DirecionarParaCadastroDoador3());
+
+            DirecionarCadastroBeneficiario1Command = new Command(async () => await DirecionarParaCadastroBeneficiario1());
+            DirecionarCadastroBeneficiario2Command = new Command(async () => await DirecionarParaCadastroBeneficiario2());
+            DirecionarCadastroBeneficiario3Command = new Command(async () => await DirecionarParaCadastroBeneficiario3());
             VoltarCommand = new Command(async () => await Voltar());
         }
 
@@ -365,6 +374,50 @@ namespace AjudaCertaApp.ViewModels.Usuarios
                     .DisplayAlert("Informação", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
             }
         }
+
+
+        public async Task DirecionarParaCadastroBeneficiario1()
+        {
+            try
+            {
+                await Application.Current.MainPage
+                    .Navigation.PushAsync(new Views.BeneficiarioCadastro1());
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Informação", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
+        public async Task DirecionarParaCadastroBeneficiario2()
+        {
+            try
+            {
+                await Application.Current.MainPage
+                    .Navigation.PushAsync(new Views.BeneficiarioCadastro2());
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Informação", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
+        public async Task DirecionarParaCadastroBeneficiario3()
+        {
+            try
+            {
+                await Application.Current.MainPage
+                    .Navigation.PushAsync(new Views.BeneficiarioCadastro3());
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Informação", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
 
         public async Task PreencherEndereço()
         {

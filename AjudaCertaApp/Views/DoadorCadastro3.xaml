@@ -141,7 +141,8 @@
                 BackgroundColor="#DF6234"
                 CornerRadius="20"
                 WidthRequest="200"
-                HeightRequest="65"                
+                HeightRequest="65"      
+                Command="{Binding RegistrarPessoaCommand}"
                 />
             
         </Grid>

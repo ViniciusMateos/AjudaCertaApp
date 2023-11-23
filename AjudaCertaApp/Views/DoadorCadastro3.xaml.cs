@@ -16,7 +16,7 @@ public partial class DoadorCadastro3 : ContentPage
 		pessoaAcadastrar = p;
 		usuarioAcadastrar = u;
 		enderecoAcadastrar = e;
-		usuarioViewModel = new UsuarioViewModel();
+		usuarioViewModel = new UsuarioViewModel(p, u, e);
 		BindingContext = usuarioViewModel;
 	}
 }

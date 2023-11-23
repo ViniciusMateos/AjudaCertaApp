@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:sf="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             xmlns:picker="clr-namespace:Syncfusion.Maui.Picker;assembly=Syncfusion.Maui.Picker"
              x:Class="AjudaCertaApp.Views.DoadorCadastro1"
              Title="DoadorCadastro1"
              NavigationPage.HasNavigationBar="False">
@@ -211,14 +212,20 @@
 	                FontSize="14"
 	                TextColor="#FFFFFF"/>
 
-                <DatePicker
-                    x:Name="dtpDataNasc"
+                <sf:SfTextInputLayout
+    x:Name="dtpDataNasc"
                     IsVisible="false"
-                    BindingContext="{Binding Datanasc}"
-                    Grid.Row="1"
-                    Grid.Column="1"
-                    HeightRequest="40"
-                    BackgroundColor="White"/>
+    Grid.Row="1"
+    Grid.Column="1"
+    ContainerBackground="White"
+    ContainerType="Outlined"
+    OutlineCornerRadius="30"
+    InputViewPadding="20,0,20,0"
+    ReserveSpaceForAssistiveLabels="False"
+    >
+                    <DatePicker
+    Date="{Binding Datanasc}"/>
+                </sf:SfTextInputLayout>
 
                 <Label
                     Grid.Row="0"
@@ -229,19 +236,24 @@
                     VerticalTextAlignment="End"
                     FontSize="14"
                     TextColor="#FFFFFF"/>
-                
-                
-                <Picker
-                    Grid.Column="0"
+
+                <sf:SfTextInputLayout
                     Grid.Row="1"
-                    BackgroundColor="White"
+                    Grid.Column="0"
+                    ContainerType="Outlined"
+                    OutlineCornerRadius="30"
+                    InputViewPadding="20,0,20,0"
+                    ContainerBackground="White"
+                    ReserveSpaceForAssistiveLabels="False">
+                    <Picker
                     Title="---Selecione---" 
                     ItemsSource="{Binding ListaFisicaJuridica}" 
                     ItemDisplayBinding="{Binding Descricao}" 
                     SelectedItem="{Binding FisicaJuridicaSelecionado}"
                     SelectedIndexChanged="pfpj_SelectedIndexChanged"
                     x:Name="pfpj"/>
-
+                </sf:SfTextInputLayout>
+            
                 <Label
                     Grid.Row="0"
                     Grid.Column="1"
@@ -299,19 +311,24 @@
                     x:Name="lblGenero"
                     IsVisible="false"/>
 
-                <Picker
+                <sf:SfTextInputLayout
                     Grid.Row="1"
-                    Grid.Column="0"
-                    HeightRequest="40"
                     IsVisible="false"
-                    VerticalOptions="Center"
-                    Title="---Selecione---" 
-                    ItemsSource="{Binding ListaGenero}" 
-                    ItemDisplayBinding="{Binding Descricao}" 
-                    SelectedItem="{Binding ListaGeneroSelecionado}"
-                    BackgroundColor="White"
-                    x:Name="pckGenero"/>
-
+                    Grid.Column="0"
+                    ContainerType="Outlined"
+                    OutlineCornerRadius="30"
+                    InputViewPadding="20,0,20,0"
+                    ContainerBackground="White"
+                    ReserveSpaceForAssistiveLabels="False"
+                    x:Name="pckGenero"> 
+                    <Picker
+                        Title="---Selecione---" 
+                        ItemsSource="{Binding ListaGenero}" 
+                        ItemDisplayBinding="{Binding Descricao}" 
+                        SelectedItem="{Binding ListaGeneroSelecionado}"
+                        />
+                </sf:SfTextInputLayout>
+                
                 <Label
                     Grid.Row="0"
                     Grid.Column="1"

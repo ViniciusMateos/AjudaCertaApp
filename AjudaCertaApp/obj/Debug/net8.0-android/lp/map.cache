@@ -11,6 +11,8 @@ Syncfusion.Maui.DataSource.dll
 Syncfusion.Maui.GridCommon.dll
 Syncfusion.Maui.Inputs.dll
 Syncfusion.Maui.ListView.dll
+Syncfusion.Maui.Picker.dll
+Syncfusion.Maui.Popup.dll
 Xamarin.Android.Glide.Annotations.dll
 Xamarin.Android.Glide.DiskLruCache.dll
 Xamarin.Android.Glide.dll

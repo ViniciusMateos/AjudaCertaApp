@@ -33,7 +33,7 @@ public partial class DoadorCadastro1 : ContentPage
             pckGenero.IsVisible = true;
 
         }
-        else if(pfpj.SelectedIndex == 1)
+        else if (pfpj.SelectedIndex == 1)
         {
             etCpf.IsVisible = false;
             lblCpf.IsVisible = false;

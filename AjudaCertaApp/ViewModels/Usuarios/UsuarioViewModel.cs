@@ -29,6 +29,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
         public ICommand DirecionarCadastroBeneficiario2Command { get; set; }
         public ICommand DirecionarCadastroBeneficiario3Command { get; set; }
         public ICommand VoltarCommand { get; set; }
+        public ICommand RegistrarPessoaCommand { get; set; }
         public Pessoa pessoaCadastro { get; set; }
         public Usuario usuarioCadastro { get; set;}
         public Endereco enderecoCadastro { get; set; }
@@ -74,6 +75,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
             DirecionarCadastroBeneficiario2Command = new Command(async () => await DirecionarParaCadastroBeneficiario2());
             DirecionarCadastroBeneficiario3Command = new Command(async () => await DirecionarParaCadastroBeneficiario3());
             VoltarCommand = new Command(async () => await Voltar());
+            RegistrarPessoaCommand = new Command(async () => await CadastrarPessoa());
         }
 
         #region AtributosPropriedades
@@ -596,6 +598,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
                 Pessoa p = pessoaCadastro;
                 Usuario u = usuarioCadastro;
                 Endereco e = enderecoCadastro;
+               // e.Cep = "02202-000"; remover validação de cep da api
 
                 if(Senha != null && ConfirmaSenha != null)
                 {

@@ -183,14 +183,20 @@
 	                FontSize="14"
 	                TextColor="#FFFFFF"/>
 
-                <DatePicker
+                <sf:SfTextInputLayout
                     x:Name="dtpDataNasc"
-                    BindingContext="{Binding Datanasc}"
                     Grid.Row="1"
                     Grid.Column="0"
-                    HeightRequest="40"
-                    BackgroundColor="White"/>
-
+                    ContainerBackground="White"
+                    ContainerType="Outlined"
+                    OutlineCornerRadius="30"
+                    InputViewPadding="20,0,20,0"
+                    ReserveSpaceForAssistiveLabels="False"
+                    >
+                <DatePicker
+                    BindingContext="{Binding Datanasc}"/>
+                </sf:SfTextInputLayout>
+            
                 <Label
                     Grid.Row="0"
                     Grid.Column="1"
@@ -243,17 +249,22 @@
 	                TextColor="#FFFFFF"
                     x:Name="lblGenero"/>
 
-                <Picker
+                <sf:SfTextInputLayout
                     Grid.Row="1"
                     Grid.Column="0"
-                    HeightRequest="40"
-                    VerticalOptions="Center"
-                    Title="---Selecione---" 
-                    ItemsSource="{Binding ListaGenero}" 
-                    ItemDisplayBinding="{Binding Descricao}" 
-                    SelectedItem="{Binding ListaGeneroSelecionado}"
-                    BackgroundColor="White"
-                    x:Name="pckGenero"/>
+                    ContainerType="Outlined"
+                    OutlineCornerRadius="30"
+                    InputViewPadding="20,0,20,0"
+                    ContainerBackground="White"
+                    ReserveSpaceForAssistiveLabels="False"
+                    x:Name="pckGenero">
+                    <Picker
+                        Title="---Selecione---" 
+                        ItemsSource="{Binding ListaGenero}" 
+                        ItemDisplayBinding="{Binding Descricao}" 
+                        SelectedItem="{Binding ListaGeneroSelecionado}"
+                        />
+                </sf:SfTextInputLayout>
 
                 <Label
                     Grid.Row="0"

@@ -85,11 +85,15 @@
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[23.2.4, )"
+              "version": "[23.2.5, )"
             },
             "Syncfusion.Maui.Inputs": {
               "target": "Package",
-              "version": "[23.2.4, )"
+              "version": "[23.2.5, )"
+            },
+            "Syncfusion.Maui.Picker": {
+              "target": "Package",
+              "version": "[23.2.5, )"
             }
           },
           "imports": [
@@ -140,11 +144,15 @@
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[23.2.4, )"
+              "version": "[23.2.5, )"
             },
             "Syncfusion.Maui.Inputs": {
               "target": "Package",
-              "version": "[23.2.4, )"
+              "version": "[23.2.5, )"
+            },
+            "Syncfusion.Maui.Picker": {
+              "target": "Package",
+              "version": "[23.2.5, )"
             }
           },
           "imports": [
@@ -195,11 +203,15 @@
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[23.2.4, )"
+              "version": "[23.2.5, )"
             },
             "Syncfusion.Maui.Inputs": {
               "target": "Package",
-              "version": "[23.2.4, )"
+              "version": "[23.2.5, )"
+            },
+            "Syncfusion.Maui.Picker": {
+              "target": "Package",
+              "version": "[23.2.5, )"
             }
           },
           "imports": [
@@ -245,11 +257,15 @@
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[23.2.4, )"
+              "version": "[23.2.5, )"
             },
             "Syncfusion.Maui.Inputs": {
               "target": "Package",
-              "version": "[23.2.4, )"
+              "version": "[23.2.5, )"
+            },
+            "Syncfusion.Maui.Picker": {
+              "target": "Package",
+              "version": "[23.2.5, )"
             }
           },
           "imports": [

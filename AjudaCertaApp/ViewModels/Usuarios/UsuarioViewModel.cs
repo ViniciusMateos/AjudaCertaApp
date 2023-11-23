@@ -513,8 +513,20 @@ namespace AjudaCertaApp.ViewModels.Usuarios
         {
             try
             {
+                Pessoa p = new Pessoa();
+                p.Nome = Nome;
+                p.Documento = Cpf;
+                p.Username = Username;
+                p.Telefone = Telefone;
+                p.fisicaJuridica = FisicaJuridicaEnum.PESSOA_FISICA;
+                p.Genero = ListaGeneroSelecionado.Descricao;
+                p.Tipo = TipoPessoaEnum.BENEFICIARIO;
+
+                Usuario u = new Usuario();
+                u.Email = Email;
+
                 await Application.Current.MainPage
-                    .Navigation.PushAsync(new Views.BeneficiarioCadastro2());
+                    .Navigation.PushAsync(new Views.BeneficiarioCadastro2(p, u));
             }
             catch (Exception ex)
             {
@@ -527,8 +539,20 @@ namespace AjudaCertaApp.ViewModels.Usuarios
         {
             try
             {
+                Pessoa p = pessoaCadastro;
+                Usuario u = usuarioCadastro;
+
+                Endereco e = new Endereco();
+                e.Rua = Rua;
+                e.Cidade = Cidade;
+                e.Cep = Ceep;
+                e.Complemento = Complemento;
+                e.Estado = Estado;
+                e.Numero = Numero;
+                e.Bairro = Bairro;
+
                 await Application.Current.MainPage
-                    .Navigation.PushAsync(new Views.BeneficiarioCadastro3());
+                    .Navigation.PushAsync(new Views.BeneficiarioCadastro3(p, u, e));
             }
             catch (Exception ex)
             {

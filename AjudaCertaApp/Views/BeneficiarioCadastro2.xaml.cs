@@ -1,3 +1,4 @@
+using AjudaCertaApp.Models;
 using AjudaCertaApp.ViewModels.Usuarios;
 
 namespace AjudaCertaApp.Views;
@@ -5,12 +6,14 @@ namespace AjudaCertaApp.Views;
 public partial class BeneficiarioCadastro2 : ContentPage
 {
     UsuarioViewModel usuarioViewModel;
-
-    public BeneficiarioCadastro2()
+    Pessoa pessoaAcadastrar;
+    Usuario usuarioAcadastrar;
+    public BeneficiarioCadastro2(Pessoa p, Usuario u)
 	{
 		InitializeComponent();
-
-        usuarioViewModel = new UsuarioViewModel();
+        pessoaAcadastrar = p;
+        usuarioAcadastrar = u;
+        usuarioViewModel = new UsuarioViewModel(p, u);
         BindingContext = usuarioViewModel;
     }
 }

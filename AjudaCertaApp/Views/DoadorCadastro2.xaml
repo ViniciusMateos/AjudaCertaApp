@@ -80,7 +80,7 @@
                     Grid.Column="0"
                     FontFamily="Inter"
 	                HorizontalTextAlignment="Start"
-                        Text="{Binding Cep}"
+                    Text="CEP:"
                     VerticalTextAlignment="End"
 	                FontSize="14"
 	                TextColor="#FFFFFF"/>
@@ -136,13 +136,20 @@
 	                FontSize="14"
 	                TextColor="#FFFFFF"/>
 
+
+                <sf:SfTextInputLayout
+                Grid.Row="1"
+                ContainerBackground="White"
+                ContainerType="Outlined"
+                HeightRequest="40"
+                OutlineCornerRadius="30"
+                InputViewPadding="20,0,20,0"
+                ReserveSpaceForAssistiveLabels="False">
                 <Entry
-                    Grid.Row="1"
-                    HeightRequest="40"
+                    IsEnabled="False"
                     VerticalOptions="Center"
-                    Text="{Binding Rua}"
-                    BackgroundColor="White"
-                    IsEnabled="False"/>
+                    Text="{Binding Rua}"/>
+                </sf:SfTextInputLayout>
 
             </Grid>
 
@@ -168,17 +175,22 @@
                     VerticalTextAlignment="End"
 	                FontSize="14"
 	                TextColor="#FFFFFF"/>
-                
-                <Entry
-                    Grid.Row="1"
-                    Grid.Column="0"
-                    Text="{Binding Numero}"
-                    HeightRequest="40"
-                    VerticalOptions="Center"
-                    BackgroundColor="White"
-                    IsEnabled="True"
-                    />
 
+                <sf:SfTextInputLayout
+                    Grid.Row="1"
+                    ContainerBackground="White"
+                    ContainerType="Outlined"
+                    HeightRequest="40"
+                    Grid.Column="0"
+                    OutlineCornerRadius="30"
+                    InputViewPadding="20,0,20,0"
+                    ReserveSpaceForAssistiveLabels="False">
+                    <Entry
+                        Text="{Binding Numero}"
+                        VerticalOptions="Center"
+                        IsEnabled="True"
+                    />
+                </sf:SfTextInputLayout>
 
                 <Label
                     Grid.Row="0"
@@ -189,17 +201,22 @@
                     VerticalTextAlignment="End"
 	                FontSize="14"
 	                TextColor="#FFFFFF"/>
-
-                <Entry
+                
+                <sf:SfTextInputLayout
                     Grid.Row="1"
-                    Grid.Column="1"
+                    ContainerBackground="White"
+                    ContainerType="Outlined"
                     HeightRequest="40"
-                    VerticalOptions="Center"
-                    Text="{Binding Complemento}"
-                    BackgroundColor="White"
-                    IsEnabled="True"
+                    Grid.Column="1"
+                    OutlineCornerRadius="30"
+                    InputViewPadding="20,0,20,0"
+                    ReserveSpaceForAssistiveLabels="False">
+                    <Entry
+                        VerticalOptions="Center"
+                        Text="{Binding Complemento}"
+                        IsEnabled="True"
                     />
-
+                </sf:SfTextInputLayout>
             </Grid>
 
             <Grid
@@ -218,14 +235,20 @@
 	                FontSize="14"
 	                TextColor="#FFFFFF"/>
 
-                <Entry
+                <sf:SfTextInputLayout
                     Grid.Row="1"
+                    ContainerBackground="White"
+                    ContainerType="Outlined"
                     HeightRequest="40"
-                    VerticalOptions="Center"
-                    Text="{Binding Bairro}"
-                    BackgroundColor="White"
-                    IsEnabled="False"/>
-
+                    Grid.Column="0"
+                    OutlineCornerRadius="30"
+                    InputViewPadding="20,0,20,0"
+                    ReserveSpaceForAssistiveLabels="False">
+                    <Entry
+                        VerticalOptions="Center"
+                        Text="{Binding Bairro}"
+                        IsEnabled="False"/>
+                </sf:SfTextInputLayout>
             </Grid>
 
             <Grid
@@ -251,16 +274,21 @@
 	                FontSize="14"
 	                TextColor="#FFFFFF"/>
 
-                <Entry
+                <sf:SfTextInputLayout
                     Grid.Row="1"
-                    Grid.Column="0"
+                    ContainerBackground="White"
+                    ContainerType="Outlined"
                     HeightRequest="40"
+                    Grid.Column="0"
+                    OutlineCornerRadius="30"
+                    InputViewPadding="20,0,20,0"
+                    ReserveSpaceForAssistiveLabels="False">
+                    <Entry
                     Text="{Binding Estado}"
                     VerticalOptions="Center"
-                    BackgroundColor="White"
                     IsEnabled="False"
                     />
-
+                </sf:SfTextInputLayout>
 
                 <Label
                     Grid.Row="0"
@@ -272,15 +300,21 @@
 	                FontSize="14"
 	                TextColor="#FFFFFF"/>
 
-                <Entry
+                <sf:SfTextInputLayout
                     Grid.Row="1"
-                    Text="{Binding Cidade}"
-                    Grid.Column="1"
+                    ContainerBackground="White"
+                    ContainerType="Outlined"
                     HeightRequest="40"
+                    Grid.Column="1"
+                    OutlineCornerRadius="30"
+                    InputViewPadding="20,0,20,0"
+                    ReserveSpaceForAssistiveLabels="False">
+                    <Entry
+                    Text="{Binding Cidade}"
                     VerticalOptions="Center"
-                    BackgroundColor="White"
                     IsEnabled="False"
                     />
+                </sf:SfTextInputLayout>
 
             </Grid>
 

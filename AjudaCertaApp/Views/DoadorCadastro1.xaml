@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sf="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
              x:Class="AjudaCertaApp.Views.DoadorCadastro1"
              Title="DoadorCadastro1"
              NavigationPage.HasNavigationBar="False">
@@ -78,13 +79,18 @@
 	                TextColor="#FFFFFF"
                     />
 
-                <Entry
+                <sf:SfTextInputLayout
                     Grid.Row="1"
+                    ContainerBackground="White"
+                    ContainerType="Outlined"
                     HeightRequest="40"
+                    OutlineCornerRadius="30"
+                    InputViewPadding="20,0,20,0"
+                    ReserveSpaceForAssistiveLabels="False">
+                <Entry
                     VerticalOptions="Center"
-                    BackgroundColor="White"
                     Text="{Binding Nome}"/>
-
+                </sf:SfTextInputLayout>
             </Grid>
 
             <Grid
@@ -103,13 +109,18 @@
 	                FontSize="14"
 	                TextColor="#FFFFFF"/>
 
-                <Entry
+                <sf:SfTextInputLayout
                     Grid.Row="1"
+                    ContainerBackground="White"
+                    ContainerType="Outlined"
                     HeightRequest="40"
+                    OutlineCornerRadius="30"
+                    InputViewPadding="20,0,20,0"
+                    ReserveSpaceForAssistiveLabels="False">
+                <Entry
                     VerticalOptions="Center"
-                    BackgroundColor="White"
                     Text="{Binding Username}"/>
-
+                </sf:SfTextInputLayout>
             </Grid>
 
             <Grid
@@ -128,12 +139,18 @@
 	                FontSize="14"
 	                TextColor="#FFFFFF"/>
 
-                <Entry
+                <sf:SfTextInputLayout
                     Grid.Row="1"
+                    ContainerBackground="White"
+                    ContainerType="Outlined"
                     HeightRequest="40"
+                    OutlineCornerRadius="30"
+                    InputViewPadding="20,0,20,0"
+                    ReserveSpaceForAssistiveLabels="False">
+                   <Entry
                     VerticalOptions="Center"
-                    BackgroundColor="White"
-                    Text="{Binding Email}"/>
+                    Text="{Binding Email}"/>    
+                </sf:SfTextInputLayout>
 
             </Grid>
 
@@ -153,12 +170,18 @@
 	                FontSize="14"
 	                TextColor="#FFFFFF"/>
 
-                <Entry
-                    Grid.Row="1"
-                    HeightRequest="40"
-                    VerticalOptions="Center"
-                    BackgroundColor="White"
-                    Text="{Binding Telefone}"/>
+                    <sf:SfTextInputLayout
+                        Grid.Row="1"
+                        ContainerBackground="White"
+                        ContainerType="Outlined"
+                        HeightRequest="40"
+                        OutlineCornerRadius="30"
+                        InputViewPadding="20,0,20,0"
+                        ReserveSpaceForAssistiveLabels="False">
+                       <Entry
+                        VerticalOptions="Center"
+                        Text="{Binding Telefone}"/>
+                    </sf:SfTextInputLayout>
 
             </Grid>
 
@@ -231,15 +254,23 @@
                     TextColor="#FFFFFF"
                     x:Name="lblCnpj"/>
 
-                <Entry
-                    IsVisible="false"
+                <sf:SfTextInputLayout
                     Grid.Row="1"
+                    IsVisible="false"
                     Grid.Column="1"
-                    Text="{Binding Cnpj}"
+                    OutlineCornerRadius="30"
+                    ContainerType="Outlined"
+                    ContainerBackground="White"
                     HeightRequest="40"
-                    VerticalOptions="Center"
-                    BackgroundColor="White"
-                    x:Name="etCnpj"/>
+                    InputViewPadding="20,0,20,0"
+                    ReserveSpaceForAssistiveLabels="False"
+                    x:Name="etCnpj"
+                    >
+                    <Entry
+                        Text="{Binding Cnpj}"
+                        VerticalOptions="Center"
+                    />
+                </sf:SfTextInputLayout>
             </Grid>
 
             <Grid
@@ -272,14 +303,14 @@
                     Grid.Row="1"
                     Grid.Column="0"
                     HeightRequest="40"
+                    IsVisible="false"
                     VerticalOptions="Center"
                     Title="---Selecione---" 
                     ItemsSource="{Binding ListaGenero}" 
                     ItemDisplayBinding="{Binding Descricao}" 
                     SelectedItem="{Binding ListaGeneroSelecionado}"
                     BackgroundColor="White"
-                    x:Name="pckGenero"
-                    IsVisible="false"/>
+                    x:Name="pckGenero"/>
 
                 <Label
                     Grid.Row="0"
@@ -293,16 +324,24 @@
                     TextColor="#FFFFFF"
                     x:Name="lblCpf"/>
 
-                <Entry
-                    IsVisible="false"
+                <sf:SfTextInputLayout
                     Grid.Row="1"
+                    IsVisible="false"
                     Grid.Column="1"
-                    Text="{Binding Cpf}"
+                    OutlineCornerRadius="30"
+                    ContainerType="Outlined"
+                    ContainerBackground="White"
                     HeightRequest="40"
+                    InputViewPadding="20,0,20,0"
+                    ReserveSpaceForAssistiveLabels="False"
+                    x:Name="etCpf"
+                    >
+                    <Entry
+                    Text="{Binding Cpf}"
                     VerticalOptions="Center"
-                    BackgroundColor="White"
-                    x:Name="etCpf"/>
-
+                    />
+                </sf:SfTextInputLayout>
+            
             </Grid>
 
             <Grid

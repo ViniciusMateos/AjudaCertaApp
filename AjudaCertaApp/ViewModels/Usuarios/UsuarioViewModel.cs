@@ -245,6 +245,25 @@ namespace AjudaCertaApp.ViewModels.Usuarios
             }
         }
 
+        private string numero = string.Empty;
+        public string Numero { get { return numero; }
+            set 
+            {
+                numero = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private string complemento = string.Empty;
+        public string Complemento
+        {
+            get { return complemento; }
+            set
+            {
+                complemento = value;
+                OnPropertyChanged();
+            }
+        }
 
         #endregion
 

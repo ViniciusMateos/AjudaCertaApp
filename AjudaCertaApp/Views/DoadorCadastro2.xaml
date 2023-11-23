@@ -100,10 +100,9 @@
                         MaskType="Simple"
                         TextColor="Black"
                         ValueMaskFormat="ExcludePromptAndLiterals"
+                        Value="{Binding Ceep}"
                         ClearButtonVisibility="WhileEditing"
-                        Mask="00000-000"
-                        BindingContext="{Binding Cep}"/>
-
+                        Mask="00000-000"/>
                 </sf:SfTextInputLayout>
                 
                 <Button

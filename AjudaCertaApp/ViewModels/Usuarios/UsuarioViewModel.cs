@@ -197,11 +197,12 @@ namespace AjudaCertaApp.ViewModels.Usuarios
             }
         }
 
-        private string cep = string.Empty;
-        public string Cep { get { return cep; }
+        private string ceep = string.Empty;
+
+        public string Ceep { get { return ceep; }
             set 
             {
-                cep = value;
+                ceep = value;
                 OnPropertyChanged();
             }
         }
@@ -470,8 +471,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
         {
             try
             {
-                // inserir mascara no textinputlayout do cep "xxxxx-xxx"
-                string cepDigitado = Cep;
+                string cepDigitado = Ceep;
                 if(cepDigitado.Length == 8) 
                 {
                     ViaCEPModel objectResult = Search.ByZipCode(cepDigitado);

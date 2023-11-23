@@ -3278,7 +3278,6 @@ G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\st
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
-C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\lp\97\jl\files.cache
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\lp\100\jl\files.cache
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\lp\108\jl\files.cache
@@ -3299,3 +3298,4 @@ C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\Syncfusion.Maui.GridCommon.dll
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\Syncfusion.Maui.Inputs.dll
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\Syncfusion.Maui.ListView.dll
+C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll

@@ -6,14 +6,15 @@ namespace AjudaCertaApp.Views;
 public partial class DoadorCadastro2 : ContentPage
 {
 	UsuarioViewModel usuarioViewModel;
-	Pessoa pessoaAcadastrar;
+	public Pessoa pessoaAcadastrar;
 	Usuario usuarioAcadastrar;
 	public DoadorCadastro2(Pessoa p, Usuario u)
 	{
 		InitializeComponent();
 		pessoaAcadastrar = p;
 		usuarioAcadastrar = u;
-		usuarioViewModel = new UsuarioViewModel();
+		usuarioViewModel = new UsuarioViewModel(p, u);
 		BindingContext = usuarioViewModel;
 	}
+
 }

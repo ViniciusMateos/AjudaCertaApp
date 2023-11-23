@@ -93,6 +93,7 @@
                 <Entry
                     Grid.Row="1"
                     VerticalOptions="Start"
+                    Text="{Binding Senha}"
                     BackgroundColor="White"
                     Placeholder="********"/>
 
@@ -117,6 +118,7 @@
                 <Entry
                     Grid.Row="1"
                     VerticalOptions="Start"
+                    Text="{Binding ConfirmaSenha}"
                     BackgroundColor="White"
                     Placeholder="********"/>
 

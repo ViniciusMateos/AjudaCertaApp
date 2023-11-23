@@ -83,7 +83,7 @@
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    BindingContext="{Binding Nome}"/>
+                    Text="{Binding Nome}"/>
 
             </Grid>
 
@@ -108,7 +108,7 @@
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    BindingContext="{Binding Username}"/>
+                    Text="{Binding Username}"/>
 
             </Grid>
 
@@ -133,7 +133,7 @@
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    BindingContext="{Binding Email}"/>
+                    Text="{Binding Email}"/>
 
             </Grid>
 
@@ -158,7 +158,7 @@
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
-                    BindingContext="{Binding Email}"/>
+                    Text="{Binding Telefone}"/>
 
             </Grid>
 
@@ -235,7 +235,7 @@
                     IsVisible="false"
                     Grid.Row="1"
                     Grid.Column="1"
-                    BindingContext="{Binding Cnpj}"
+                    Text="{Binding Cnpj}"
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
@@ -297,7 +297,7 @@
                     IsVisible="false"
                     Grid.Row="1"
                     Grid.Column="1"
-                    BindingContext="{Binding Cpf}"
+                    Text="{Binding Cpf}"
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"

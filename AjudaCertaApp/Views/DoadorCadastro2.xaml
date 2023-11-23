@@ -172,6 +172,7 @@
                 <Entry
                     Grid.Row="1"
                     Grid.Column="0"
+                    Text="{Binding Numero}"
                     HeightRequest="40"
                     VerticalOptions="Center"
                     BackgroundColor="White"
@@ -194,6 +195,7 @@
                     Grid.Column="1"
                     HeightRequest="40"
                     VerticalOptions="Center"
+                    Text="{Binding Complemento}"
                     BackgroundColor="White"
                     IsEnabled="True"
                     />

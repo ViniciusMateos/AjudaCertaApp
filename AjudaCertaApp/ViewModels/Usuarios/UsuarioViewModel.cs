@@ -2,6 +2,7 @@
 using AjudaCertaApp.Models.Enuns;
 using AjudaCertaApp.Services;
 using AjudaCertaApp.Services.Pessoas;
+using AjudaCertaApp.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -28,6 +29,9 @@ namespace AjudaCertaApp.ViewModels.Usuarios
         public ICommand DirecionarCadastroBeneficiario2Command { get; set; }
         public ICommand DirecionarCadastroBeneficiario3Command { get; set; }
         public ICommand VoltarCommand { get; set; }
+        public Pessoa pessoaCadastro { get; set; }
+        public Usuario usuarioCadastro { get; set;}
+        public Endereco enderecoCadastro { get; set; }
         public UsuarioViewModel()
         {
             pService = new PessoaService();
@@ -35,6 +39,27 @@ namespace AjudaCertaApp.ViewModels.Usuarios
             InicializarCommands();
             _ = ObterFisicaJuridica();
             _ = ObterGenero();
+        }
+        public UsuarioViewModel(Pessoa p, Usuario u)
+        {
+            pService = new PessoaService();
+            vcService = new ViaCEPServices();
+            InicializarCommands();
+            _ = ObterFisicaJuridica();
+            _ = ObterGenero();
+            pessoaCadastro = p;
+            usuarioCadastro = u;
+        }
+        public UsuarioViewModel(Pessoa p, Usuario u, Endereco e)
+        {
+            pService = new PessoaService();
+            vcService = new ViaCEPServices();
+            InicializarCommands();
+            _ = ObterFisicaJuridica();
+            _ = ObterGenero();
+            pessoaCadastro = p;
+            usuarioCadastro = u;
+            enderecoCadastro = e;
         }
 
         public void InicializarCommands()
@@ -265,6 +290,25 @@ namespace AjudaCertaApp.ViewModels.Usuarios
             }
         }
 
+        private string senha = string.Empty;
+        public string Senha { get { return senha; }
+            set 
+            {
+                senha = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private string confirmaSenha = string.Empty;
+        public string ConfirmaSenha
+        {
+            get { return confirmaSenha; }
+            set
+            {
+                confirmaSenha = value;
+                OnPropertyChanged();
+            }
+        }
         #endregion
 
         #region Métodos
@@ -393,22 +437,17 @@ namespace AjudaCertaApp.ViewModels.Usuarios
                 //else if (Email == string.Empty)
                 //{
                 //    await Application.Current.MainPage
-                //    .DisplayAlert("Atenção", "Preencha o campo nome.", "Ok");
+                //    .DisplayAlert("Atenção", "Preencha o campo email.", "Ok");
                 //}
                 //else if (Telefone == string.Empty)
                 //{
                 //    await Application.Current.MainPage
-                //    .DisplayAlert("Atenção", "Preencha o campo nome.", "Ok");
+                //    .DisplayAlert("Atenção", "Preencha o campo telefone.", "Ok");
                 //}
                 //else if (Datanasc == DateTime.Now)
                 //{
                 //    await Application.Current.MainPage
                 //    .DisplayAlert("Atenção", "Escolha sua data de nascimento.", "Ok");
-                //}
-                //else if (Telefone == string.Empty)
-                //{
-                //    await Application.Current.MainPage
-                //    .DisplayAlert("Atenção", "Preencha o campo nome.", "Ok");
                 //}
                 //else if (Cpf == string.Empty && Cnpj == string.Empty)
                 //{
@@ -432,8 +471,21 @@ namespace AjudaCertaApp.ViewModels.Usuarios
         {
             try
             {
+                Pessoa p = pessoaCadastro;
+                Usuario u = usuarioCadastro;
+
+                Endereco e = new Endereco();
+                e.Cep = Ceep;
+                e.Rua = Rua;
+                e.Estado = Estado;
+                e.Cidade = Cidade;
+                e.Bairro = Bairro;
+                e.Complemento = Complemento;
+                e.Numero = Numero;
+                
+
                 await Application.Current.MainPage
-                    .Navigation.PushAsync(new Views.DoadorCadastro3());
+                    .Navigation.PushAsync(new Views.DoadorCadastro3(p, u, e));
             }
             catch (Exception ex)
             {
@@ -505,6 +557,46 @@ namespace AjudaCertaApp.ViewModels.Usuarios
                 else
                     await Application.Current.MainPage
                         .DisplayAlert("Atenção", "O CEP digitado não é válido.", "Ok");
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Informação", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
+        public async Task CadastrarPessoa()
+        {
+            try
+            {
+                Pessoa p = pessoaCadastro;
+                Usuario u = usuarioCadastro;
+                Endereco e = enderecoCadastro;
+
+                if(Senha != null && ConfirmaSenha != null)
+                {
+                    if(Senha == ConfirmaSenha)
+                    {
+                        u.Senha = Senha;
+
+                        p.Usuario = u;
+                        p.Endereco = e;
+
+                        Pessoa pRegistrado = await pService.PostRegistrarPessoaAsync(p);
+                        if(pRegistrado.Id != 0)
+                        {
+                            string mensagem = "Cadastro realizado com sucesso! Agora, realize a autenticação.";
+                            await Application.Current.MainPage.DisplayAlert("Informação", mensagem, "Ok");
+                            await Application.Current.MainPage.Navigation.PopToRootAsync();
+                        }
+                    }
+                    else
+                        await Application.Current.MainPage
+                            .DisplayAlert("Atenção", "As senhas não conferem.", "Ok");
+                }
+                else
+                    await Application.Current.MainPage
+                        .DisplayAlert("Atenção","Preencha os campos corretamente.", "Ok");
             }
             catch (Exception ex)
             {

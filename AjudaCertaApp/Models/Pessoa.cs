@@ -19,5 +19,7 @@ namespace AjudaCertaApp.Models
         public string Genero { get; set; }
         public FisicaJuridicaEnum fisicaJuridica { get; set; }
         public TipoPessoaEnum Tipo { get; set; }
+        public Usuario Usuario { get; set; }
+        public Endereco Endereco { get; set; }
     }
 }

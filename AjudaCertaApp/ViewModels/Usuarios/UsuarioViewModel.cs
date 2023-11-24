@@ -2,6 +2,7 @@
 using AjudaCertaApp.Models.Enuns;
 using AjudaCertaApp.Services;
 using AjudaCertaApp.Services.Pessoas;
+using AjudaCertaApp.Services.Usuarios;
 using AjudaCertaApp.Views;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
 {
     public class UsuarioViewModel : BaseViewModel
     {
+        private UsuarioService uService;
         private PessoaService pService;
         private ViaCEPServices vcService;
         public ICommand DirecionarCadastroCommand { get; set; }
@@ -30,12 +32,14 @@ namespace AjudaCertaApp.ViewModels.Usuarios
         public ICommand DirecionarCadastroBeneficiario3Command { get; set; }
         public ICommand VoltarCommand { get; set; }
         public ICommand RegistrarPessoaCommand { get; set; }
+        public ICommand AutenticarPessoaCommand { get; set; }
         public Pessoa pessoaCadastro { get; set; }
         public Usuario usuarioCadastro { get; set;}
         public Endereco enderecoCadastro { get; set; }
         public UsuarioViewModel()
         {
             pService = new PessoaService();
+            uService = new UsuarioService();
             vcService = new ViaCEPServices();
             InicializarCommands();
             _ = ObterFisicaJuridica();
@@ -44,6 +48,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
         public UsuarioViewModel(Pessoa p, Usuario u)
         {
             pService = new PessoaService();
+            uService = new UsuarioService();
             vcService = new ViaCEPServices();
             InicializarCommands();
             _ = ObterFisicaJuridica();
@@ -55,6 +60,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
         {
             pService = new PessoaService();
             vcService = new ViaCEPServices();
+            uService = new UsuarioService();
             InicializarCommands();
             _ = ObterFisicaJuridica();
             _ = ObterGenero();
@@ -76,6 +82,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
             DirecionarCadastroBeneficiario3Command = new Command(async () => await DirecionarParaCadastroBeneficiario3());
             VoltarCommand = new Command(async () => await Voltar());
             RegistrarPessoaCommand = new Command(async () => await CadastrarPessoa());
+            AutenticarPessoaCommand = new Command(async () => await  AutenticarPessoa());
         }
 
         #region AtributosPropriedades
@@ -624,6 +631,41 @@ namespace AjudaCertaApp.ViewModels.Usuarios
                 else
                     await Application.Current.MainPage
                         .DisplayAlert("Atenção","Preencha os campos corretamente.", "Ok");
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Informação", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
+        public async Task AutenticarPessoa()
+        {
+            try
+            {
+                Usuario credenciais = new Usuario();
+                credenciais.Senha = Senha;
+                credenciais.Email = Email;
+
+                Usuario uAutenticado = await uService.PostAutenticarUsuarioAsync(credenciais);
+                if (!string.IsNullOrEmpty(uAutenticado.Token))
+                {
+                    string mensagem = $"Bem-vindo(a) {uAutenticado.Email}";
+
+                    Preferences.Set("UsuarioId", uAutenticado.Id);
+                    Preferences.Set("UsuarioEmail", uAutenticado.Email);
+                    Preferences.Set("UsuarioToken", uAutenticado.Token);
+
+                    await Application.Current.MainPage
+                        .DisplayAlert("Informação", mensagem, "Ok");
+
+                    //Application.Current.MainPage = new MainPage();
+                }
+                else
+                {
+                    await Application.Current.MainPage
+                        .DisplayAlert("Erro", "Dados incorretos. Verifique o email e a senha.", "Ok");
+                }
             }
             catch (Exception ex)
             {

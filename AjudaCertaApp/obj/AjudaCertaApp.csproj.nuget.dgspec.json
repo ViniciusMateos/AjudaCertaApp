@@ -91,6 +91,10 @@
               "target": "Package",
               "version": "[23.2.5, )"
             },
+            "Syncfusion.Maui.ListView": {
+              "target": "Package",
+              "version": "[23.2.5, )"
+            },
             "Syncfusion.Maui.Picker": {
               "target": "Package",
               "version": "[23.2.5, )"
@@ -147,6 +151,10 @@
               "version": "[23.2.5, )"
             },
             "Syncfusion.Maui.Inputs": {
+              "target": "Package",
+              "version": "[23.2.5, )"
+            },
+            "Syncfusion.Maui.ListView": {
               "target": "Package",
               "version": "[23.2.5, )"
             },
@@ -209,6 +217,10 @@
               "target": "Package",
               "version": "[23.2.5, )"
             },
+            "Syncfusion.Maui.ListView": {
+              "target": "Package",
+              "version": "[23.2.5, )"
+            },
             "Syncfusion.Maui.Picker": {
               "target": "Package",
               "version": "[23.2.5, )"
@@ -260,6 +272,10 @@
               "version": "[23.2.5, )"
             },
             "Syncfusion.Maui.Inputs": {
+              "target": "Package",
+              "version": "[23.2.5, )"
+            },
+            "Syncfusion.Maui.ListView": {
               "target": "Package",
               "version": "[23.2.5, )"
             },

@@ -37806,6 +37806,7 @@
       "Newtonsoft.Json >= 13.0.3",
       "Syncfusion.Maui.Core >= 23.2.5",
       "Syncfusion.Maui.Inputs >= 23.2.5",
+      "Syncfusion.Maui.ListView >= 23.2.5",
       "Syncfusion.Maui.Picker >= 23.2.5"
     ],
     "net8.0-ios17.0": [
@@ -37816,6 +37817,7 @@
       "Newtonsoft.Json >= 13.0.3",
       "Syncfusion.Maui.Core >= 23.2.5",
       "Syncfusion.Maui.Inputs >= 23.2.5",
+      "Syncfusion.Maui.ListView >= 23.2.5",
       "Syncfusion.Maui.Picker >= 23.2.5"
     ],
     "net8.0-maccatalyst17.0": [
@@ -37826,6 +37828,7 @@
       "Newtonsoft.Json >= 13.0.3",
       "Syncfusion.Maui.Core >= 23.2.5",
       "Syncfusion.Maui.Inputs >= 23.2.5",
+      "Syncfusion.Maui.ListView >= 23.2.5",
       "Syncfusion.Maui.Picker >= 23.2.5"
     ],
     "net8.0-windows10.0.19041": [
@@ -37835,6 +37838,7 @@
       "Newtonsoft.Json >= 13.0.3",
       "Syncfusion.Maui.Core >= 23.2.5",
       "Syncfusion.Maui.Inputs >= 23.2.5",
+      "Syncfusion.Maui.ListView >= 23.2.5",
       "Syncfusion.Maui.Picker >= 23.2.5"
     ]
   },
@@ -37929,6 +37933,10 @@
             "target": "Package",
             "version": "[23.2.5, )"
           },
+          "Syncfusion.Maui.ListView": {
+            "target": "Package",
+            "version": "[23.2.5, )"
+          },
           "Syncfusion.Maui.Picker": {
             "target": "Package",
             "version": "[23.2.5, )"
@@ -37985,6 +37993,10 @@
             "version": "[23.2.5, )"
           },
           "Syncfusion.Maui.Inputs": {
+            "target": "Package",
+            "version": "[23.2.5, )"
+          },
+          "Syncfusion.Maui.ListView": {
             "target": "Package",
             "version": "[23.2.5, )"
           },
@@ -38047,6 +38059,10 @@
             "target": "Package",
             "version": "[23.2.5, )"
           },
+          "Syncfusion.Maui.ListView": {
+            "target": "Package",
+            "version": "[23.2.5, )"
+          },
           "Syncfusion.Maui.Picker": {
             "target": "Package",
             "version": "[23.2.5, )"
@@ -38098,6 +38114,10 @@
             "version": "[23.2.5, )"
           },
           "Syncfusion.Maui.Inputs": {
+            "target": "Package",
+            "version": "[23.2.5, )"
+          },
+          "Syncfusion.Maui.ListView": {
             "target": "Package",
             "version": "[23.2.5, )"
           },

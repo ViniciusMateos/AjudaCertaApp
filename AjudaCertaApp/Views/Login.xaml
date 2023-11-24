@@ -63,7 +63,8 @@
                     Stroke="#F5A24A"
                     >
                     <Entry
-                        VerticalOptions="Center"/>
+                        VerticalOptions="Center"
+                        Text="{Binding Email}"/>
                 </sf:SfTextInputLayout>
             </Grid>
 
@@ -92,7 +93,8 @@
                     ContainerBackground="White"
                     Stroke="#F5A24A">
                     <Entry
-                        VerticalOptions="Center"/>
+                        VerticalOptions="Center"
+                        Text="{Binding Senha}"/>
                 </sf:SfTextInputLayout>
             </Grid>
 
@@ -125,7 +127,8 @@
                 BackgroundColor="#DF6234"
                 CornerRadius="20"
                 WidthRequest="200"
-                HeightRequest="65"                
+                HeightRequest="65"       
+                Command="{Binding AutenticarPessoaCommand}"
                 />
 
         </Grid>

@@ -98,6 +98,9 @@
 	  <MauiXaml Update="Views\DoadorCadastro3.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\FeedView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Inicial.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

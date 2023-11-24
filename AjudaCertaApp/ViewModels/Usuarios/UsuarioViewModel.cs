@@ -659,7 +659,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
                     await Application.Current.MainPage
                         .DisplayAlert("Informação", mensagem, "Ok");
 
-                    //Application.Current.MainPage = new MainPage();
+                    Application.Current.MainPage = new FeedView();
                 }
                 else
                 {

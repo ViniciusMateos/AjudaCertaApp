@@ -88,6 +88,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Doador
 build_metadata.AdditionalFiles.TargetPath = Views\DoadorCadastro3.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\DoadorCadastro3.xaml
 
+[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/FeedView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.FeedView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\FeedView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\FeedView.xaml
+
 [C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/Inicial.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Inicial.xaml

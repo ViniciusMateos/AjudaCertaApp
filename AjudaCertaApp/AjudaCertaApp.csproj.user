@@ -29,6 +29,9 @@
     <MauiXaml Update="Views\DoadorCadastro3.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\FeedView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\Inicial.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

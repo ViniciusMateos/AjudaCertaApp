@@ -6,6 +6,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\footerperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\iconbeneficiario.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\icondoador.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\logo_minimalista.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\postfoto.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\setabotao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\setavoltar.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\footerchat.png
@@ -16,6 +17,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\footerperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\iconbeneficiario.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\icondoador.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\logo_minimalista.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\postfoto.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\setabotao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\setavoltar.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\footerchat.png
@@ -26,6 +28,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\footerperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\iconbeneficiario.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\icondoador.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\logo_minimalista.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\postfoto.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\setabotao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\setavoltar.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\footerchat.png
@@ -36,6 +39,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\footerperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\iconbeneficiario.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\icondoador.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\logo_minimalista.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\postfoto.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\setabotao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\setavoltar.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\footerchat.png
@@ -46,6 +50,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\footerperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconbeneficiario.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\icondoador.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\logo_minimalista.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\postfoto.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\setabotao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\setavoltar.png
 obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml

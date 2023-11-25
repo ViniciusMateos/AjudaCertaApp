@@ -9,15 +9,15 @@
     <Grid
         BackgroundColor="#F4DFC9">
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
             <RowDefinition Height=".20*"/>
-            <RowDefinition Height=".80*"/>
+            <RowDefinition Height=".20*"/>
+            <RowDefinition Height=".60*"/>
         </Grid.RowDefinitions>
 
 
 
         <Label
-            Grid.Row="1"
+            Grid.RowSpan="1"
             FontFamily="Inter"
             HorizontalTextAlignment="Center"
             VerticalOptions="Center"
@@ -27,13 +27,14 @@
 
         <BoxView 
             Color="#F5A24A"
-            Grid.Row="2"
+            Grid.Row="1"
+            Grid.RowSpan="4"
             BackgroundColor="#F4DFC9"
             CornerRadius="88,88,0,0"
             />
 
         <Grid
-            Grid.Row="2"
+            Grid.Row="1"
             Padding="40,70,40,20"
             RowSpacing="-15">
             <Grid.RowDefinitions>
@@ -78,29 +79,27 @@
 
         
         <!--PRODUTO-->
-        <Grid
-            x:Name="GridProduto"
-            IsVisible="false"
+        <ScrollView
             Grid.Row="2"
-            Padding="40,70,40,20"
-            RowSpacing="-15">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="90"/>
-                <RowDefinition Height="90"/>
-                <RowDefinition Height="200"/>
-                <RowDefinition Height="90"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
+            x:Name="GridProduto"
+            VerticalOptions="Start"
+            Padding="40,0,40,20"
+            IsVisible="false"
+            >
+        <VerticalStackLayout
+            Spacing="-15"
+            >
 
-            <Grid
+                <Grid
                 Grid.Row="1"
-                IsVisible="true">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="30"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
+                IsVisible="true"
+                    HeightRequest="90">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
 
-                <Label
+                    <Label
                     Text="Nome:"
                     FontFamily="Inter"
 	                HorizontalTextAlignment="Start"
@@ -109,7 +108,7 @@
                     Padding="5,0"
 	                TextColor="#FFFFFF"/>
 
-                <sf:SfTextInputLayout 
+                    <sf:SfTextInputLayout 
                     Grid.Row="1" 
                     ContainerType="Outlined"
                     OutlineCornerRadius="30"
@@ -117,126 +116,131 @@
                     InputViewPadding="15,5,15,5"
                     Stroke="#F5A24A"
                     >
-                    <Editor
+                        <Editor
                        
                         AutoSize="TextChanges"
                         VerticalOptions="Start"                        
                         />
-                </sf:SfTextInputLayout>
-            </Grid>
+                    </sf:SfTextInputLayout>
+                </Grid>
 
-            <Grid
-                Grid.Row="2"
-                IsVisible="true">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="30"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-
-                <Label
-                    Text="Descrição:"
-                    FontFamily="Inter"
-	                HorizontalTextAlignment="Start"
-                    VerticalTextAlignment="End"
-	                FontSize="14"
-                    Padding="5,0"
-	                TextColor="#FFFFFF"/>
-
-                <sf:SfTextInputLayout 
-                    Grid.Row="1" 
-                    ContainerType="Outlined"
-                    OutlineCornerRadius="30"
-                    ContainerBackground="White"
-                    InputViewPadding="15,5,15,5"
-                    Stroke="#F5A24A"
-                    >
-                    <Editor
-                        AutoSize="TextChanges"
-                        VerticalOptions="Start"                        
-                        />
-                </sf:SfTextInputLayout>
-            </Grid>
-
-            <Grid
-                Grid.Row="3"
-                ColumnSpacing="20">
-                <Grid.RowDefinitions>
+                <Grid
+            Grid.Row="2"
+                    HeightRequest="90"
+            IsVisible="true">
+                    <Grid.RowDefinitions>
                         <RowDefinition Height="30"/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
 
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
+                    <Label
+                Text="Descrição:"
+                FontFamily="Inter"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="End"
+                FontSize="14"
+                Padding="5,0"
+                TextColor="#FFFFFF"/>
 
-                <Label
-                    x:Name="lblDataValidade"
-                    IsVisible="true"
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    Text="Data de validade:"
-                    Padding="5,0"
-                    FontFamily="Inter"
-                    HorizontalTextAlignment="Start"
-                    VerticalTextAlignment="End"
-                    FontSize="14"
-                    TextColor="#FFFFFF"/>
+                    <sf:SfTextInputLayout 
+                Grid.Row="1" 
+                ContainerType="Outlined"
+                OutlineCornerRadius="30"
+                ContainerBackground="White"
+                InputViewPadding="15,5,15,5"
+                Stroke="#F5A24A"
+                >
+                        <Editor
+                    AutoSize="TextChanges"
+                    VerticalOptions="Start"                        
+                    />
+                    </sf:SfTextInputLayout>
+                </Grid>
 
-                <sf:SfTextInputLayout
-                    x:Name="dtpDataValidade"
-                    IsVisible="true"
-                    Grid.Row="1"
-                    Grid.Column="0"
-                    ContainerBackground="White"
-                    ContainerType="Outlined"
-                    OutlineCornerRadius="30"
-                    InputViewPadding="20,0,20,0"
-                    
-                    >
-                    <DatePicker
-                        VerticalOptions="Center"
-                    Date="{Binding Datanasc}"/>
-                </sf:SfTextInputLayout>
+                <Grid
+                    Grid.Row="3"
+                    ColumnSpacing="20"
+                    HeightRequest="90">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label
+                        x:Name="lblDataValidade"
+                        IsVisible="true"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Text="Data de validade:"
+                        Padding="5,0"
+                        FontFamily="Inter"
+                        HorizontalTextAlignment="Start"
+                        VerticalTextAlignment="End"
+                        FontSize="14"
+                        TextColor="#FFFFFF"/>
+
+                    <sf:SfTextInputLayout
+                        x:Name="dtpDataValidade"
+                        IsVisible="true"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        ContainerBackground="White"
+                        ContainerType="Outlined"
+                        OutlineCornerRadius="30"
+                        InputViewPadding="20,0,20,0"
+                        >
+                        <DatePicker
+                    VerticalOptions="Center"
+                Date="{Binding Datanasc}"/>
+                    </sf:SfTextInputLayout>
 
 
 
-                <!--FAZER PICKER-->
-                <Label
-                    x:Name="lblTipoProduto"
-                    IsVisible="true"
-                    Grid.Row="0"
-                    Grid.Column="1"
-                    Text="Tipo:"
-                    Padding="5,0"
-                    FontFamily="Inter"
-                    HorizontalTextAlignment="Start"
-                    VerticalTextAlignment="End"
-                    FontSize="14"
-                    TextColor="#FFFFFF"/>
+                    <!--FAZER PICKER-->
+                    <Label
+                        x:Name="lblTipoProduto"
+                        IsVisible="true"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Text="Tipo:"
+                        Padding="5,0"
+                        FontFamily="Inter"
+                        HorizontalTextAlignment="Start"
+                        VerticalTextAlignment="End"
+                        FontSize="14"
+                        TextColor="#FFFFFF"/>
 
-                <sf:SfTextInputLayout 
-                    Grid.Row="1" 
-                    Grid.Column="1"
-                    ContainerType="Outlined"
-                    OutlineCornerRadius="30"
-                    ContainerBackground="White"
-                    InputViewPadding="20,5,0,5"
-                    Stroke="#F5A24A"
-                    >
-                    <Picker
-                        Title="---Selecione---"
-                        ItemsSource="{Binding ListaTipoProduto}"
-                        ItemDisplayBinding="{Binding Descricao}"
-                        SelectedItem="{Binding TipoProdutoSelecionado}"/>
-                </sf:SfTextInputLayout>
+                    <sf:SfTextInputLayout 
+                        Grid.Row="1" 
+                        Grid.Column="1"
+                        ContainerType="Outlined"
+                        OutlineCornerRadius="30"
+                        ContainerBackground="White"
+                        InputViewPadding="20,5,0,5"
+                        Stroke="#F5A24A"
+                        >
+                        <Picker
+                            Title="---Selecione---"
+                            ItemsSource="{Binding ListaTipoProduto}"
+                            ItemDisplayBinding="{Binding Descricao}"
+                            SelectedItem="{Binding TipoProdutoSelecionado}"/>
+                            </sf:SfTextInputLayout>
 
-            </Grid>
+
+
+                </Grid>
 
                 <Button
+                    Margin="0,50"
                     Grid.Row="4"
                     Text="DOAR"
                     FontSize="24"
+                    HorizontalOptions="Center"
                     VerticalOptions="End"
                     BackgroundColor="#DF6234"
                     CornerRadius="20"
@@ -245,26 +249,26 @@
                     Command="{Binding AutenticarPessoaCommand}"
                     />
 
-        </Grid>
+            </VerticalStackLayout>
+        </ScrollView>
+        
+                      
+        
+
 
         <!--ELETRODOMÉSTICO-->
-        <Grid
+        <ScrollView
             x:Name="GridEletro"
             IsVisible="false"
             Grid.Row="2"
-            Padding="40,70,40,20"
-            RowSpacing="-15">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="90"/>
-                <RowDefinition Height="90"/>
-                <RowDefinition Height="200"/>
-                <RowDefinition Height="90"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-
+            Padding="40,0,40,20"
+            >
+            <StackLayout
+                Spacing="-15">
             <Grid
                 Grid.Row="1"
-                IsVisible="true">
+                IsVisible="true"
+                HeightRequest="90">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
                     <RowDefinition/>
@@ -296,7 +300,8 @@
 
             <Grid
                 Grid.Row="2"
-                IsVisible="true">
+                IsVisible="true"
+                HeightRequest="90">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
                     <RowDefinition/>
@@ -328,7 +333,8 @@
 
             <Grid
                 Grid.Row="3"
-                ColumnSpacing="20">
+                ColumnSpacing="20"
+                HeightRequest="90">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
                     <RowDefinition/>
@@ -400,6 +406,7 @@
 
             <Button
                 Grid.Row="4"
+                Margin="0,50"
                 Text="DOAR"
                 FontSize="24"
                 BackgroundColor="#DF6234"
@@ -409,27 +416,22 @@
                 VerticalOptions="End"
                 Command="{Binding AutenticarPessoaCommand}"
                 />
-        </Grid>
+            </StackLayout>
+        </ScrollView>
         
        <!--ROUPA-->
-        <Grid
+        <ScrollView
             x:Name="GridRoupa"
             IsVisible="false"
             Grid.Row="2"
-            Padding="40,70,40,20"
-            RowSpacing="-20">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="90"/>
-                <RowDefinition Height="90"/>
-                <RowDefinition Height="150"/>
-                <RowDefinition Height="90"/>
-                <RowDefinition Height="90"/>
-                <RowDefinition Height="90"/>
-            </Grid.RowDefinitions>
+            Padding="40,0,40,20">
+            <VerticalStackLayout
+                Spacing="-15">
 
             <Grid
                 Grid.Row="1"
-                IsVisible="true">
+                IsVisible="true"
+                HeightRequest="90">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
                     <RowDefinition/>
@@ -462,7 +464,8 @@
             
             <Grid
                 Grid.Row="2"
-                IsVisible="true">
+                IsVisible="true"
+                HeightRequest="90">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
                     <RowDefinition/>
@@ -494,7 +497,8 @@
 
             <Grid
                 Grid.Row="3"
-                ColumnSpacing="20">
+                ColumnSpacing="20"
+                HeightRequest="90">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
                     <RowDefinition/>
@@ -563,7 +567,8 @@
 
             <Grid
                 Grid.Row="4"
-                ColumnSpacing="20">
+                ColumnSpacing="20"
+                HeightRequest="90">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
                     <RowDefinition/>
@@ -636,35 +641,31 @@
             <Button
                 Grid.Row="5"
                 Text="DOAR"
+                Margin="0,50"
                 FontSize="24"
                 BackgroundColor="#DF6234"
                 CornerRadius="20"
                 WidthRequest="200"
                 HeightRequest="50" 
                 VerticalOptions="End"
-                Command="{Binding AutenticarPessoaCommand}"
                 />
-
-        </Grid>
+            </VerticalStackLayout>
+        </ScrollView>
         
         <!--MOBÍLIA-->
-        <Grid
+        <ScrollView
             x:Name="GridMobilia"
             IsVisible="false"
             Grid.Row="2"
-            Padding="40,70,40,20"
-            RowSpacing="-15">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="90"/>
-                <RowDefinition Height="90"/>
-                <RowDefinition Height="200"/>
-                <RowDefinition Height="90"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
+            Padding="40,0,40,20"
+            >
+            <VerticalStackLayout
+                Spacing="-15">
 
             <Grid
                 Grid.Row="1"
-                IsVisible="true">
+                IsVisible="true"
+                HeightRequest="90">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
                     <RowDefinition/>
@@ -696,7 +697,8 @@
 
             <Grid
                 Grid.Row="2"
-                IsVisible="true">
+                IsVisible="true"
+                HeightRequest="90">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
                     <RowDefinition/>
@@ -728,7 +730,8 @@
 
             <Grid
                 Grid.Row="3"
-                ColumnSpacing="20">
+                ColumnSpacing="20"
+                HeightRequest="90">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
                     <RowDefinition/>
@@ -799,33 +802,29 @@
                 Grid.Row="4"
                 Text="DOAR"
                 FontSize="24"
+                Margin="0,50"
                 BackgroundColor="#DF6234"
                 CornerRadius="20"
                 WidthRequest="200"
                 HeightRequest="50" 
                 VerticalOptions="End"
-                Command="{Binding AutenticarPessoaCommand}"
                 />
-        </Grid>
+            </VerticalStackLayout>
+        </ScrollView>
         
         <!--DINHEIRO-->
-        <Grid
+        <ScrollView
             IsVisible="false"
             x:Name="GridDinheiro"
             Grid.Row="2"
-            Padding="40,70,40,20"
-            RowSpacing="-15">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="90"/>
-                <RowDefinition Height="90"/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition Height="100"/>
-            </Grid.RowDefinitions>
+            Padding="40,0,40,20"
+            >
+            <VerticalStackLayout>
 
             <Grid
                 Grid.Row="1"
-                IsVisible="true">
+                IsVisible="true"
+                HeightRequest="90">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="30"/>
                     <RowDefinition/>
@@ -864,10 +863,9 @@
                 WidthRequest="200"
                 HeightRequest="50" 
                 VerticalOptions="End"
-                Command="{Binding AutenticarPessoaCommand}"
                 />
-        </Grid>
-
+            </VerticalStackLayout>
+        </ScrollView>
     </Grid>
     
 </ContentPage>

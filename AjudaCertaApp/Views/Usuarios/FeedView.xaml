@@ -5,37 +5,83 @@
              xmlns:syncfusion="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
              x:Class="AjudaCertaApp.Views.FeedView" 
              NavigationPage.HasNavigationBar="False"
-             
              >
+    <ScrollView
+        BackgroundColor="#F4DFC9">
+        
+        <StackLayout>
+            <syncfusion:SfListView
+                         x:Name="ListView"
+                         ItemsSource="logo_minimalista.svg"
+                         ItemSpacing="5,0,0,0"
+                        ItemSize="400">
+                <syncfusion:SfListView.ItemTemplate>
+                    <DataTemplate>
 
-        <Grid
-         BackgroundColor="#F4DFC9">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="50"/>
-            </Grid.RowDefinitions>
+                        <Grid
+                            Padding="20">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <BoxView
+                                Color="#F5AF66"
+                                BackgroundColor="Transparent"
+                                CornerRadius="20"
+                                />
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height=".65*"/>
+                                    <RowDefinition Height=".1*"/>
+                                    <RowDefinition Height=".25*"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid
+                                    Padding="0"
+                                    Grid.Row="0">
+                                    
+
+                                    <ImageButton
+                                        Padding="5,0,5,0"
+                                        Source="postfoto.svg"
+                                        CornerRadius="15"
+                                        />
+
+                                </Grid>
+
+                                <Label
+                                    Grid.Row="1"
+                                    Text="@ong_estreladalva"
+                                    TextColor="white"
+                                    Padding="10,5"
+                                    FontAttributes="Bold"/>
+
+                                <Grid
+                                    Grid.Row="2"
+                                    Padding="15,0,15,15">
+                                <ScrollView
+                                    Grid.Row="2"
+                                    >
+                                    <Label
+                                        Text="akdfjus fldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljlfbldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjlj"
+                                        TextColor="White"/>
+
+                                </ScrollView>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+
+                    </DataTemplate>
+                </syncfusion:SfListView.ItemTemplate>
+            </syncfusion:SfListView>
+                    
+                
+
+            </StackLayout>
 
 
-
-            <Grid
-             Grid.Row="1">
-                <ScrollView>
-                    <syncfusion:SfListView
-                 x:Name="ListView"
-                 ItemsSource="{Binding Posts}"
-                 ItemSpacing="5,0,0,0">
-                        <syncfusion:SfListView.ItemTemplate>
-                            <DataTemplate>
-                                <Label Text="{Binding Conteudo}"/>
-                            </DataTemplate>
-                        </syncfusion:SfListView.ItemTemplate>
-
-                    </syncfusion:SfListView>
-                </ScrollView>
-            </Grid>
-
-
-        </Grid>
-    </ContentPage>
+    
+    </ScrollView>
+</ContentPage>
 

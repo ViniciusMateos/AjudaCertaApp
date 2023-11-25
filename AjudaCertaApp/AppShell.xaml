@@ -30,25 +30,27 @@
                 <FlexLayout Grid.Row="0" Direction="Row" AlignItems="Center" >
 
                     <Frame Padding="0" CornerRadius="40"
-                            HeightRequest="80" WidthRequest="80" >
+                            HeightRequest="80" WidthRequest="80" 
+                           Margin="5">
                         <Image Source="logo_minimalista.svg"/>
                     </Frame>
 
                     <VerticalStackLayout Padding="10,0,0,0" Spacing="0">
 
                         <Label Text="Ajuda Certa" FontAttributes="Bold" FontSize="Medium" />
-                        <Label Text="Pinto"/>
                     </VerticalStackLayout>
                 </FlexLayout>
             </Grid>
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
 
+
+
     <FlyoutItem Title="MyTabApp" FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent Title="Home"
                       
                       Icon="footerhome.svg"
-                      
+                      FlyoutItemIsVisible="False"
                       FlyoutIcon="footerhome.svg"
                       ContentTemplate="{DataTemplate views:FeedView}"/>
         <ShellContent Title="Doar"
@@ -57,5 +59,9 @@
                       ContentTemplate="{DataTemplate viewsDoador:Doacao}"/>
     </FlyoutItem>
 
-    
+    <ShellContent>
+
+    </ShellContent>
+
+
 </Shell>

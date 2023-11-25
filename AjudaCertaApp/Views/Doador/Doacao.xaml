@@ -54,8 +54,6 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
 
-
-                <!--JOAO FAZER PICKER-->
                 <Label
                     Text="Tipo de doação:"
                     FontFamily="Inter"
@@ -73,9 +71,13 @@
                     InputViewPadding="20,5,20,5"
                     Stroke="#F5A24A"
                     >
-                    <Entry
-                        VerticalOptions="Center"
-                        />
+                    <Picker
+                        Title="---Selecione---"
+                        ItemsSource="{Binding ListaConteudoDoacao}"
+                        ItemDisplayBinding="{Binding Descricao}"
+                        SelectedItem="{Binding ConteudoDoacaoSelecionado}"
+                        SelectedIndexChanged="pckTipoDoacao_SelectedIndexChanged"
+                        x:Name="pckTipoDoacao"/>
                 </sf:SfTextInputLayout>
             </Grid>
             
@@ -84,6 +86,7 @@
         
         <!--PRODUTO-->
         <Grid
+            x:Name="GridProduto"
             IsVisible="false"
             Grid.Row="2"
             Padding="40,70,40,20"
@@ -228,9 +231,11 @@
                     InputViewPadding="20,5,0,5"
                     Stroke="#F5A24A"
                     >
-                    <Entry
-                        VerticalOptions="Center"
-                        />
+                    <Picker
+                        Title="---Selecione---"
+                        ItemsSource="{Binding ListaTipoProduto}"
+                        ItemDisplayBinding="{Binding Descricao}"
+                        SelectedItem="{Binding TipoProdutoSelecionado}"/>
                 </sf:SfTextInputLayout>
 
             </Grid>
@@ -251,6 +256,7 @@
 
         <!--ELETRODOMÉSTICO-->
         <Grid
+            x:Name="GridEletro"
             IsVisible="false"
             Grid.Row="2"
             Padding="40,70,40,20"
@@ -414,6 +420,7 @@
         
        <!--ROUPA-->
         <Grid
+            x:Name="GridRoupa"
             IsVisible="false"
             Grid.Row="2"
             Padding="40,70,40,20"
@@ -574,7 +581,6 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <!--PICKER-->
                 <Label
                     IsVisible="true"
                     Grid.Row="0"
@@ -597,12 +603,13 @@
                     InputViewPadding="20,5,20,5"
             
                     >
-                    <Editor
-                        AutoSize="TextChanges"
-                        VerticalOptions="Start" />
+                    <Picker
+                        Title="---Selecione---"
+                        ItemsSource="{Binding ListaGenero}"
+                        ItemDisplayBinding="{Binding Descricao}"
+                        SelectedItem="{Binding ListaGeneroSelecionado}"/>
                 </sf:SfTextInputLayout>
 
-                <!--PICKER-->
                 <Label
                     IsVisible="true"
                     Grid.Row="0"
@@ -624,9 +631,11 @@
                     InputViewPadding="20,5,20,5"
                     Stroke="#F5A24A"
                     >
-                    <Editor
-                        AutoSize="TextChanges"
-                        VerticalOptions="Start" />
+                    <Picker
+                        Title="---Selecione---"
+                        ItemsSource="{Binding ListaFxEtaria}"
+                        ItemDisplayBinding="{Binding Descricao}"
+                        SelectedItem="{Binding FxEtariaSelecionado}"/>
                 </sf:SfTextInputLayout>
 
             </Grid>
@@ -647,6 +656,7 @@
         
         <!--MOBÍLIA-->
         <Grid
+            x:Name="GridMobilia"
             IsVisible="false"
             Grid.Row="2"
             Padding="40,70,40,20"
@@ -807,7 +817,8 @@
         
         <!--DINHEIRO-->
         <Grid
-            IsVisible="true"
+            IsVisible="false"
+            x:Name="GridDinheiro"
             Grid.Row="2"
             Padding="40,70,40,20"
             RowSpacing="-15">

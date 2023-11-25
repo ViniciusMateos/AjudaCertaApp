@@ -213,18 +213,18 @@
 	                TextColor="#FFFFFF"/>
 
                 <sf:SfTextInputLayout
-    x:Name="dtpDataNasc"
-                    IsVisible="false"
-    Grid.Row="1"
-    Grid.Column="1"
-    ContainerBackground="White"
-    ContainerType="Outlined"
-    OutlineCornerRadius="30"
-    InputViewPadding="20,0,20,0"
-    ReserveSpaceForAssistiveLabels="False"
-    >
-                    <DatePicker
-    Date="{Binding Datanasc}"/>
+                    x:Name="dtpDataNasc"
+                                    IsVisible="false"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    ContainerBackground="White"
+                    ContainerType="Outlined"
+                    OutlineCornerRadius="30"
+                    InputViewPadding="20,0,20,0"
+                    ReserveSpaceForAssistiveLabels="False"
+                    >
+                                    <DatePicker
+                    Date="{Binding Datanasc}"/>
                 </sf:SfTextInputLayout>
 
                 <Label

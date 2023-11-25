@@ -2,7 +2,7 @@ using AjudaCertaApp.ViewModels.Posts;
 
 namespace AjudaCertaApp.Views;
 
-public partial class FeedView : ContentPage
+public partial class FeedView : TabbedPage
 {
 	ListagemPostViewModel viewModel;
 	public FeedView()

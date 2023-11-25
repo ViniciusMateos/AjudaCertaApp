@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sf="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             x:Class="AjudaCertaApp.Views.Doador.Doacao"
+             Title="Doacao"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid
+        BackgroundColor="#F4DFC9">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height=".20*"/>
+            <RowDefinition Height=".80*"/>
+        </Grid.RowDefinitions>
+
+        <ImageButton
+            Grid.Column="0"
+            Source="setavoltar.svg"
+            HeightRequest="25"
+            Margin="4,0,0,0"
+            HorizontalOptions="Start"
+            Command="{Binding VoltarCommand}"
+        />
+
+        <Label
+            Grid.Row="1"
+            FontFamily="Inter"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="Center"
+            FontSize="40"
+            TextColor="#DF6034"
+            Text="Doação"/>
+
+        <BoxView 
+            Color="#F5A24A"
+            Grid.Row="2"
+            BackgroundColor="#F4DFC9"
+            CornerRadius="88,88,0,0"
+            />
+
+
+        <Grid
+            Grid.Row="2"
+            Padding="40,70,40,20"
+            RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid
+                Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+
+
+                <Label
+                    Text="Login:"
+                    FontFamily="Inter"
+	                HorizontalTextAlignment="Start"
+                    VerticalTextAlignment="End"
+	                FontSize="14"
+                    Padding="5,0"
+	                TextColor="#FFFFFF"/>
+
+                <sf:SfTextInputLayout 
+                    Grid.Row="1" 
+                    ContainerType="Outlined"
+                    OutlineCornerRadius="30"
+                    ContainerBackground="White"
+                    InputViewPadding="20,5,0,5"
+                    Stroke="#F5A24A"
+                    >
+                    <Entry
+                        VerticalOptions="Center"
+                        />
+                </sf:SfTextInputLayout>
+            </Grid>
+
+            <Grid
+                Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label
+                    Text="Login:"
+                    FontFamily="Inter"
+	                HorizontalTextAlignment="Start"
+                    VerticalTextAlignment="End"
+	                FontSize="14"
+                    Padding="5,0"
+	                TextColor="#FFFFFF"/>
+
+                <sf:SfTextInputLayout 
+                    Grid.Row="1" 
+                    ContainerType="Outlined"
+                    OutlineCornerRadius="30"
+                    ContainerBackground="White"
+                    InputViewPadding="15,5,15,5"
+                    Stroke="#F5A24A"
+                    >
+                    <Editor
+                       
+                        AutoSize="TextChanges"
+                        VerticalOptions="Start"                        
+                        />
+                </sf:SfTextInputLayout>
+            </Grid>
+
+            
+            
+            <Button
+            Grid.Row="4"
+            Text="ENTRAR"
+            FontSize="24"
+            BackgroundColor="#DF6234"
+            CornerRadius="20"
+            WidthRequest="200"
+            HeightRequest="65"       
+            Command="{Binding AutenticarPessoaCommand}"
+            />
+
+        </Grid>
+
+
+
+        
+    </Grid>
+    
+</ContentPage>

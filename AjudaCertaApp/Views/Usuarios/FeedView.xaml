@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sf="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
+             x:Class="AjudaCertaApp.Views.FeedView"  
+            BarBackgroundColor="#F4DFC9"
+            xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+             >
+
+    
+   
+
+    <ContentPage
+        IconImageSource="footerhome.svg"
+        Title="Home">
+        
+    </ContentPage>
+
+    
+
+    <ContentPage
+     IconImageSource="footercifrao.svg"
+     Title="Doar"
+     >
+        <Grid
+         BackgroundColor="#F4DFC9">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+
+
+
+            <Grid
+             Grid.Row="1">
+                <ScrollView>
+                    <syncfusion:SfListView
+                 x:Name="ListView"
+                 ItemsSource="{Binding Posts}"
+                 ItemSpacing="5,0,0,0">
+                        <syncfusion:SfListView.ItemTemplate>
+                            <DataTemplate>
+                                <Label Text="{Binding Conteudo}"/>
+                            </DataTemplate>
+                        </syncfusion:SfListView.ItemTemplate>
+
+                    </syncfusion:SfListView>
+                </ScrollView>
+            </Grid>
+
+
+        </Grid>
+    </ContentPage>
+
+    <ContentPage
+        IconImageSource="footerchat.svg"
+        Title="Chat">
+
+    </ContentPage>
+
+    <ContentPage
+        IconImageSource="footerperfil.svg"
+        Title="Perfil"
+        >
+
+    </ContentPage>
+
+</TabbedPage>

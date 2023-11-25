@@ -8,34 +8,40 @@
     <DefaultDevice>pixel_5_-_api_33</DefaultDevice>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="Views\BeneficiarioCadastro1.xaml">
+    <MauiXaml Update="Views\Beneficiario\BeneficiarioCadastro1.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\BeneficiarioCadastro2.xaml">
+    <MauiXaml Update="Views\Beneficiario\BeneficiarioCadastro2.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\BeneficiarioCadastro3.xaml">
+    <MauiXaml Update="Views\Beneficiario\BeneficiarioCadastro3.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\CadastroEscolha.xaml">
+    <MauiXaml Update="Views\Doador\Doacao.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\DoadorCadastro1.xaml">
+    <MauiXaml Update="Views\Usuarios\CadastroEscolha.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\DoadorCadastro2.xaml">
+    <MauiXaml Update="Views\Doador\DoadorCadastro1.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\DoadorCadastro3.xaml">
+    <MauiXaml Update="Views\Doador\DoadorCadastro2.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\FeedView.xaml">
+    <MauiXaml Update="Views\Doador\DoadorCadastro3.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\Inicial.xaml">
+    <MauiXaml Update="Views\Usuarios\FeedView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\Login.xaml">
+    <MauiXaml Update="Views\Usuarios\Inicial.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\Usuarios\Login.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\Usuarios\Perfil.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

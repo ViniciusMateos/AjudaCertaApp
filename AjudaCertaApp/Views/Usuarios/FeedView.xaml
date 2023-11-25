@@ -1,29 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:sf="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
              xmlns:syncfusion="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
-             x:Class="AjudaCertaApp.Views.FeedView"  
-            BarBackgroundColor="#F4DFC9"
-            xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
-            android:TabbedPage.ToolbarPlacement="Bottom"
+             x:Class="AjudaCertaApp.Views.FeedView" 
+             NavigationPage.HasNavigationBar="False"
+             
              >
 
-    
-   
-
-    <ContentPage
-        IconImageSource="footerhome.svg"
-        Title="Home">
-        
-    </ContentPage>
-
-    
-
-    <ContentPage
-     IconImageSource="footercifrao.svg"
-     Title="Doar"
-     >
         <Grid
          BackgroundColor="#F4DFC9">
             <Grid.RowDefinitions>
@@ -55,17 +39,3 @@
         </Grid>
     </ContentPage>
 
-    <ContentPage
-        IconImageSource="footerchat.svg"
-        Title="Chat">
-
-    </ContentPage>
-
-    <ContentPage
-        IconImageSource="footerperfil.svg"
-        Title="Perfil"
-        >
-
-    </ContentPage>
-
-</TabbedPage>

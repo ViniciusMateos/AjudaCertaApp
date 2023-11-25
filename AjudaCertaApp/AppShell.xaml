@@ -5,11 +5,57 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:AjudaCertaApp"
     xmlns:views="clr-namespace:AjudaCertaApp.Views"
-    Title="AjudaCertaApp">
+    xmlns:viewsDoador="clr-namespace:AjudaCertaApp.Views.Doador"
+    Title="AjudaCertaApp"
+    Shell.BackgroundColor="#F5A24A"
+    Shell.TabBarBackgroundColor="#F4DFC9"
+    Shell.TabBarTitleColor="#F5A24A"
+    Shell.TabBarUnselectedColor="#F5A24A"
+    Shell.TabBarForegroundColor="#F5A24A"
+    >
+    <Shell.TitleView>
+        <HorizontalStackLayout VerticalOptions="Fill">
+            
+        </HorizontalStackLayout>
+    </Shell.TitleView>
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="{OnPlatform Android=130, iOS=200}"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                </Grid.RowDefinitions>
 
-    <FlyoutItem Title="MyTabApp" Shell.TabBarIsVisible="False" FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent Title="About"
+                <FlexLayout Grid.Row="0" Direction="Row" AlignItems="Center" >
+
+                    <Frame Padding="0" CornerRadius="40"
+                            HeightRequest="80" WidthRequest="80" >
+                        <Image Source="logo_minimalista.svg"/>
+                    </Frame>
+
+                    <VerticalStackLayout Padding="10,0,0,0" Spacing="0">
+
+                        <Label Text="Ajuda Certa" FontAttributes="Bold" FontSize="Medium" />
+                        <Label Text="Pinto"/>
+                    </VerticalStackLayout>
+                </FlexLayout>
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+
+    <FlyoutItem Title="MyTabApp" FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="Home"
+                      
+                      Icon="footerhome.svg"
+                      
+                      FlyoutIcon="footerhome.svg"
                       ContentTemplate="{DataTemplate views:FeedView}"/>
+        <ShellContent Title="Doar"
+                      Icon="footercifrao.svg"
+                      FlyoutIcon="footercifrao.svg"
+                      ContentTemplate="{DataTemplate viewsDoador:Doacao}"/>
     </FlyoutItem>
+
     
 </Shell>

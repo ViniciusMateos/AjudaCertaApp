@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:sf="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
              x:Class="AjudaCertaApp.Views.Doador.Doacao"
-             Title="Doacao"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             >
 
     <Grid
         BackgroundColor="#F4DFC9">
@@ -14,14 +14,7 @@
             <RowDefinition Height=".80*"/>
         </Grid.RowDefinitions>
 
-        <ImageButton
-            Grid.Column="0"
-            Source="setavoltar.svg"
-            HeightRequest="25"
-            Margin="4,0,0,0"
-            HorizontalOptions="Start"
-            Command="{Binding VoltarCommand}"
-        />
+
 
         <Label
             Grid.Row="1"

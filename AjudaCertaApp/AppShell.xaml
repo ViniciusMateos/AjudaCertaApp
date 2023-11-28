@@ -7,6 +7,7 @@
     xmlns:views="clr-namespace:AjudaCertaApp.Views"
     xmlns:viewsDoador="clr-namespace:AjudaCertaApp.Views.Doador"
     xmlns:viewsUsuarios="clr-namespace:AjudaCertaApp.Views.Usuarios"
+    xmlns:viewsOng="clr-namespace:AjudaCertaApp.Views.Ong"
     Title="AjudaCertaApp"
     Shell.BackgroundColor="#F5A24A"
     Shell.TabBarBackgroundColor="#F4DFC9"
@@ -69,7 +70,7 @@
         <ShellContent Title="Perfil"
               Icon="footerperfil.svg"
               FlyoutIcon="footerperfil.svg"
-              ContentTemplate="{DataTemplate viewsUsuarios:Perfil}"/>
+              ContentTemplate="{DataTemplate viewsOng:PerfilOng}"/>
     </FlyoutItem>
 
     <ShellContent>

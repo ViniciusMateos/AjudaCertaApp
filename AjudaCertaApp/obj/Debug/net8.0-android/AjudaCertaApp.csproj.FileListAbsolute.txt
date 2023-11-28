@@ -4428,9 +4428,9 @@ G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\re
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\postfoto.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\postfoto.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\postfoto.png
-G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\fotoperfil.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\fotoperfil.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\fotoperfil.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\fotoperfil.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\fotoperfil.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll

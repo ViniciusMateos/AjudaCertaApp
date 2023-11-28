@@ -23,7 +23,7 @@
     <MauiXaml Update="Views\Doador\Doacao.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\Ong\Perfil.xaml">
+    <MauiXaml Update="Views\Ong\PerfilOng.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\Usuarios\CadastroEscolha.xaml">

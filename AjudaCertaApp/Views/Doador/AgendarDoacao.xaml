@@ -8,7 +8,8 @@
              Title="AgendarDoacao"
              NavigationPage.HasNavigationBar="False">
 
-    <Grid>
+    <Grid
+        BackgroundColor="#F4DFC9">
         <Grid.RowDefinitions>
             <RowDefinition Height=".07*"/>
             <RowDefinition Height=".9*"/>
@@ -40,13 +41,14 @@
 
         <Grid
             Grid.Row="1"
-            Padding="20,50,20,20">
+            Padding="20,50,20,20"
+            RowSpacing="0">
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="500"/>
+                <RowDefinition Height="0"/>
+                <RowDefinition Height="70"/>
             </Grid.RowDefinitions>
 
             <Label
@@ -59,7 +61,8 @@
 	            Text="Local:"/>
 
             <Grid 
-                Grid.Row="1">
+                Grid.Row="1"
+                VerticalOptions="Start">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
@@ -71,6 +74,7 @@
 	                FontAttributes="Bold"
 	                HorizontalTextAlignment="Center"
 	                FontSize="20"
+                    VerticalOptions="End"
 	                TextColor="#000000"
 	                Text="Ong Estrela Dalva"/>
 
@@ -85,77 +89,113 @@
                  />
             </Grid>
 
-            <Label
-                Grid.Row="2"
+            <Grid
+                Grid.Row="2">
+                <StackLayout
+                    Spacing="-100"
+                    VerticalOptions="Center">
+                <Label
+                Grid.Row="0"
                 FontFamily="Inter"
 	            FontAttributes="Bold"
 	            HorizontalTextAlignment="Center"
-	            FontSize="20"
+	            FontSize="Medium"
                 WidthRequest="300"
 	            TextColor="#000000"
 	            Text="Agende um dia e horário para realizar essa doação"
              />
 
-            <Grid
-                Grid.Row="3">
-                <picker:SfDateTimePicker x:Name="Picker"
+                <Grid>
+                    <picker:SfDateTimePicker x:Name="Picker"
                                          HeightRequest="300"
                                          DateFormat="dd_MM_yyyy"
                                          TimeFormat="H_mm"
+                                         MinimumDate="2000/11/28 16:00:00"
                                          Mode="Dialog"
-                                         ColumnDividerColor="Transparent">
+                                         ColumnDividerColor="Transparent"
+                                         CancelButtonClicked="Picker_CancelButtonClicked"
+                                         OkButtonClicked="Picker_OkButtonClicked">
 
-                    <picker:SfDateTimePicker.SelectionView >
-                        <picker:PickerSelectionView CornerRadius="10" 
+                        <picker:SfDateTimePicker.SelectionView >
+                            <picker:PickerSelectionView CornerRadius="10"
                                                     Stroke="#F5A24A" 
                                                     Padding="10, 5, 10, 5" 
                                                     Background="#F5A24A"
                                                     />
-                    </picker:SfDateTimePicker.SelectionView>
-                    
+                        </picker:SfDateTimePicker.SelectionView>
 
-                    <picker:SfDateTimePicker.HeaderView>
-                        <picker:DateTimePickerHeaderView Background="#D3D3D3"
+
+                        <picker:SfDateTimePicker.HeaderView>
+                            <picker:DateTimePickerHeaderView Background="#D3D3D3"
+                                                             TimeFormat="H:mm"
                                                          >
-                            
-                            <picker:DateTimePickerHeaderView.TextStyle>
-                                <picker:PickerTextStyle FontSize="15" 
+
+                                <picker:DateTimePickerHeaderView.TextStyle>
+                                    <picker:PickerTextStyle FontSize="15"
+                                                            
                                                         />
-                                
-                            </picker:DateTimePickerHeaderView.TextStyle>
-                        </picker:DateTimePickerHeaderView>
-                    </picker:SfDateTimePicker.HeaderView>
+
+                                </picker:DateTimePickerHeaderView.TextStyle>
+                            </picker:DateTimePickerHeaderView>
+                        </picker:SfDateTimePicker.HeaderView>
 
 
 
 
-                    <picker:SfDateTimePicker.ColumnHeaderView>
-                        <picker:DateTimePickerColumnHeaderView>
-                            
-                            
-                        </picker:DateTimePickerColumnHeaderView>
-
-                    </picker:SfDateTimePicker.ColumnHeaderView>
+                        <picker:SfDateTimePicker.ColumnHeaderView>
+                            <picker:DateTimePickerColumnHeaderView>
 
 
+                            </picker:DateTimePickerColumnHeaderView>
 
-                    <picker:SfDateTimePicker.FooterView>
-                        <picker:PickerFooterView ShowOkButton="True" 
+                        </picker:SfDateTimePicker.ColumnHeaderView>
+
+
+
+                        <picker:SfDateTimePicker.FooterView>
+                            <picker:PickerFooterView ShowOkButton="True" 
                                                  Height="40"
-                                                 />
-                    </picker:SfDateTimePicker.FooterView>
-                </picker:SfDateTimePicker>
-            
-                <Button
-                    Text="Open Date Time picker" 
-                    x:Name="pickerButton"
-                    Clicked="pickerButton_Clicked"  
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"
-                    HeightRequest="50" 
-                    WidthRequest="150"
-                    />
+                                                 >
+                                <picker:PickerFooterView.TextStyle >
+                                    <picker:PickerTextStyle FontSize="15" TextColor="Black" />
+                                </picker:PickerFooterView.TextStyle>
+                            </picker:PickerFooterView>
+
+
+
+
+                        </picker:SfDateTimePicker.FooterView>
+
+                    </picker:SfDateTimePicker>
+
+                    <Button
+                        Text="Agendar" 
+                        x:Name="pickerButton"
+                        FontSize="Medium"
+                        Clicked="pickerButton_Clicked"  
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        HeightRequest="50"   
+                        WidthRequest="150"
+                        />
+                </Grid>
+                </StackLayout>
             </Grid>
+
+
+
+            <Button
+                    Margin="0,50"
+                    Grid.Row="4"
+                    Text="Concluir"
+                    FontSize="24"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    BackgroundColor="#DF6234"
+                    CornerRadius="20"
+                    WidthRequest="200"
+                    HeightRequest="50"       
+                    />
 
         </Grid>
         

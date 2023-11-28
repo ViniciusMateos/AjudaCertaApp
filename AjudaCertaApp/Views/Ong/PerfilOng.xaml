@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sf="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
+             x:Class="AjudaCertaApp.Views.Ong.PerfilOng"
+             NavigationPage.HasNavigationBar="False"
+             Title="PerfilOng">
+
+    <ScrollView
+        BackgroundColor="#F4DFC9"
+        Padding="30,50,30,50"
+        VerticalScrollBarVisibility="Never">
+        <StackLayout
+            Padding="0"
+            Spacing="30">
+            <Grid>
+                <HorizontalStackLayout
+                    Spacing="20">
+                    <Image
+                        Source="fotoperfil.svg"/>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Label
+                            Grid.Row="0"
+                            FontSize="Medium"
+                            Text="Olá,"
+                            VerticalOptions="End"/>
+
+                        <Label
+                            Grid.Row="1"
+                            Text="Ong Estrela Dalva"
+                            FontSize="Medium"
+                            FontAttributes="Bold"/>
+
+                    </Grid>
+                </HorizontalStackLayout>
+            </Grid>
+
+            <HorizontalStackLayout
+                Spacing="2">
+                <Label
+                    Text="Endereço: "
+                    FontAttributes="Bold"
+                    FontSize="15"/>
+
+                <Label
+                    Text="Av. Josino Vieira de Goes, 1089"
+                    FontSize="15"/>
+            </HorizontalStackLayout>
+            
+            <Grid>
+                <ScrollView
+                    Orientation="Horizontal"
+                    HorizontalScrollBarVisibility="Never">
+                    <HorizontalStackLayout
+                        Spacing="5">
+                        <Grid>
+                            <Button
+                                HeightRequest="30"
+                                WidthRequest="100"/>
+                            <Label
+                                Text="Concluídas"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                />
+                        </Grid>
+
+                        <Grid>
+                            <Button
+                                HeightRequest="30"
+                                WidthRequest="100"/>
+                            <Label
+                                Text="Pendentes"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                />
+                        </Grid>
+
+                        <Grid>
+                            <Button
+                                HeightRequest="30"
+                                WidthRequest="100"/>
+                            <Label
+                                Text="Doaões"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                />
+                        </Grid>
+
+                        <Grid>
+                            <Button
+                                HeightRequest="30"
+                                WidthRequest="100"/>
+                            <Label
+                                Text="Doaões"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                />
+                        </Grid>
+
+
+                    </HorizontalStackLayout>
+                </ScrollView>
+            </Grid>
+
+
+            <Label
+                FontFamily="Inter"
+	            FontAttributes="Bold"
+	            HorizontalTextAlignment="Center"
+	            FontSize="25"
+                HeightRequest="30"
+	            TextColor="#000000"
+	            Text="Minhas doações concluídas"/>
+
+
+            <syncfusion:SfListView
+             x:Name="ListView"
+             ItemsSource="logo_minimalista.svg"
+             ItemSpacing="5,0,0,0"
+             ItemSize="400"
+             ScrollBarVisibility="Never">
+                <syncfusion:SfListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <Grid
+                            Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <BoxView
+                                Color="#F5AF66"
+                                BackgroundColor="Transparent"
+                                CornerRadius="20"
+                                />
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height=".65*"/>
+                                    <RowDefinition Height=".1*"/>
+                                    <RowDefinition Height=".25*"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid
+                                    Padding="0"
+                                    Grid.Row="0">
+
+
+                                    <ImageButton
+                                        Padding="5,0,5,0"
+                                        Source="postfoto.svg"
+                                        CornerRadius="15"
+                                        />
+
+                                </Grid>
+
+                                <Label
+                                    Grid.Row="1"
+                                    Text="@ong_estreladalva"
+                                    TextColor="white"
+                                    Padding="10,5"
+                                    FontAttributes="Bold"/>
+
+                                <Grid
+                                    Grid.Row="2"
+                                    Padding="15,0,15,15">
+                                    <ScrollView
+                                         Grid.Row="2"
+                                        VerticalScrollBarVisibility="Never">
+                                        <Label
+                                            Text="akdfjus fldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljlfbldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjlj"
+                                            TextColor="White"/>
+
+                                    </ScrollView>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+
+                    </DataTemplate>
+                </syncfusion:SfListView.ItemTemplate>
+            </syncfusion:SfListView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

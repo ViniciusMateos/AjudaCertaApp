@@ -77,6 +77,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\Ong\PerfilOng.xaml.cs">
+	    <DependentUpon>PerfilOng.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\Usuarios\ChatLista.xaml.cs">
 	    <DependentUpon>ChatLista.xaml</DependentUpon>
 	  </Compile>
@@ -98,7 +101,7 @@
 	  <MauiXaml Update="Views\Doador\Doacao.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Ong\Perfil.xaml">
+	  <MauiXaml Update="Views\Ong\PerfilOng.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Usuarios\CadastroEscolha.xaml">

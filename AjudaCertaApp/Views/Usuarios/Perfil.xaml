@@ -9,10 +9,11 @@
 
     <ScrollView
         BackgroundColor="#F4DFC9"
-        Padding="30,50,30,50">
+        Padding="30,50,30,50"
+        VerticalScrollBarVisibility="Never">
         <StackLayout
             Padding="0"
-            Spacing="60">
+            Spacing="30">
             <Grid>
                 <HorizontalStackLayout
                     Spacing="20">
@@ -41,20 +42,87 @@
                 </HorizontalStackLayout>
             </Grid>
 
+
+            <Grid>
+                <ScrollView
+                    Orientation="Horizontal"
+                    HorizontalScrollBarVisibility="Never">
+                    <HorizontalStackLayout
+                        Spacing="5">
+                        <Grid>
+                            <Button
+                                HeightRequest="30"
+                                WidthRequest="100"/>
+                            <Label
+                                Text="Concluídas"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                />
+                        </Grid>
+
+                        <Grid>
+                            <Button
+                                HeightRequest="30"
+                                WidthRequest="100"/>
+                            <Label
+                                Text="Pendentes"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                />
+                        </Grid>
+
+                        <Grid>
+                            <Button
+                                HeightRequest="30"
+                                WidthRequest="100"/>
+                            <Label
+                                Text="Doaões"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                />
+                        </Grid>
+
+                        <Grid>
+                            <Button
+                                HeightRequest="30"
+                                WidthRequest="100"/>
+                            <Label
+                                Text="Doaões"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                />
+                        </Grid>
+
+
+                    </HorizontalStackLayout>
+                </ScrollView>
+            </Grid>
+
+
             <Label
-                	FontFamily="Inter"
-	                FontAttributes="Bold"
-	                HorizontalTextAlignment="Center"
-	                FontSize="25"
-	                TextColor="#000000"
-	                Text="Minhas doações"/>
+                FontFamily="Inter"
+	            FontAttributes="Bold"
+	            HorizontalTextAlignment="Center"
+	            FontSize="25"
+                HeightRequest="30"
+	            TextColor="#000000"
+	            Text="Minhas doações concluídas"/>
 
             
             <syncfusion:SfListView
              x:Name="ListView"
              ItemsSource="logo_minimalista.svg"
              ItemSpacing="5,0,0,0"
-             ItemSize="400">
+             ItemSize="400"
+             ScrollBarVisibility="Never">
                 <syncfusion:SfListView.ItemTemplate>
                     <DataTemplate>
 
@@ -102,7 +170,7 @@
                                     Padding="15,0,15,15">
                                     <ScrollView
                                          Grid.Row="2"
-                        >
+                                        VerticalScrollBarVisibility="Never">
                                         <Label
                                             Text="akdfjus fldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljlfbldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjlj"
                                             TextColor="White"/>

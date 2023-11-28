@@ -62,7 +62,7 @@
                     ContainerType="Outlined"
                     OutlineCornerRadius="30"
                     ContainerBackground="White"
-                    InputViewPadding="20,5,20,5"
+                    InputViewPadding="15,0,0,6"
                     Stroke="#F5A24A"
                     >
                     <Picker
@@ -86,7 +86,7 @@
             Padding="40,0,40,20"
             IsVisible="false"
             >
-        <VerticalStackLayout
+            <VerticalStackLayout
             Spacing="-15"
             >
 
@@ -229,7 +229,7 @@
                             ItemsSource="{Binding ListaTipoProduto}"
                             ItemDisplayBinding="{Binding Descricao}"
                             SelectedItem="{Binding TipoProdutoSelecionado}"/>
-                            </sf:SfTextInputLayout>
+                    </sf:SfTextInputLayout>
 
 
 
@@ -238,7 +238,7 @@
                 <Button
                     Margin="0,50"
                     Grid.Row="4"
-                    Text="DOAR"
+                    Text="AGENDAR"
                     FontSize="24"
                     HorizontalOptions="Center"
                     VerticalOptions="End"
@@ -251,10 +251,6 @@
 
             </VerticalStackLayout>
         </ScrollView>
-        
-                      
-        
-
 
         <!--ELETRODOMÉSTICO-->
         <ScrollView
@@ -407,7 +403,7 @@
             <Button
                 Grid.Row="4"
                 Margin="0,50"
-                Text="DOAR"
+                Text="AGENDAR"
                 FontSize="24"
                 BackgroundColor="#DF6234"
                 CornerRadius="20"
@@ -640,7 +636,7 @@
 
             <Button
                 Grid.Row="5"
-                Text="DOAR"
+                Text="AGENDAR"
                 Margin="0,50"
                 FontSize="24"
                 BackgroundColor="#DF6234"
@@ -800,7 +796,7 @@
 
             <Button
                 Grid.Row="4"
-                Text="DOAR"
+                Text="AGENDAR"
                 FontSize="24"
                 Margin="0,50"
                 BackgroundColor="#DF6234"
@@ -819,18 +815,19 @@
             Grid.Row="2"
             Padding="40,0,40,20"
             >
-            <VerticalStackLayout>
+            <VerticalStackLayout
+                >
 
-            <Grid
+                <Grid
                 Grid.Row="1"
                 IsVisible="true"
                 HeightRequest="90">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="30"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
 
-                <Label
+                    <Label
                     Text="Valor:"
                     FontFamily="Inter"
                     HorizontalTextAlignment="Start"
@@ -839,7 +836,7 @@
                     Padding="5,0"
                     TextColor="#FFFFFF"/>
 
-                <sf:SfTextInputLayout 
+                    <sf:SfTextInputLayout 
                     Grid.Row="1" 
                     ContainerType="Outlined"
                     OutlineCornerRadius="30"
@@ -847,14 +844,49 @@
                     InputViewPadding="15,5,15,5"
                     Stroke="#F5A24A"
                     >
-                    <Editor
+                        <Editor
                         AutoSize="TextChanges"
                         VerticalOptions="Start"                        
                         />
-                </sf:SfTextInputLayout>
-            </Grid>
+                    </sf:SfTextInputLayout>
+                </Grid>
 
-            <Button
+                <!--PICKER-->
+                <Grid
+                Grid.Row="1"
+                IsVisible="true"
+                HeightRequest="90">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Label
+                    Text="Forma de pagamento:"
+                    FontFamily="Inter"
+                    HorizontalTextAlignment="Start"
+                    VerticalTextAlignment="End"
+                    FontSize="14"
+                    Padding="5,0"
+                    TextColor="#FFFFFF"/>
+
+                    <sf:SfTextInputLayout 
+                    Grid.Row="1" 
+                    ContainerType="Outlined"
+                    OutlineCornerRadius="30"
+                    ContainerBackground="White"
+                    InputViewPadding="15,5,15,5"
+                    Stroke="#F5A24A"
+                    >
+                        <Editor
+                        AutoSize="TextChanges"
+                        VerticalOptions="Start"                        
+                        />
+                    </sf:SfTextInputLayout>
+                </Grid>
+
+
+                <Button
                 Grid.Row="4"
                 Text="DOAR"
                 FontSize="24"
@@ -866,6 +898,7 @@
                 />
             </VerticalStackLayout>
         </ScrollView>
+        
     </Grid>
     
 </ContentPage>

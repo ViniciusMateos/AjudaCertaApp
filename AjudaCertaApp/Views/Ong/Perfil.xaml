@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sf="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
+             x:Class="AjudaCertaApp.Views.Ong.Perfil"
+             Title="Perfil">
+
+    <ScrollView
+    BackgroundColor="#F4DFC9"
+    Padding="40,50,50,50">
+        <StackLayout
+        Padding="0"
+        Spacing="60">
+            <Grid>
+                <HorizontalStackLayout
+                Spacing="20">
+                    <Image
+                    Source="fotoperfil.svg"/>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Label
+                        Grid.Row="0"
+                        FontSize="Medium"
+                        Text="Boa tarde,"
+                        VerticalOptions="End"/>
+
+                        <Label
+                        Grid.Row="1"
+                        Text="Maria P. Silva!"
+                        FontSize="Medium"
+                        FontAttributes="Bold"/>
+
+                    </Grid>
+                </HorizontalStackLayout>
+            </Grid>
+
+            <Label
+               	FontFamily="Inter"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                FontSize="25"
+                TextColor="#000000"
+                Text="Minhas doações"/>
+
+            <syncfusion:SfListView
+                x:Name="ListView"
+                ItemsSource="logo_minimalista.svg"
+                ItemSpacing="5,0,0,0"
+                ItemSize="400">
+                <syncfusion:SfListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <Grid
+                            Padding="20">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <BoxView
+                                Color="#F5AF66"
+                                BackgroundColor="Transparent"
+                                CornerRadius="20"
+                                />
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height=".65*"/>
+                                    <RowDefinition Height=".1*"/>
+                                    <RowDefinition Height=".25*"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid
+                                    Padding="0"
+                                    Grid.Row="0">
+
+
+                                    <ImageButton
+                                        Padding="5,0,5,0"
+                                        Source="postfoto.svg"
+                                        CornerRadius="15"
+                                        />
+
+                                </Grid>
+
+                                <Label
+                                    Grid.Row="1"
+                                    Text="@ong_estreladalva"
+                                    TextColor="white"
+                                    Padding="10,5"
+                                    FontAttributes="Bold"/>
+
+                                <Grid
+                                    Grid.Row="2"
+                                    Padding="15,0,15,15">
+                                    <ScrollView
+                                        Grid.Row="2"
+                                        >
+                                        <Label
+                                            Text="akdfjus fldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljlfbldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjlj"
+                                            TextColor="White"/>
+
+                                    </ScrollView>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+
+                    </DataTemplate>
+                </syncfusion:SfListView.ItemTemplate>
+            </syncfusion:SfListView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

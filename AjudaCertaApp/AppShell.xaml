@@ -6,6 +6,7 @@
     xmlns:local="clr-namespace:AjudaCertaApp"
     xmlns:views="clr-namespace:AjudaCertaApp.Views"
     xmlns:viewsDoador="clr-namespace:AjudaCertaApp.Views.Doador"
+    xmlns:viewsUsuarios="clr-namespace:AjudaCertaApp.Views.Usuarios"
     Title="AjudaCertaApp"
     Shell.BackgroundColor="#F5A24A"
     Shell.TabBarBackgroundColor="#F4DFC9"
@@ -14,9 +15,11 @@
     Shell.TabBarForegroundColor="#F5A24A"
     >
     <Shell.TitleView>
-        <HorizontalStackLayout VerticalOptions="Fill">
-            
-        </HorizontalStackLayout>
+        <Image
+            Source="logo_minimalista.svg"
+            HorizontalOptions="End"
+            Margin="0,5,10,5"
+            />
     </Shell.TitleView>
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
@@ -47,16 +50,26 @@
 
 
     <FlyoutItem Title="MyTabApp" FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent Title="Home"
-                      
+        <ShellContent
+            Title="Home"
                       Icon="footerhome.svg"
-                      FlyoutItemIsVisible="False"
+                      FlyoutItemIsVisible="True"
                       FlyoutIcon="footerhome.svg"
                       ContentTemplate="{DataTemplate views:FeedView}"/>
         <ShellContent Title="Doar"
                       Icon="footercifrao.svg"
                       FlyoutIcon="footercifrao.svg"
                       ContentTemplate="{DataTemplate viewsDoador:Doacao}"/>
+
+        <ShellContent Title="Chat"
+              Icon="footerchat.svg"
+              FlyoutIcon="footerchat.svg"
+              ContentTemplate="{DataTemplate viewsUsuarios:ChatLista}"/>
+
+        <ShellContent Title="Perfil"
+              Icon="footerperfil.svg"
+              FlyoutIcon="footerperfil.svg"
+              ContentTemplate="{DataTemplate viewsUsuarios:Perfil}"/>
     </FlyoutItem>
 
     <ShellContent>

@@ -62,6 +62,11 @@
                       FlyoutIcon="footercifrao.svg"
                       ContentTemplate="{DataTemplate viewsDoador:Doacao}"/>
 
+        <ShellContent Title="Postar"
+              Icon="iconpost.svg"
+              FlyoutIcon="iconpost.svg"
+              ContentTemplate="{DataTemplate viewsOng:Post}"/>
+
         <ShellContent Title="Chat"
               Icon="footerchat.svg"
               FlyoutIcon="footerchat.svg"

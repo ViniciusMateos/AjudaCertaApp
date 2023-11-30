@@ -7,7 +7,7 @@
             InitializeComponent();
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjgyMTI5OEAzMjMzMmUzMDJlMzBmNmM3ZjVtQWh2WGtpbDIrWjhaOWd2anM2NUpBVWdrZUdUaTlUWTkxQVBVPQ==");
 
-            MainPage = new NavigationPage(new AppShell ());
+            MainPage = new NavigationPage(new AppShell());
         }
     }
 }

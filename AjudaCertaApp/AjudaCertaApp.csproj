@@ -104,6 +104,9 @@
 	  <MauiXaml Update="Views\Ong\PerfilOng.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Ong\Post.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Usuarios\CadastroEscolha.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

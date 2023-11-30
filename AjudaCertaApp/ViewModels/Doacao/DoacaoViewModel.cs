@@ -144,6 +144,7 @@ namespace AjudaCertaApp.ViewModels.Doacao
                 ListaConteudoDoacao.Add(new ConteudoDoacao() { Id = 2, Descricao = "Mobilia" });
                 ListaConteudoDoacao.Add(new ConteudoDoacao() { Id = 3, Descricao = "Roupa" });
                 ListaConteudoDoacao.Add(new ConteudoDoacao() { Id = 4, Descricao = "Eletrodomestico" });
+                ListaConteudoDoacao.Add(new ConteudoDoacao() { Id = 5, Descricao = "Cesta Básica" });
 
                 OnPropertyChanged(nameof(ListaConteudoDoacao));
             }

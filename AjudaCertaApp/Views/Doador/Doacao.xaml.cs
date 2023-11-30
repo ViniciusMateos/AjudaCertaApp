@@ -23,6 +23,7 @@ public partial class Doacao : ContentPage
 			GridRoupa.IsVisible = false;
 			GridMobilia.IsVisible = false;
 			GridDinheiro.IsVisible = true;
+            GridCestaBasica.IsVisible = false;
 		}
 		else if (pckTipoDoacao.SelectedIndex == 1)
 		{
@@ -31,6 +32,7 @@ public partial class Doacao : ContentPage
             GridRoupa.IsVisible = false;
             GridMobilia.IsVisible = false;
             GridDinheiro.IsVisible = false;
+            GridCestaBasica.IsVisible = false;
 
         }
         else if (pckTipoDoacao.SelectedIndex == 2)
@@ -40,6 +42,7 @@ public partial class Doacao : ContentPage
             GridRoupa.IsVisible = false;
             GridMobilia.IsVisible = true;
             GridDinheiro.IsVisible = false;
+            GridCestaBasica.IsVisible = false;
         }
         else if (pckTipoDoacao.SelectedIndex == 3)
 		{
@@ -48,6 +51,7 @@ public partial class Doacao : ContentPage
             GridRoupa.IsVisible = true;
             GridMobilia.IsVisible = false;
             GridDinheiro.IsVisible = false;
+            GridCestaBasica.IsVisible = false;
         }
         else if (pckTipoDoacao.SelectedIndex == 4)
 		{
@@ -56,6 +60,16 @@ public partial class Doacao : ContentPage
             GridRoupa.IsVisible = false;
             GridMobilia.IsVisible = false;
             GridDinheiro.IsVisible = false;
+            GridCestaBasica.IsVisible = false;
+        }
+        else if (pckTipoDoacao.SelectedIndex == 5)
+        {
+            GridProduto.IsVisible = false;
+            GridEletro.IsVisible = false;
+            GridRoupa.IsVisible = false;
+            GridMobilia.IsVisible = false;
+            GridDinheiro.IsVisible = false;
+            GridCestaBasica.IsVisible = true;
         }
     }
 }

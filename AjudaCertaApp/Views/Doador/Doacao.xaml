@@ -898,7 +898,63 @@
                 />
             </VerticalStackLayout>
         </ScrollView>
-        
+
+        <!--CESTA BÁSICA-->
+        <ScrollView
+            IsVisible="false"
+            x:Name="GridCestaBasica"
+            Grid.Row="2"
+            Padding="40,0,40,20"
+            >
+            <VerticalStackLayout
+        >
+
+                <Grid
+                    Grid.Row="1"
+                    IsVisible="true"
+                    HeightRequest="90">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Label
+                        Text="Quantidade:"
+                        FontFamily="Inter"
+                        HorizontalTextAlignment="Start"
+                        VerticalTextAlignment="End"
+                        FontSize="14"
+                        Padding="5,0"
+                        TextColor="#FFFFFF"/>
+
+                    <sf:SfTextInputLayout 
+                        Grid.Row="1" 
+                        ContainerType="Outlined"
+                        OutlineCornerRadius="30"
+                        ContainerBackground="White"
+                        InputViewPadding="15,5,15,5"
+                        Stroke="#F5A24A"
+                        >
+                        <Editor
+                            AutoSize="TextChanges"
+                            VerticalOptions="Start"                        
+                            />
+                    </sf:SfTextInputLayout>
+                </Grid>
+
+                <Button
+                    Grid.Row="4"
+                    Text="DOAR"
+                    FontSize="24"
+                    BackgroundColor="#DF6234"
+                    CornerRadius="20"
+                    WidthRequest="200"
+                    HeightRequest="50" 
+                    VerticalOptions="End"
+                    />
+            </VerticalStackLayout>
+        </ScrollView>
+
     </Grid>
     
 </ContentPage>

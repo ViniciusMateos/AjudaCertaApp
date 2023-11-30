@@ -650,16 +650,26 @@ namespace AjudaCertaApp.ViewModels.Usuarios
                 Usuario uAutenticado = await uService.PostAutenticarUsuarioAsync(credenciais);
                 if (!string.IsNullOrEmpty(uAutenticado.Token))
                 {
-                    string mensagem = $"Bem-vindo(a) {uAutenticado.Email}";
-
                     Preferences.Set("UsuarioId", uAutenticado.Id);
                     Preferences.Set("UsuarioEmail", uAutenticado.Email);
                     Preferences.Set("UsuarioToken", uAutenticado.Token);
 
-                    await Application.Current.MainPage
+                    PessoaService ps = new PessoaService(uAutenticado.Token);
+                    Pessoa p = await ps.GetPessoaPorUsuarioAsync();
+                    if (p == null) 
+                    {
+                        await Application.Current.MainPage
+                            .DisplayAlert("Erro", "Falha", "Ok");
+                    }
+                    else 
+                    {
+                        string mensagem = $"Bem-vindo(a) {p.Username}";
+
+                        await Application.Current.MainPage
                         .DisplayAlert("Informação", mensagem, "Ok");
 
-                    Application.Current.MainPage = new FeedView();
+                        Application.Current.MainPage = new AppShell(p);
+                    }
                 }
                 else
                 {

@@ -10,7 +10,7 @@ namespace AjudaCertaApp.Services.Usuarios
     public class UsuarioService : Request
     {
         private readonly Request _request;
-        private const string apiUrlBase = "http://fuscatcc.somee.com/ApiAjudaCerta/Usuarios";
+        private const string apiUrlBase = "http://ajudacerta-001-site1.anytempurl.com/Usuarios";
 
         public UsuarioService()
         {

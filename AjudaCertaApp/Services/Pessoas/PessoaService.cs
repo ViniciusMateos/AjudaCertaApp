@@ -11,7 +11,7 @@ namespace AjudaCertaApp.Services.Pessoas
     public class PessoaService : Request
     {
         private readonly Request _request;
-        private const string apiUrlBase = "http://fuscatcc.somee.com/ApiAjudaCerta/Pessoas";
+        private const string apiUrlBase = "http://ajudacerta-001-site1.anytempurl.com/Pessoas";
         private string _token;  
 
         public PessoaService()

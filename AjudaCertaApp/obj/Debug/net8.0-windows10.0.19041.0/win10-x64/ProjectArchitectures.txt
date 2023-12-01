@@ -1,1 +1,1 @@
-G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp.csproj;x64
+C:\Projetos\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp.csproj;x64

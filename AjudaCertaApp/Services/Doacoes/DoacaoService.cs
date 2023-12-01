@@ -35,5 +35,11 @@ namespace AjudaCertaApp.Services.Doacoes
                 _request.GetAsync<ObservableCollection<Doacao>>(apiUrlBase + urlComplementar, _token);
             return listaDoacoes;
         }
+
+        public async Task<int> PostDoacaoItens(ItemDoacaoDoado novoIDD) 
+        {
+            string urlComplementar = string.Format("{0}", "/DoacaoItens");
+            return await _request.PostReturnIntTokenAsync(apiUrlBase + urlComplementar, novoIDD, _token);
+        }
     }
 }

@@ -18,5 +18,6 @@ namespace AjudaCertaApp.Models
         public Agenda Agenda { get; set; }
         public int AgendaId { get; set; }
         public double Dinheiro { get; set; }
+        public List<ItemDoacaoDoado> ItemDoacaoDoados { get; set; }
     }
 }

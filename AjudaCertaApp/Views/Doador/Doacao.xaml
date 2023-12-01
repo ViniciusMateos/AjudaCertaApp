@@ -201,7 +201,6 @@
 
 
 
-                    <!--FAZER PICKER-->
                     <Label
                         x:Name="lblTipoProduto"
                         IsVisible="true"

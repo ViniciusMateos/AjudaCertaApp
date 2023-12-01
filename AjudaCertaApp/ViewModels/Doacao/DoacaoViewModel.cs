@@ -1,4 +1,5 @@
 ﻿using AjudaCertaApp.Models;
+using AjudaCertaApp.Services.Doacoes;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,9 +11,12 @@ namespace AjudaCertaApp.ViewModels.Doacao
 {
     public class DoacaoViewModel : BaseViewModel
     {
+        private DoacaoService dService;
 
         public DoacaoViewModel() 
         {
+            string token = Preferences.Get("UsuarioToken", string.Empty);
+            dService = new DoacaoService(token);
             _ = ObterConteudoDoacao();
             _ = ObterTipoProduto();
             _ = ObterGenero();
@@ -21,6 +25,7 @@ namespace AjudaCertaApp.ViewModels.Doacao
 
         #region AtributosPropriedades
 
+        #region Pickers
         private ObservableCollection<ConteudoDoacao> listaConteudoDoacao;
         public ObservableCollection<ConteudoDoacao> ListaConteudoDoacao { 
             get { return listaConteudoDoacao; }
@@ -133,7 +138,80 @@ namespace AjudaCertaApp.ViewModels.Doacao
         }
         #endregion
 
+        private string nome;
+        public string Nome 
+        { 
+            get { return nome; }
+            set 
+            {
+                nome = value; OnPropertyChanged();
+            }
+        }
+
+        private string descricao;
+        public string Descricao
+        {
+            get { return descricao; }
+            set
+            {
+                descricao = value; OnPropertyChanged();
+            }
+        }
+
+        private DateTime dataValidade;
+        public DateTime DataValidade
+        {
+            get { return dataValidade; }
+            set
+            {
+                dataValidade = value; OnPropertyChanged();
+            }
+        }
+
+        private string medida;
+        public string Medida
+        {
+            get { return medida; }
+            set
+            {
+                medida = value; OnPropertyChanged();
+            }
+        }
+
+        private string condicao;
+        public string Condicao
+        {
+            get { return condicao; }
+            set
+            {
+                condicao = value; OnPropertyChanged();
+            }
+        }
+
+        private string tamanho;
+        public string Tamanho
+        {
+            get { return tamanho; }
+            set
+            {
+                tamanho = value; OnPropertyChanged();
+            }
+        }
+
+        private double valor;
+        public double Valor
+        {
+            get { return valor; }
+            set
+            {
+                valor = value; OnPropertyChanged();
+            }
+        }
+        #endregion
+
         #region Métodos
+
+        #region Pickers
         public async Task ObterConteudoDoacao()
         {
             try
@@ -193,6 +271,9 @@ namespace AjudaCertaApp.ViewModels.Doacao
                     .DisplayAlert("Ops", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
             }
         }
+        #endregion
+
+        
         #endregion
     }
 }

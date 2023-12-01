@@ -95,6 +95,9 @@
 	  <MauiXaml Update="Views\Beneficiario\BeneficiarioCadastro3.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Doador\AgendamentoConcluido.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Doador\AgendarDoacao.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

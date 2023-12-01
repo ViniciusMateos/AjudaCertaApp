@@ -8,131 +8,137 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AjudaCertaApp
-build_property.ProjectDir = C:\Projetos\AjudaCertaApp\AjudaCertaApp\
+build_property.ProjectDir = G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/App.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/AppShell.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/MainPage.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Resources/Styles/Colors.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Resources/Styles/Styles.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/Beneficiario/BeneficiarioCadastro1.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Beneficiario/BeneficiarioCadastro1.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Beneficiario.BeneficiarioCadastro1.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Beneficiario\BeneficiarioCadastro1.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Beneficiario\BeneficiarioCadastro1.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/Beneficiario/BeneficiarioCadastro2.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Beneficiario/BeneficiarioCadastro2.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Beneficiario.BeneficiarioCadastro2.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Beneficiario\BeneficiarioCadastro2.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Beneficiario\BeneficiarioCadastro2.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/Beneficiario/BeneficiarioCadastro3.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Beneficiario/BeneficiarioCadastro3.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Beneficiario.BeneficiarioCadastro3.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Beneficiario\BeneficiarioCadastro3.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Beneficiario\BeneficiarioCadastro3.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/Doador/AgendarDoacao.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Doador/AgendamentoConcluido.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Doador.AgendamentoConcluido.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Doador\AgendamentoConcluido.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Doador\AgendamentoConcluido.xaml
+
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Doador/AgendarDoacao.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Doador.AgendarDoacao.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Doador\AgendarDoacao.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Doador\AgendarDoacao.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/Doador/Doacao.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Doador/Doacao.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Doador.Doacao.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Doador\Doacao.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Doador\Doacao.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/Doador/DoadorCadastro1.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Doador/DoadorCadastro1.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Doador.DoadorCadastro1.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Doador\DoadorCadastro1.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Doador\DoadorCadastro1.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/Doador/DoadorCadastro2.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Doador/DoadorCadastro2.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Doador.DoadorCadastro2.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Doador\DoadorCadastro2.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Doador\DoadorCadastro2.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/Doador/DoadorCadastro3.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Doador/DoadorCadastro3.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Doador.DoadorCadastro3.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Doador\DoadorCadastro3.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Doador\DoadorCadastro3.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/Ong/PerfilOng.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Ong/PerfilOng.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Ong.PerfilOng.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Ong\PerfilOng.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Ong\PerfilOng.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/Ong/Post.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Ong/Post.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Ong.Post.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Ong\Post.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Ong\Post.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/Usuarios/CadastroEscolha.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Usuarios/CadastroEscolha.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Usuarios.CadastroEscolha.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\CadastroEscolha.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\CadastroEscolha.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/Usuarios/ChatLista.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Usuarios/ChatLista.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Usuarios.ChatLista.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\ChatLista.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\ChatLista.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/Usuarios/FeedView.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Usuarios/FeedView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Usuarios.FeedView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\FeedView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\FeedView.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/Usuarios/Inicial.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Usuarios/Inicial.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Usuarios.Inicial.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\Inicial.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\Inicial.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/Usuarios/Login.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Usuarios/Login.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Usuarios.Login.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\Login.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Usuarios\Login.xaml
 
-[C:/Projetos/AjudaCertaApp/AjudaCertaApp/Views/Usuarios/Perfil.xaml]
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Usuarios/Perfil.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Usuarios.Perfil.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Usuarios\Perfil.xaml

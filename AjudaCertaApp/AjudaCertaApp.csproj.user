@@ -17,6 +17,9 @@
     <MauiXaml Update="Views\Beneficiario\BeneficiarioCadastro3.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\Doador\AgendamentoConcluido.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\Doador\AgendarDoacao.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

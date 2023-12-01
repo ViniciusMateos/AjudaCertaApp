@@ -106,9 +106,9 @@
              />
 
                 <Grid>
-                    <picker:SfDateTimePicker x:Name="Picker"
+                        <picker:SfDateTimePicker x:Name="Picker"
                                          HeightRequest="300"
-                                         DateFormat="dd_MM_yyyy"
+                                         DateFormat="dd_MM"
                                          TimeFormat="H_mm"
                                          MinimumDate="2000/11/28 16:00:00"
                                          Mode="Dialog"
@@ -116,7 +116,7 @@
                                          CancelButtonClicked="Picker_CancelButtonClicked"
                                          OkButtonClicked="Picker_OkButtonClicked">
 
-                        <picker:SfDateTimePicker.SelectionView >
+                            <picker:SfDateTimePicker.SelectionView >
                             <picker:PickerSelectionView CornerRadius="10"
                                                     Stroke="#F5A24A" 
                                                     Padding="10, 5, 10, 5" 
@@ -126,8 +126,10 @@
 
 
                         <picker:SfDateTimePicker.HeaderView>
-                            <picker:DateTimePickerHeaderView Background="#D3D3D3"
-                                                             TimeFormat="H:mm"
+                                <picker:DateTimePickerHeaderView DividerColor="#F5A24A"
+                                                             Background="#D3D3D3"
+                                                             TimeFormat="HH:mm"
+                                                                 
                                                          >
 
                                 <picker:DateTimePickerHeaderView.TextStyle>

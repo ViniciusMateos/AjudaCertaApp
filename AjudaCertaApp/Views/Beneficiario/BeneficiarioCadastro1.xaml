@@ -194,7 +194,7 @@
                     ReserveSpaceForAssistiveLabels="False"
                     >
                 <DatePicker
-                    BindingContext="{Binding Datanasc}"/>
+                    Date="{Binding Datanasc}"/>
                 </sf:SfTextInputLayout>
             
                 <Label

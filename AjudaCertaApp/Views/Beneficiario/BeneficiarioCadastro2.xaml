@@ -116,6 +116,7 @@
                     BackgroundColor="#DF6234"
                     CornerRadius="10"
                     WidthRequest="120"
+                    Command="{Binding PreencherEnderecoCommand}"
                     HeightRequest="40"/>
 
             </Grid>

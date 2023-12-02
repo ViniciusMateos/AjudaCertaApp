@@ -15,33 +15,9 @@
             <RowDefinition Height=".9*"/>
         </Grid.RowDefinitions>
 
-        <BoxView
-            Grid.Row="0"
-            Color="#F5A24A"
-            CornerRadius="0,0,20,20"
-            BackgroundColor="Transparent"
-            />
-
-        <ImageButton
-            Grid.Column="0"
-            Source="setavoltar.svg"
-            HeightRequest="25"
-            Margin="4,0,0,0"
-            HorizontalOptions="Start"
-            Command="{Binding VoltarCommand}"
-        />
-
-        <Image 
-            Grid.Row="0"
-            
-            Source="logo_minimalista.svg"
-            HorizontalOptions="End"
-            BackgroundColor="Transparent"
-            Margin="0,5,10,5"/>
-
         <Grid
             Grid.Row="1"
-            Padding="20,50,20,20"
+            Padding="20,0,20,20"
             RowSpacing="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="30"/>

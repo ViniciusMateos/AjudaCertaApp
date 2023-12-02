@@ -4473,7 +4473,6 @@ C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\d
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconpost.png
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\postfoto.png
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
-G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\bin\Debug\net8.0-android\AjudaCertaApp.runtimeconfig.json
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\bin\Debug\net8.0-android\AjudaCertaApp.dll
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\bin\Debug\net8.0-android\AjudaCertaApp.pdb
@@ -5613,3 +5612,19 @@ C:\Projetos\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\s
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\iconcancelada.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\iconconfirmada.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\iconpendente.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\iconcancelada.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\iconconfirmada.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\iconpendente.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\iconcancelada.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\iconconfirmada.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\iconpendente.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\iconcancelada.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\iconconfirmada.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\iconpendente.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconcancelada.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconconfirmada.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconpendente.png

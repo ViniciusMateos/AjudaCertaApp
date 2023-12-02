@@ -77,7 +77,6 @@
             
         </Grid>
 
-        
         <!--PRODUTO-->
         <ScrollView
             Grid.Row="2"
@@ -118,6 +117,40 @@
                     >
                         <Editor
                         Text="{Binding Nome}"
+                        AutoSize="TextChanges"
+                        VerticalOptions="Start"                        
+                        />
+                    </sf:SfTextInputLayout>
+                </Grid>
+
+                <Grid
+                Grid.Row="1"
+                IsVisible="true"
+                    HeightRequest="90">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Label
+                    Text="Quantidade:"
+                    FontFamily="Inter"
+	                HorizontalTextAlignment="Start"
+                    VerticalTextAlignment="End"
+	                FontSize="14"
+                    Padding="5,0"
+	                TextColor="#FFFFFF"/>
+
+                    <sf:SfTextInputLayout 
+                    Grid.Row="1" 
+                    ContainerType="Outlined"
+                    OutlineCornerRadius="30"
+                    ContainerBackground="White"
+                    InputViewPadding="15,5,15,5"
+                    Stroke="#F5A24A"
+                    >
+                        <Editor
+                        Text="{Binding Quantidade}"
                         AutoSize="TextChanges"
                         VerticalOptions="Start"                        
                         />
@@ -295,7 +328,41 @@
                 </sf:SfTextInputLayout>
             </Grid>
 
-            <Grid
+                <Grid
+                Grid.Row="1"
+                IsVisible="true"
+                    HeightRequest="90">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Label
+                    Text="Quantidade:"
+                    FontFamily="Inter"
+	                HorizontalTextAlignment="Start"
+                    VerticalTextAlignment="End"
+	                FontSize="14"
+                    Padding="5,0"
+	                TextColor="#FFFFFF"/>
+
+                    <sf:SfTextInputLayout 
+                    Grid.Row="1" 
+                    ContainerType="Outlined"
+                    OutlineCornerRadius="30"
+                    ContainerBackground="White"
+                    InputViewPadding="15,5,15,5"
+                    Stroke="#F5A24A"
+                    >
+                        <Editor
+                        Text="{Binding Quantidade}"
+                        AutoSize="TextChanges"
+                        VerticalOptions="Start"                        
+                        />
+                    </sf:SfTextInputLayout>
+                </Grid>
+
+                <Grid
                 Grid.Row="2"
                 IsVisible="true"
                 HeightRequest="90">
@@ -462,8 +529,41 @@
                 </sf:SfTextInputLayout>
             </Grid>
 
-            
-            <Grid
+                <Grid
+                Grid.Row="1"
+                IsVisible="true"
+                    HeightRequest="90">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Label
+                    Text="Quantidade:"
+                    FontFamily="Inter"
+	                HorizontalTextAlignment="Start"
+                    VerticalTextAlignment="End"
+	                FontSize="14"
+                    Padding="5,0"
+	                TextColor="#FFFFFF"/>
+
+                    <sf:SfTextInputLayout 
+                    Grid.Row="1" 
+                    ContainerType="Outlined"
+                    OutlineCornerRadius="30"
+                    ContainerBackground="White"
+                    InputViewPadding="15,5,15,5"
+                    Stroke="#F5A24A"
+                    >
+                        <Editor
+                        Text="{Binding Quantidade}"
+                        AutoSize="TextChanges"
+                        VerticalOptions="Start"                        
+                        />
+                    </sf:SfTextInputLayout>
+                </Grid>
+
+                <Grid
                 Grid.Row="2"
                 IsVisible="true"
                 HeightRequest="90">
@@ -701,7 +801,41 @@
                 </sf:SfTextInputLayout>
             </Grid>
 
-            <Grid
+                <Grid
+                Grid.Row="1"
+                IsVisible="true"
+                    HeightRequest="90">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Label
+                    Text="Quantidade:"
+                    FontFamily="Inter"
+	                HorizontalTextAlignment="Start"
+                    VerticalTextAlignment="End"
+	                FontSize="14"
+                    Padding="5,0"
+	                TextColor="#FFFFFF"/>
+
+                    <sf:SfTextInputLayout 
+                    Grid.Row="1" 
+                    ContainerType="Outlined"
+                    OutlineCornerRadius="30"
+                    ContainerBackground="White"
+                    InputViewPadding="15,5,15,5"
+                    Stroke="#F5A24A"
+                    >
+                        <Editor
+                        Text="{Binding Quantidade}"
+                        AutoSize="TextChanges"
+                        VerticalOptions="Start"                        
+                        />
+                    </sf:SfTextInputLayout>
+                </Grid>
+
+                <Grid
                 Grid.Row="2"
                 IsVisible="true"
                 HeightRequest="90">
@@ -830,7 +964,7 @@
             Padding="40,0,40,20"
             >
             <VerticalStackLayout
-                >
+                Spacing="-15">
 
                 <Grid
                 Grid.Row="1"
@@ -899,17 +1033,26 @@
                     </sf:SfTextInputLayout>
                 </Grid>
 
+                <Grid
+                    Padding="0,20">
+                    <Button
+                        Grid.Row="4"
+                        FontSize="24"
+                        BackgroundColor="#DF6234"
+                        CornerRadius="20"
+                        WidthRequest="200"
+                        HeightRequest="50" 
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        />
 
-                <Button
-                Grid.Row="4"
-                Text="DOAR"
-                FontSize="24"
-                BackgroundColor="#DF6234"
-                CornerRadius="20"
-                WidthRequest="200"
-                HeightRequest="50" 
-                VerticalOptions="End"
-                />
+                    <Label
+                        Text="DOAR"
+                        TextColor="White"
+                        FontSize="Large"
+                        VerticalTextAlignment="Center"
+                        HorizontalOptions="Center"/>
+                </Grid>
             </VerticalStackLayout>
         </ScrollView>
 

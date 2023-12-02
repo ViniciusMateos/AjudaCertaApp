@@ -334,10 +334,8 @@ namespace AjudaCertaApp.ViewModels.Doacao
 
                 novoIdd.Doacao.Agenda = new();
                 novoIdd.Doacao.Agenda.Status = StatusDoacaoEnum.PENDENTE;
-                novoIdd.Doacao.Agenda.Pessoa = new();
-                novoIdd.Doacao.Agenda.Pessoa = await ps.GetPessoaPorId(1);
-                novoIdd.Doacao.Agenda.Endereco = new();
-                novoIdd.Doacao.Agenda.Endereco = await es.GetEnderecoAsync(1);
+                novoIdd.Doacao.Agenda.PessoaId = 1;
+                novoIdd.Doacao.Agenda.EnderecoId = 1;
 
                 novoIdd.ItemDoacao = new();
                 novoIdd.ItemDoacao.Nome = Nome;

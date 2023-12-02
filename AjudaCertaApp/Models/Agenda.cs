@@ -13,7 +13,9 @@ namespace AjudaCertaApp.Models
         public DateTime Data { get; set; }
         public StatusDoacaoEnum Status { get; set; }
         public Pessoa? Pessoa { get; set; }
+        public int PessoaId { get; set; }
         public Endereco? Endereco { get; set; }
+        public int EnderecoId { get; set; }
         public Doacao? Doacao { get; set; }
     }
 }

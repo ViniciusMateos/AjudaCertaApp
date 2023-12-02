@@ -1,5 +1,6 @@
 ﻿using AjudaCertaApp.Models;
 using AjudaCertaApp.Services.Posts;
+using Syncfusion.Maui.DataSource.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -27,6 +28,7 @@ namespace AjudaCertaApp.ViewModels.Posts
             try
             {
                 Posts = await pService.GetPostsAsync();
+                Posts = Posts.OrderByDescending(x => x.DataPostagem).ToObservableCollection();
                 OnPropertyChanged(nameof(Posts));
             }
             catch (Exception ex)

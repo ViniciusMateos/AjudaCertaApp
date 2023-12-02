@@ -32,7 +32,7 @@
     <MauiXaml Update="Views\Ong\PerfilOng.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\Ong\Post.xaml">
+    <MauiXaml Update="Views\Ong\PostView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\Usuarios\CadastroEscolha.xaml">

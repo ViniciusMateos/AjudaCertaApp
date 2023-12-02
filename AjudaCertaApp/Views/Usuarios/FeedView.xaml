@@ -2,17 +2,23 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:sf="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             xmlns:conv="clr-namespace:AjudaCertaApp.Converters"
              xmlns:syncfusion="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
              x:Class="AjudaCertaApp.Views.FeedView" 
              NavigationPage.HasNavigationBar="False"
              >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <conv:ByteArrayToImageSourceConverter x:Key="ByteArrayToImage" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ScrollView
         BackgroundColor="#F4DFC9">
         
         <StackLayout>
             <syncfusion:SfListView
                          x:Name="ListView"
-                         ItemsSource="logo_minimalista.svg"
+                         ItemsSource="{Binding Posts}"
                          ItemSpacing="5,0,0,0"
                         ItemSize="400">
                 <syncfusion:SfListView.ItemTemplate>
@@ -44,7 +50,7 @@
 
                                     <ImageButton
                                         Padding="5,0,5,0"
-                                        Source="postfoto.svg"
+                                        Source="{Binding Foto, Converter={StaticResource ByteArrayToImage}}"
                                         CornerRadius="15"
                                         />
 
@@ -61,10 +67,11 @@
                                     Grid.Row="2"
                                     Padding="15,0,15,15">
                                 <ScrollView
+                                    VerticalScrollBarVisibility="Never"
                                     Grid.Row="2"
                                     >
                                     <Label
-                                        Text="akdfjus fldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljlfbldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjljldsnalsfjklshalhfdlkghjklsdfhlvkfdhvjsklvhcjvlznbljvfxjlkvhjlxcvjlxbzljvhskvsadjvlkdfljkvjlcxbvjcbxvjlcvblxvljkcbzjlj"
+                                        Text="{Binding Conteudo}"
                                         TextColor="White"/>
 
                                 </ScrollView>

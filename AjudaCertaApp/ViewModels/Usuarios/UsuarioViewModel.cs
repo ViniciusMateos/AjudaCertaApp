@@ -661,13 +661,8 @@ namespace AjudaCertaApp.ViewModels.Usuarios
                         await Application.Current.MainPage
                             .DisplayAlert("Erro", "Falha", "Ok");
                     }
-                    else 
-                    {
-                        string mensagem = $"Bem-vindo(a) {p.Username}";
-
-                        await Application.Current.MainPage
-                        .DisplayAlert("Informação", mensagem, "Ok");
-
+                    else
+                    { 
                         Application.Current.MainPage = new AppShell(p);
                     }
                 }

@@ -67,7 +67,7 @@
               x:Name="btnPostar"
               Icon="iconpost.svg"
               FlyoutIcon="iconpost.svg"
-              ContentTemplate="{DataTemplate viewsOng:Post}"/>
+              ContentTemplate="{DataTemplate viewsOng:PostView}"/>
 
         <ShellContent Title="Chat"
               Icon="footerchat.svg"

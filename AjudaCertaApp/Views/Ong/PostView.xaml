@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AjudaCertaApp.Views.Ong.Post"
+             x:Class="AjudaCertaApp.Views.Ong.PostView"
              NavigationPage.HasNavigationBar="False"
              Title="Post">
     
@@ -30,7 +30,8 @@
                             BackgroundColor="#F5A24A"
                             CornerRadius="20"
                             WidthRequest="60"
-                            HeightRequest="60"       
+                            HeightRequest="60"   
+                            Command="{Binding FotografarCommand}"
                             />
                         <Image
                             Source="iconcamera.svg"
@@ -47,7 +48,8 @@
                             BackgroundColor="#F5A24A"
                             CornerRadius="20"
                             WidthRequest="60"
-                            HeightRequest="60"       
+                            HeightRequest="60"
+                            Command="{Binding AbrirGaleriaCommand}"
                             />
                         <Image
                             Source="icongaleria.svg"
@@ -64,15 +66,16 @@
                 HeightRequest="450"
                 WidthRequest="350"
                 >
-                <BoxView
-                    Color="Blue"/>
-                <Image
+
+                <Image Source="{Binding FonteImagem}"
+                       Margin="10"
                     />
             </Grid>
 
             <Grid>
                 <Button
                     WidthRequest="200"
+                    Command="{Binding DirecionarCompartilharCommand}"
                     BackgroundColor="#DF6234"/>
                 <Label
                     Text="Selecionar"

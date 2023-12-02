@@ -188,7 +188,7 @@
 
             <Button
                     Margin="0,50"
-                    Grid.Row="4"
+                    Grid.Row="3"
                     Text="Concluir"
                     FontSize="24"
                     HorizontalOptions="Center"
@@ -196,7 +196,8 @@
                     BackgroundColor="#DF6234"
                     CornerRadius="20"
                     WidthRequest="200"
-                    HeightRequest="50"       
+                    HeightRequest="50"
+                    Command="{Binding DoarItensCommand}"
                     />
 
         </Grid>

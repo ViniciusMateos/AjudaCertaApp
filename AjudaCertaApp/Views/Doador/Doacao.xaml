@@ -117,7 +117,7 @@
                     Stroke="#F5A24A"
                     >
                         <Editor
-                       
+                        Text="{Binding Nome}"
                         AutoSize="TextChanges"
                         VerticalOptions="Start"                        
                         />
@@ -152,7 +152,8 @@
                 >
                         <Editor
                     AutoSize="TextChanges"
-                    VerticalOptions="Start"                        
+                    VerticalOptions="Start"
+                            Text="{Binding Descricao}"
                     />
                     </sf:SfTextInputLayout>
                 </Grid>
@@ -196,7 +197,7 @@
                         >
                         <DatePicker
                     VerticalOptions="Center"
-                Date="{Binding Datanasc}"/>
+                Date="{Binding DataValidade}"/>
                     </sf:SfTextInputLayout>
 
 
@@ -245,7 +246,7 @@
                     CornerRadius="20"
                     WidthRequest="200"
                     HeightRequest="50"       
-                    Command="{Binding AutenticarPessoaCommand}"
+                    Command="{Binding DirecionarAgendamentoCommand}"
                     />
 
             </VerticalStackLayout>
@@ -288,7 +289,8 @@
                     >
                     <Editor
                         AutoSize="TextChanges"
-                        VerticalOptions="Start"                        
+                        VerticalOptions="Start"
+                        Text="{Binding Nome}"
                         />
                 </sf:SfTextInputLayout>
             </Grid>
@@ -321,7 +323,8 @@
                     >
                     <Editor
                         AutoSize="TextChanges"
-                        VerticalOptions="Start"                        
+                        VerticalOptions="Start"
+                        Text="{Binding Descricao}"
                         />
                 </sf:SfTextInputLayout>
             </Grid>
@@ -366,7 +369,8 @@
                     >
                     <Editor
                         AutoSize="TextChanges"
-                        VerticalOptions="Start" />
+                        VerticalOptions="Start"
+                        Text="{Binding Medida}"/>
                 </sf:SfTextInputLayout>
 
 
@@ -394,7 +398,8 @@
                     >
                     <Editor
                         AutoSize="TextChanges"
-                        VerticalOptions="Start" />
+                        VerticalOptions="Start"
+                        Text="{Binding Condicao}"/>
                 </sf:SfTextInputLayout>
 
             </Grid>
@@ -409,7 +414,7 @@
                 WidthRequest="200"
                 HeightRequest="50" 
                 VerticalOptions="End"
-                Command="{Binding AutenticarPessoaCommand}"
+                Command="{Binding DirecionarAgendamentoCommand}"
                 />
             </StackLayout>
         </ScrollView>
@@ -451,7 +456,8 @@
                     >
                     <Editor
                         AutoSize="TextChanges"
-                        VerticalOptions="Start"                        
+                        VerticalOptions="Start"
+                        Text="{Binding Nome}"
                         />
                 </sf:SfTextInputLayout>
             </Grid>
@@ -485,7 +491,8 @@
                     >
                     <Editor
                         AutoSize="TextChanges"
-                        VerticalOptions="Start"                        
+                        VerticalOptions="Start"
+                        Text="{Binding Descricao}"
                         />
                 </sf:SfTextInputLayout>
             </Grid>
@@ -528,7 +535,8 @@
                     >
                     <Editor
                         AutoSize="TextChanges"
-                        VerticalOptions="Start" />
+                        VerticalOptions="Start" 
+                        Text="{Binding Tamanho}"/>
                 </sf:SfTextInputLayout>
 
 
@@ -555,7 +563,8 @@
                     >
                     <Editor
                         AutoSize="TextChanges"
-                        VerticalOptions="Start" />
+                        VerticalOptions="Start"
+                        Text="{Binding Condicao}"/>
                 </sf:SfTextInputLayout>
 
             </Grid>
@@ -643,6 +652,7 @@
                 WidthRequest="200"
                 HeightRequest="50" 
                 VerticalOptions="End"
+                Command="{Binding DirecionarAgendamentoCommand}"
                 />
             </VerticalStackLayout>
         </ScrollView>
@@ -685,7 +695,8 @@
                     >
                     <Editor
                         AutoSize="TextChanges"
-                        VerticalOptions="Start"                        
+                        VerticalOptions="Start"
+                        Text="{Binding Nome}"
                         />
                 </sf:SfTextInputLayout>
             </Grid>
@@ -718,7 +729,8 @@
                     >
                     <Editor
                         AutoSize="TextChanges"
-                        VerticalOptions="Start"                        
+                        VerticalOptions="Start"
+                        Text="{Binding Descricao}"
                         />
                 </sf:SfTextInputLayout>
             </Grid>
@@ -761,7 +773,8 @@
                     >
                     <Editor
                         AutoSize="TextChanges"
-                        VerticalOptions="Start" />
+                        VerticalOptions="Start"
+                        Text="{Binding Medida}"/>
                 </sf:SfTextInputLayout>
 
 
@@ -787,6 +800,7 @@
                     Stroke="#F5A24A"
                     >
                     <Editor
+                        Text="{Binding Condicao}"
                         AutoSize="TextChanges"
                         VerticalOptions="Start" />
                 </sf:SfTextInputLayout>
@@ -803,6 +817,7 @@
                 WidthRequest="200"
                 HeightRequest="50" 
                 VerticalOptions="End"
+                Command="{Binding DirecionarAgendamentoCommand}"
                 />
             </VerticalStackLayout>
         </ScrollView>
@@ -936,20 +951,22 @@
                         >
                         <Editor
                             AutoSize="TextChanges"
-                            VerticalOptions="Start"                        
+                            VerticalOptions="Start"       
+                            Text="{Binding Quantidade}"
                             />
                     </sf:SfTextInputLayout>
                 </Grid>
 
                 <Button
                     Grid.Row="4"
-                    Text="DOAR"
+                    Text="AGENDAR"
                     FontSize="24"
                     BackgroundColor="#DF6234"
                     CornerRadius="20"
                     WidthRequest="200"
                     HeightRequest="50" 
                     VerticalOptions="End"
+                    Command="{Binding DirecionarAgendamentoCommand}"
                     />
             </VerticalStackLayout>
         </ScrollView>

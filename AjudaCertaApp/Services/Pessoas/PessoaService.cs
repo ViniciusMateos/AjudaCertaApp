@@ -41,5 +41,13 @@ namespace AjudaCertaApp.Services.Pessoas
             return p;
         }
 
+        public async Task<Pessoa> GetPessoaPorId(int pessoaId)
+        {
+            string urlComplementar = string.Format("/{0}", pessoaId);
+            Pessoa p = await _request.GetAsync<Pessoa>(apiUrlBase + urlComplementar, _token);
+
+            return p;
+        }
+
     }
 }

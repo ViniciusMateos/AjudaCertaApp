@@ -14,10 +14,10 @@ namespace AjudaCertaApp.Models
         public StatusDoacaoEnum StatusDoacao { get; set; }
         public TipoDoacaoEnum TipoDoacao { get; set; }
         public StatusDoacaoEnum IdDoacaoOrigem { get; set; }
-        public Pessoa Pessoa { get; set; }
-        public Agenda Agenda { get; set; }
+        public Pessoa? Pessoa { get; set; }
+        public Agenda? Agenda { get; set; }
         public int AgendaId { get; set; }
         public double Dinheiro { get; set; }
-        public List<ItemDoacaoDoado> ItemDoacaoDoados { get; set; }
+        public List<ItemDoacaoDoado>? ItemDoacaoDoados { get; set; }
     }
 }

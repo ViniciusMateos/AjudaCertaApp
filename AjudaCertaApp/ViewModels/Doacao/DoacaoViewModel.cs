@@ -1,17 +1,25 @@
 ﻿using AjudaCertaApp.Models;
+using AjudaCertaApp.Models.Enuns;
 using AjudaCertaApp.Services.Doacoes;
+using AjudaCertaApp.Services.Enderecos;
+using AjudaCertaApp.Services.Pessoas;
+using AjudaCertaApp.Views.Doador;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace AjudaCertaApp.ViewModels.Doacao
 {
     public class DoacaoViewModel : BaseViewModel
     {
         private DoacaoService dService;
+        private ItemDoacaoDoado idd;
+        public ICommand DirecionarAgendamentoCommand { get; set; }
+        public ICommand DoarItensCommand { get; set; }
 
         public DoacaoViewModel() 
         {
@@ -21,6 +29,21 @@ namespace AjudaCertaApp.ViewModels.Doacao
             _ = ObterTipoProduto();
             _ = ObterGenero();
             _ = ObterFaixaEtaria();
+            InicializarCommands();
+        }
+
+        public DoacaoViewModel(ItemDoacaoDoado aDoar)
+        {
+            string token = Preferences.Get("UsuarioToken", string.Empty);
+            dService = new DoacaoService(token);
+            idd = aDoar;
+            InicializarCommands();
+        }
+
+        public void InicializarCommands()
+        {
+            DirecionarAgendamentoCommand = new Command(async () => await DirecionarParaAgendamento());
+            DoarItensCommand = new Command(async () => await DoarItens());
         }
 
         #region AtributosPropriedades
@@ -207,6 +230,26 @@ namespace AjudaCertaApp.ViewModels.Doacao
                 valor = value; OnPropertyChanged();
             }
         }
+
+        private string quantidade;
+        public string Quantidade
+        {
+            get { return quantidade; }
+            set
+            {
+                quantidade = value; OnPropertyChanged();
+            }
+        }
+
+        private DateTime dataAgenda;
+        public DateTime DataAgenda 
+        {
+            get { return dataAgenda; }
+            set
+            {
+                dataAgenda = value; OnPropertyChanged();
+            }
+        }
         #endregion
 
         #region Métodos
@@ -273,7 +316,104 @@ namespace AjudaCertaApp.ViewModels.Doacao
         }
         #endregion
 
-        
+        public async Task DirecionarParaAgendamento()
+        {
+            try
+            {
+                ItemDoacaoDoado novoIdd = new ItemDoacaoDoado();
+
+                string token = Preferences.Get("UsuarioToken", string.Empty);
+                PessoaService ps = new PessoaService(token);
+                EnderecoService es = new EnderecoService(token);
+
+                novoIdd.Doacao = new();
+                novoIdd.Doacao.Pessoa = new Pessoa();
+                novoIdd.Doacao.Pessoa = await ps.GetPessoaPorUsuarioAsync();
+                novoIdd.Doacao.Data = DateTime.Now;
+                novoIdd.Doacao.StatusDoacao = StatusDoacaoEnum.PENDENTE;
+
+                novoIdd.Doacao.Agenda = new();
+                novoIdd.Doacao.Agenda.Status = StatusDoacaoEnum.PENDENTE;
+                novoIdd.Doacao.Agenda.Pessoa = new();
+                novoIdd.Doacao.Agenda.Pessoa = await ps.GetPessoaPorId(1);
+                novoIdd.Doacao.Agenda.Endereco = new();
+                novoIdd.Doacao.Agenda.Endereco = await es.GetEnderecoAsync(1);
+
+                novoIdd.ItemDoacao = new();
+                novoIdd.ItemDoacao.Nome = Nome;
+                novoIdd.ItemDoacao.Descricao = Descricao;
+                novoIdd.ItemDoacao.Quantidade = 1;
+                if (ConteudoDoacaoSelecionado.Id == 1)
+                {
+                    novoIdd.ItemDoacao.TipoItem = (TipoItemEnum)ConteudoDoacaoSelecionado.Id;
+                    novoIdd.ItemDoacao.Produtos = new();
+                    novoIdd.ItemDoacao.Produtos.Add(new Produto() { Validade = Convert.ToDateTime(DataValidade), StatusItem = Models.Enuns.StatusItemEnum.DISPONIVEL, TipoProduto = (TipoProdutoEnum)TipoProdutoSelecionado.Id });
+                }
+                else if (ConteudoDoacaoSelecionado.Id == 2)
+                {
+                    novoIdd.ItemDoacao.TipoItem = (TipoItemEnum)ConteudoDoacaoSelecionado.Id;
+                    novoIdd.ItemDoacao.Mobilias = new();
+                    novoIdd.ItemDoacao.Mobilias.Add(new Mobilia() { Medida = Medida, Condicao = Condicao, StatusItem = StatusItemEnum.DISPONIVEL });
+                }
+                else if (ConteudoDoacaoSelecionado.Id == 3)
+                {
+                    novoIdd.ItemDoacao.TipoItem = (TipoItemEnum)ConteudoDoacaoSelecionado.Id;
+                    novoIdd.ItemDoacao.Roupas = new();
+                    novoIdd.ItemDoacao.Roupas.Add(new Roupa() { Condicao = Condicao, StatusItem = StatusItemEnum.DISPONIVEL, Tamanho = Tamanho, Genero = (GeneroEnum)listaGeneroSelecionado.Id, FaixaEtaria = (FaixaEtariaEnum)FxEtariaSelecionado.Id  });
+                }
+                else if (ConteudoDoacaoSelecionado.Id == 4)
+                {
+                    novoIdd.ItemDoacao.TipoItem = (TipoItemEnum)ConteudoDoacaoSelecionado.Id;
+                    novoIdd.ItemDoacao.Eletrodomesticos = new();
+                    novoIdd.ItemDoacao.Eletrodomesticos.Add(new Eletrodomestico() { Condicao = Condicao, Medida = Medida, StatusItem = StatusItemEnum.INDISPONIVEL });
+                }
+                else if(ConteudoDoacaoSelecionado.Id == 5)
+                {
+                    novoIdd.ItemDoacao.Nome = "Cesta Básica";
+                    novoIdd.ItemDoacao.Descricao = string.Empty;
+                    novoIdd.ItemDoacao.TipoItem = TipoItemEnum.PRODUTO;
+                    novoIdd.ItemDoacao.Quantidade = Convert.ToInt32(Quantidade);
+                    novoIdd.ItemDoacao.Produtos = new();
+                    novoIdd.ItemDoacao.Produtos.Add(new Produto() { Validade = DateTime.MaxValue, StatusItem = Models.Enuns.StatusItemEnum.DISPONIVEL, TipoProduto = TipoProdutoEnum.CESTA_BASICA });
+                }
+
+                await Application.Current.MainPage
+                    .Navigation.PushAsync(new AgendarDoacao(novoIdd));
+                    
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Informação", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
+        public async Task DoarItens() 
+        {
+            try
+            {
+                if(DataAgenda < DateTime.Now)
+                    await Application.Current.MainPage
+                    .DisplayAlert("Erro", "Não é possível agendar doações em datas inválidas.", "Ok");
+
+                ItemDoacaoDoado aDoar = idd;
+                aDoar.Doacao.Agenda.Data = DataAgenda;
+
+                int idDoacao = await dService.PostDoacaoItens(aDoar);
+                if(idDoacao != 0)
+                {
+                    await Application.Current.MainPage.Navigation.PushAsync(new AgendamentoConcluido());
+                }
+                else
+                    await Application.Current.MainPage
+                    .DisplayAlert("Erro", "Tente novamente mais tarde.", "Ok");
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Informação", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
         #endregion
     }
 }

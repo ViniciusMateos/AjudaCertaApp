@@ -11,7 +11,7 @@ namespace AjudaCertaApp.Services.Posts
     public class PostService : Request
     {
         private readonly Request _request;
-        private const string apiUrlBase = "http://fuscatcc.somee.com/ApiAjudaCerta/Posts";
+        private const string apiUrlBase = "http://ajudacerta-001-site1.anytempurl.com/Posts";
         private string _token;
 
         public PostService(string token)

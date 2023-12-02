@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AjudaCertaApp.Views.Ong.compartilharPost"
+             NavigationPage.HasNavigationBar="False"
+             Title="compartilharPost">
+
+    <ScrollView
+        BackgroundColor="#F5A24A"
+        Padding="20,60,20,0"
+        VerticalScrollBarVisibility="Never">
+
+        <VerticalStackLayout
+            >
+            <Label
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                FontSize="Title"
+                TextColor="White"
+                Text="Compartilhar"
+                FontAttributes="Bold"
+                />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

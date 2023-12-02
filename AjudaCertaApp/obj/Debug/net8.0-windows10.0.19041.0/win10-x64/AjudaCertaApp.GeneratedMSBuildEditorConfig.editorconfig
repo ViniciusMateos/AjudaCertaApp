@@ -96,6 +96,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Doador
 build_metadata.AdditionalFiles.TargetPath = Views\Doador\DoadorCadastro3.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Doador\DoadorCadastro3.xaml
 
+[G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Ong/compartilharPost.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Ong.compartilharPost.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Ong\compartilharPost.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Ong\compartilharPost.xaml
+
 [G:/Vinicin/AjudaCertaTCC/AjudaCertaApp/AjudaCertaApp/Views/Ong/PerfilOng.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AjudaCertaApp.Views.Ong.PerfilOng.xaml

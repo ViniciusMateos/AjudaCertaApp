@@ -26,6 +26,9 @@
     <MauiXaml Update="Views\Doador\Doacao.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\Ong\compartilharPost.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\Ong\PerfilOng.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

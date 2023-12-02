@@ -104,6 +104,9 @@
 	  <MauiXaml Update="Views\Doador\Doacao.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Ong\compartilharPost.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Ong\PerfilOng.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

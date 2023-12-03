@@ -41,7 +41,8 @@
 
                     <VerticalStackLayout Padding="10,0,0,0" Spacing="0">
 
-                        <Label x:Name="lblUsuario" FontAttributes="Bold" FontSize="Medium" />
+                        <Label x:Name="lblUsuario" Text="{Binding Username}" FontAttributes="Bold" FontSize="Medium" />
+                        <!-- fazer tipo do usuario aqui <Label Text="{Binding Username}"  FontSize="Small" />-->
                     </VerticalStackLayout>
                 </FlexLayout>
             </Grid>

@@ -1,13 +1,17 @@
 ﻿using AjudaCertaApp.Models;
+using AjudaCertaApp.ViewModels;
 
 namespace AjudaCertaApp
 {
     public partial class AppShell : Shell
     {
         Pessoa pessoaLogada;
+        AppShellViewModel viewModel;
         public AppShell(Pessoa pessoalogada)
         {
             InitializeComponent();
+            viewModel = new AppShellViewModel();
+            BindingContext = viewModel;
             pessoaLogada = pessoalogada;
             
             if(pessoaLogada.Tipo == Models.Enuns.TipoPessoaEnum.ONG) 

@@ -17,10 +17,11 @@
         
         <StackLayout>
             <syncfusion:SfListView
-                         x:Name="ListView"
-                         ItemsSource="{Binding Posts}"
-                         ItemSpacing="5,0,0,0"
-                        ItemSize="400">
+                x:Name="ListView"
+                ItemsSource="{Binding Posts}"
+                ItemSpacing="5,0,0,0"
+                ItemSize="500"               
+                        >
                 <syncfusion:SfListView.ItemTemplate>
                     <DataTemplate>
 

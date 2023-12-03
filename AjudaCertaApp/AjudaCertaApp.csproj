@@ -116,6 +116,9 @@
 	  <MauiXaml Update="Views\Ong\PostView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Usuarios\AlterarFotoPerfil.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Usuarios\CadastroEscolha.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

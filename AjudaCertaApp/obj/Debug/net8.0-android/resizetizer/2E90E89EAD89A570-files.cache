@@ -4,6 +4,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\footerhome.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\footermais.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\footerperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\fotoperfil.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\fotoperfilteste.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\iconbeneficiario.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\iconcamera.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\iconcancelada.png
@@ -22,6 +23,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\footerhome.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\footermais.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\footerperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\fotoperfil.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\fotoperfilteste.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\iconbeneficiario.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\iconcamera.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\iconcancelada.png
@@ -40,6 +42,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\footerhome.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\footermais.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\footerperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\fotoperfil.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\fotoperfilteste.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\iconbeneficiario.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\iconcamera.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\iconcancelada.png
@@ -58,6 +61,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\footerhome.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\footermais.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\footerperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\fotoperfil.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\fotoperfilteste.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\iconbeneficiario.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\iconcamera.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\iconcancelada.png
@@ -76,6 +80,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\footerhome.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\footermais.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\footerperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\fotoperfil.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\fotoperfilteste.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconbeneficiario.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconcamera.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconcancelada.png

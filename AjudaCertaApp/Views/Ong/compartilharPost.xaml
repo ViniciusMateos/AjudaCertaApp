@@ -8,7 +8,7 @@
 
     <ScrollView
         BackgroundColor="#F5A24A"
-        Padding="20,60,20,0"
+        Padding="20,20,20,0"
         VerticalScrollBarVisibility="Never">
 
         <VerticalStackLayout

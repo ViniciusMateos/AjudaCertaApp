@@ -3,6 +3,7 @@
     x:Class="AjudaCertaApp.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:avatarview="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
     xmlns:local="clr-namespace:AjudaCertaApp"
     xmlns:views="clr-namespace:AjudaCertaApp.Views"
     xmlns:viewsDoador="clr-namespace:AjudaCertaApp.Views.Doador"
@@ -33,11 +34,22 @@
 
                 <FlexLayout Grid.Row="0" Direction="Row" AlignItems="Center" >
 
-                    <Frame Padding="0" CornerRadius="40"
-                            HeightRequest="80" WidthRequest="80" 
-                           Margin="5">
-                        <Image Source="logo_minimalista.svg"/>
-                    </Frame>
+                    <Grid
+                        Padding="5,0">
+                        <avatarview:SfAvatarView 
+                           ContentType="Custom"
+                           ImageSource="fotoperfilteste.svg"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"   
+                           HeightRequest="100"
+                           WidthRequest="100"
+                           CornerRadius="50" />
+
+                        <Button
+                            CornerRadius="50"
+                            BackgroundColor="Transparent"
+                            />
+                    </Grid>
 
                     <VerticalStackLayout Padding="10,0,0,0" Spacing="0">
 

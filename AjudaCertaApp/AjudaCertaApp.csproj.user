@@ -35,6 +35,9 @@
     <MauiXaml Update="Views\Ong\PostView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\Usuarios\AlterarFotoPerfil.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\Usuarios\CadastroEscolha.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

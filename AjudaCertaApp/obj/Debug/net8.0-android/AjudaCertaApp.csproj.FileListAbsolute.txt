@@ -5611,7 +5611,6 @@ C:\Projetos\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\s
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
-G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\iconcancelada.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\iconconfirmada.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\iconpendente.png
@@ -5673,3 +5672,9 @@ C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\jni_rem
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\app_shared_libraries\armeabi-v7a\libxamarin-app.so
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\app_shared_libraries\x86\libxamarin-app.so
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\fotoperfilteste.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\fotoperfilteste.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\fotoperfilteste.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\fotoperfilteste.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\fotoperfilteste.png

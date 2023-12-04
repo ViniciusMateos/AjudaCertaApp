@@ -9,6 +9,7 @@
     xmlns:conv="clr-namespace:AjudaCertaApp.Converters"
     xmlns:viewsDoador="clr-namespace:AjudaCertaApp.Views.Doador"
     xmlns:viewsUsuarios="clr-namespace:AjudaCertaApp.Views.Usuarios"
+    xmlns:viewsBenefiario="clr-namespace:AjudaCertaApp.Views.Beneficiario"
     xmlns:viewsOng="clr-namespace:AjudaCertaApp.Views.Ong"
     Title="AjudaCertaApp"
     Shell.BackgroundColor="#F5A24A"
@@ -77,11 +78,18 @@
                       FlyoutItemIsVisible="True"
                       FlyoutIcon="footerhome.svg"
                       ContentTemplate="{DataTemplate views:FeedView}"/>
+        
         <ShellContent Title="Doar"
                       x:Name="BtnDoar"
                       Icon="footercifrao.svg"
                       FlyoutIcon="footercifrao.svg"
                       ContentTemplate="{DataTemplate viewsDoador:Doacao}"/>
+
+        <ShellContent Title="Reservar"
+                      x:Name="BtnReservar"
+                      Icon="iconreservar.svg"
+                      FlyoutIcon="iconreservar.svg"
+                      ContentTemplate="{DataTemplate viewsBenefiario:ReservarDoacao}"/>
 
         <ShellContent Title="Postar"
               x:Name="btnPostar"

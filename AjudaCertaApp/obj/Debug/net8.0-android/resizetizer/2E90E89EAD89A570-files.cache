@@ -4,7 +4,6 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\footerhome.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\footermais.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\footerperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\fotoperfil.png
-obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\fotoperfilteste.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\iconbeneficiario.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\iconcamera.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\iconcancelada.png
@@ -13,8 +12,9 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\icondoador.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\icongaleria.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\iconpendente.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\iconpost.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\iconreservar.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\lapisperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\logo_minimalista.png
-obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\postfoto.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\setabotao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\setavoltar.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\footerchat.png
@@ -23,7 +23,6 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\footerhome.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\footermais.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\footerperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\fotoperfil.png
-obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\fotoperfilteste.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\iconbeneficiario.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\iconcamera.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\iconcancelada.png
@@ -32,8 +31,9 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\icondoador.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\icongaleria.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\iconpendente.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\iconpost.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\iconreservar.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\lapisperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\logo_minimalista.png
-obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\postfoto.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\setabotao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\setavoltar.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\footerchat.png
@@ -42,7 +42,6 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\footerhome.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\footermais.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\footerperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\fotoperfil.png
-obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\fotoperfilteste.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\iconbeneficiario.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\iconcamera.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\iconcancelada.png
@@ -51,8 +50,9 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\icondoador.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\icongaleria.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\iconpendente.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\iconpost.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\iconreservar.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\lapisperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\logo_minimalista.png
-obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\postfoto.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\setabotao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\setavoltar.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\footerchat.png
@@ -61,7 +61,6 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\footerhome.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\footermais.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\footerperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\fotoperfil.png
-obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\fotoperfilteste.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\iconbeneficiario.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\iconcamera.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\iconcancelada.png
@@ -70,8 +69,9 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\icondoador.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\icongaleria.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\iconpendente.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\iconpost.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\iconreservar.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\lapisperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\logo_minimalista.png
-obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\postfoto.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\setabotao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\setavoltar.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\footerchat.png
@@ -80,7 +80,6 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\footerhome.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\footermais.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\footerperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\fotoperfil.png
-obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\fotoperfilteste.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconbeneficiario.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconcamera.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconcancelada.png
@@ -89,8 +88,9 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\icondoador.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\icongaleria.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconpendente.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconpost.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconreservar.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\lapisperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\logo_minimalista.png
-obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\postfoto.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\setabotao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\setavoltar.png
 obj\Debug\net8.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml

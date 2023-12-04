@@ -33,11 +33,25 @@
                            WidthRequest="100"
                            CornerRadius="50" />
 
-                        <Button
+                        <Grid
+                            HorizontalOptions="End"
+                            VerticalOptions="End"
+                            HeightRequest="30"
+                            WidthRequest="30">
+                            <Button
                             CornerRadius="50"
-                            BackgroundColor="Transparent"
+                            HeightRequest="30"
+                            WidthRequest="30"
+                            VerticalOptions="End"
+                            HorizontalOptions="End"
+                            BackgroundColor="#F5A24A"
                             Command="{Binding AlterarFotoCommand}"
                             />
+
+                            <Image
+                                Source="lapisperfil.svg"
+                                WidthRequest="20"/>
+                        </Grid>
                     </Grid>
 
                     <Grid>
@@ -60,6 +74,11 @@
 
                     </Grid>
                 </HorizontalStackLayout>
+            </Grid>
+
+            <Grid>
+                <Label
+                    Text="Ong fundada em 2010 com a missão de ajudar pessoas atráves de doações de alimentos, eletrodomésticos, roupas, entre outros itens básicos."/>
             </Grid>
 
             <HorizontalStackLayout
@@ -145,12 +164,8 @@
                         <DataTemplate>
 
                             <Grid
-                            Padding="0,10,0,0"
+                            Padding="40,10,40,0"
                                 ColumnSpacing="10">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition/>
-                                    <ColumnDefinition/>
-                                </Grid.ColumnDefinitions>
 
                                 <BoxView
                                 Color="#F5AF66"
@@ -593,7 +608,7 @@
                                     <Grid
                                         IsVisible="false"
                                         Grid.Column="0"
-                                        Padding="5,0,0,15"
+                                        Padding="10,0,0,15"
                                         >
                                         <HorizontalStackLayout
                                             Spacing="4"
@@ -612,7 +627,7 @@
                                     <Grid
                                         IsVisible="true"
                                         Grid.Column="0"
-                                        Padding="5,0,0,15"
+                                        Padding="10,0,0,15"
                                         >
                                         <HorizontalStackLayout
                                             Spacing="4"
@@ -632,7 +647,7 @@
                                     <Grid
                                         IsVisible="false"
                                         Grid.Column="0"
-                                        Padding="5,0,0,15"
+                                        Padding="10,0,0,15"
                                         >
                                         <HorizontalStackLayout
                                             Spacing="4"

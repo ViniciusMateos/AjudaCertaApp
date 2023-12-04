@@ -8,6 +8,9 @@
     <DefaultDevice>pixel_5_-_api_33</DefaultDevice>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="Views\Beneficiario\AgendarRetirada.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\Beneficiario\BeneficiarioCadastro1.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
@@ -15,6 +18,9 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\Beneficiario\BeneficiarioCadastro3.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\Beneficiario\ReservarDoacao.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\Doador\AgendamentoConcluido.xaml">

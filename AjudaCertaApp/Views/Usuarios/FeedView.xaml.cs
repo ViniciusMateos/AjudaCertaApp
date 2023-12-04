@@ -12,4 +12,9 @@ public partial class FeedView : ContentPage
 		viewModel = new ListagemPostViewModel();
 		BindingContext = viewModel;
 	}
+
+    private void SwipeGestureRecognizer_Swiped(object sender, SwipedEventArgs e)
+    {
+			viewModel.ObterPosts();
+    }
 }

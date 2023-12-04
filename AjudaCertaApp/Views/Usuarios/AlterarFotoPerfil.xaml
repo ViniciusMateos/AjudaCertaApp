@@ -2,9 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AjudaCertaApp.Views.Usuarios.AlterarFotoPerfil"
+             xmlns:conv="clr-namespace:AjudaCertaApp.Converters"
              Title="AlterarFotoPerfil"
              NavigationPage.HasNavigationBar="False">
-
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <conv:ByteArrayToImageSourceConverter x:Key="ByteArrayToImage" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ScrollView
         BackgroundColor="#F4DFC9"
         Padding="20,60,20,0"
@@ -76,10 +81,10 @@
             <Grid>
                 <Button
                     WidthRequest="200"
-                    Command="{Binding DirecionarCompartilharCommand}"
+                    Command="{Binding SalvarImagemCommand}"
                     BackgroundColor="#DF6234"/>
                 <Label
-                    Text="Selecionar"
+                    Text="Alterar"
                     FontSize="Medium"
                     FontAttributes="Bold"
                     TextColor="White"

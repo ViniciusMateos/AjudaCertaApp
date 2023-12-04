@@ -14,6 +14,10 @@
     </ContentPage.Resources>
     <ScrollView
         BackgroundColor="#F4DFC9">
+
+        <ScrollView.GestureRecognizers>
+            <SwipeGestureRecognizer Direction="Down" Swiped="SwipeGestureRecognizer_Swiped" />
+        </ScrollView.GestureRecognizers>
         
         <StackLayout>
             <syncfusion:SfListView

@@ -6,6 +6,7 @@
     xmlns:avatarview="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
     xmlns:local="clr-namespace:AjudaCertaApp"
     xmlns:views="clr-namespace:AjudaCertaApp.Views"
+    xmlns:conv="clr-namespace:AjudaCertaApp.Converters"
     xmlns:viewsDoador="clr-namespace:AjudaCertaApp.Views.Doador"
     xmlns:viewsUsuarios="clr-namespace:AjudaCertaApp.Views.Usuarios"
     xmlns:viewsOng="clr-namespace:AjudaCertaApp.Views.Ong"
@@ -23,6 +24,12 @@
             Margin="0,5,10,5"
             />
     </Shell.TitleView>
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <conv:ByteArrayToImageSourceConverter x:Key="ByteArrayToImage" />
+        </ResourceDictionary>
+    </Shell.Resources>
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
             <Grid>
@@ -38,7 +45,7 @@
                         Padding="5,0">
                         <avatarview:SfAvatarView 
                            ContentType="Custom"
-                           ImageSource="fotoperfilteste.svg"
+                           ImageSource="{Binding Foto, Converter={StaticResource ByteArrayToImage}}"
                            VerticalOptions="Center"
                            HorizontalOptions="Center"   
                            HeightRequest="100"
@@ -54,7 +61,7 @@
                     <VerticalStackLayout Padding="10,0,0,0" Spacing="0">
 
                         <Label x:Name="lblUsuario" Text="{Binding Username}" FontAttributes="Bold" FontSize="Medium" />
-                        <!-- fazer tipo do usuario aqui <Label Text="{Binding Username}"  FontSize="Small" />-->
+                        <Label Text="{Binding TipoPessoa}"  FontSize="Small" />
                     </VerticalStackLayout>
                 </FlexLayout>
             </Grid>

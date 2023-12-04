@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace AjudaCertaApp.ViewModels.Posts
 {
@@ -21,7 +22,10 @@ namespace AjudaCertaApp.ViewModels.Posts
             Posts = new ObservableCollection<Post>();
 
             _ = ObterPosts();
+            AtualizarCommand = new Command(async () => ObterPosts());
         }
+
+        public ICommand AtualizarCommand { get; set; }
 
         public async Task ObterPosts()
         {

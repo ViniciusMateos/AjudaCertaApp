@@ -1,4 +1,5 @@
 ﻿using AjudaCertaApp.Models;
+using AjudaCertaApp.Models.Enuns;
 using AjudaCertaApp.Services.Pessoas;
 using AjudaCertaApp.Services.Usuarios;
 using System;
@@ -23,6 +24,28 @@ namespace AjudaCertaApp.ViewModels
         }
 
         #region AtributosPropriedades
+
+        private TipoPessoaEnum tipo;
+        public TipoPessoaEnum Tipo
+        {
+            get { return tipo; } 
+            set
+            {
+                tipo = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private string tipoPessoa;
+        public string TipoPessoa
+        {
+            get { return tipoPessoa; }
+            set
+            {
+                tipoPessoa = value;
+                OnPropertyChanged();
+            }
+        }
 
         private byte[] foto;
         public byte[] Foto
@@ -59,6 +82,14 @@ namespace AjudaCertaApp.ViewModels
 
                 Foto = u.Foto;
                 Username = p.Username;
+                Tipo = p.Tipo;
+
+                if (Tipo == TipoPessoaEnum.DOADOR)
+                    TipoPessoa = "DOADOR";
+                else if (Tipo == TipoPessoaEnum.ONG)
+                    TipoPessoa = "ONG";
+                else if (Tipo == TipoPessoaEnum.BENEFICIARIO)
+                    TipoPessoa = "BENEFICIÁRIO";
             }
             catch (Exception ex)
             {

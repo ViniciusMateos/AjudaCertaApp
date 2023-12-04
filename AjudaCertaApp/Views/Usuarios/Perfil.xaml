@@ -3,10 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:sf="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
              xmlns:syncfusion="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
+             xmlns:conv="clr-namespace:AjudaCertaApp.Converters"
              x:Class="AjudaCertaApp.Views.Usuarios.Perfil"
              NavigationPage.HasNavigationBar="False"
              Title="Perfil">
-
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <conv:ByteArrayToImageSourceConverter x:Key="ByteArrayToImage" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ScrollView
         BackgroundColor="#F4DFC9"
         Padding="15,20,15,50"

@@ -20,6 +20,9 @@
     <MauiXaml Update="Views\Beneficiario\BeneficiarioCadastro3.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\Beneficiario\PerfilBeneficiario.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\Beneficiario\ReservarDoacao.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
@@ -30,6 +33,9 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\Doador\Doacao.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\Doador\PerfilDoador.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\Ong\compartilharPost.xaml">
@@ -66,9 +72,6 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\Usuarios\Login.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
-    <MauiXaml Update="Views\Usuarios\Perfil.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

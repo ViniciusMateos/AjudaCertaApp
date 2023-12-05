@@ -1,6 +1,6 @@
 ﻿using AjudaCertaApp.Models;
-using AjudaCertaApp.Models.Enuns;
 using AjudaCertaApp.Models.ListagemDoacao;
+using AjudaCertaApp.Models.Enuns;
 using AjudaCertaApp.Services.Agendas;
 using AjudaCertaApp.Services.Doacoes;
 using AjudaCertaApp.Services.ItemDoacao;
@@ -172,14 +172,7 @@ namespace AjudaCertaApp.ViewModels.Perfil
 
                         if(d.Dinheiro != 0)
                         {
-                            Dinheiro = true;
-
-                            Descricao = false;
-                            Produto = false;
-                            Eletrodomestico = false;
-                            Roupa = false;
-                            Mobilia = false;
-                            Quantidade = false;
+                            
                         }
                         else 
                         {
@@ -264,15 +257,109 @@ namespace AjudaCertaApp.ViewModels.Perfil
                         l.Id = d.Id;
                         l.DataDoacao = d.Data;
                         l.DataAgenda = d.Agenda.Data;
+                        l.StatusDoacao = d.StatusDoacao;
+                        
                         l.Dinheiro = d.Dinheiro;
-                        if(d.Dinheiro != 0)
+                        if(l.Dinheiro == 0)
                         {
+                            l.ItemDoacaoNome = d.ItemDoacaoDoados.First().ItemDoacao.Nome;
+                            l.ItemDoacaoDescricao = d.ItemDoacaoDoados.First().ItemDoacao.Descricao;
+                            l.Quantidade = d.ItemDoacaoDoados.First().ItemDoacao.Quantidade;
+                            l.TipoItem = d.ItemDoacaoDoados.First().ItemDoacao.TipoItem;
+                            
+                            if(l.TipoItem == TipoItemEnum.PRODUTO)
+                            {
+                                l.Validade = d.ItemDoacaoDoados.First().ItemDoacao
+                                    .Produtos.First().Validade;
+                                l.TipoProduto = d.ItemDoacaoDoados.First().ItemDoacao
+                                    .Produtos.First().TipoProduto;
+
+                                l.roupa = false;
+                                l.dinheiro = false;
+                                l.mobilia = false;
+                                l.eletrodomestico = false;
+                                l.quantidade = true;
+                                l.produto = true;
+                                l.descricao = true;
+                            }
+                            else if(l.TipoItem == TipoItemEnum.ROUPA)
+                            {
+                                if (d.ItemDoacaoDoados.First().ItemDoacao
+                                    .Roupas.First().FaixaEtaria == FaixaEtariaEnum.ADULTO)
+                                    l.FaixaEtaria = "Adulto";
+                                else if (d.ItemDoacaoDoados.First().ItemDoacao
+                                    .Roupas.First().FaixaEtaria == FaixaEtariaEnum.INFANTIL)
+                                    l.FaixaEtaria = "Infantil";
+
+                                l.Tamanho = d.ItemDoacaoDoados.First().ItemDoacao
+                                    .Roupas.First().Tamanho;
+
+                                if (d.ItemDoacaoDoados.First().ItemDoacao
+                                    .Roupas.First().Genero == GeneroEnum.MASCULINO)
+                                    l.Genero = "Masculino";
+                                else if (d.ItemDoacaoDoados.First().ItemDoacao
+                                    .Roupas.First().Genero == GeneroEnum.FEMININO)
+                                    l.Genero = "Feminino";
+
+                                l.CondicaoR = d.ItemDoacaoDoados.First().ItemDoacao
+                                    .Roupas.First().Condicao;
+
+                                l.roupa = true;
+                                l.dinheiro = false;
+                                l.mobilia = false;
+                                l.eletrodomestico = false;
+                                l.quantidade = true;
+                                l.produto = false;
+                                l.descricao = true;
+                            }
+                            else if(l.TipoItem == TipoItemEnum.MOBILIA)
+                            {
+                                l.CondicaoM = d.ItemDoacaoDoados.First().ItemDoacao
+                                    .Mobilias.First().Condicao;
+                                l.MedidaM = d.ItemDoacaoDoados.First().ItemDoacao
+                                    .Mobilias.First().Medida;
+                                l.roupa = false;
+                                l.dinheiro = false;
+                                l.mobilia = true;
+                                l.eletrodomestico = false;
+                                l.quantidade = true;
+                                l.produto = false;
+                                l.descricao = true;
+                            }
+                            else if (l.TipoItem == TipoItemEnum.ELETRODOMESTICO)
+                            {
+                                l.CondicaoE = d.ItemDoacaoDoados.First().ItemDoacao
+                                    .Eletrodomesticos.First().Condicao;
+                                l.MedidaM = d.ItemDoacaoDoados.First().ItemDoacao
+                                    .Mobilias.First().Medida;
+
+                                l.roupa = false;
+                                l.dinheiro = false;
+                                l.mobilia = false;
+                                l.eletrodomestico = true;
+                                l.quantidade = true;
+                                l.produto = false;
+                                l.descricao = true;
+                            }
 
                         }
+                        else
+                        {
+                            l.ItemDoacaoNome = "Doação monetária";
 
+                            l.roupa = false;
+                            l.dinheiro = true;
+                            l.mobilia = false;
+                            l.eletrodomestico = false;
+                            l.quantidade = false;
+                            l.produto = false;
+                            l.descricao = false;
+                        }
+
+                        ListaDoacaos.Add(l);
                     }
 
-
+                    OnPropertyChanged(nameof(ListaDoacaos));
                 }
                 else if(p.Tipo == TipoPessoaEnum.DOADOR)
                 {

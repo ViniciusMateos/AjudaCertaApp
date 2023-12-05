@@ -425,6 +425,7 @@ namespace AjudaCertaApp.ViewModels.Doacao
                 if(pessoaLogada != null) 
                 {
                     Application.Current.MainPage = new AppShell(pessoaLogada);
+                    
                 }
                 else
                     await Application.Current.MainPage

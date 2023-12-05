@@ -5631,7 +5631,6 @@ C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\d
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconcancelada.png
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconconfirmada.png
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconpendente.png
-C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\iconreservar.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\iconreservar.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\iconreservar.png
@@ -5663,3 +5662,4 @@ C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\d
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\excluirpost.png
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\iconreservar.png
 C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\lapisperfil.png
+C:\Projetos\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll

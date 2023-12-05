@@ -14,5 +14,6 @@ namespace AjudaCertaApp.Models
         public TipoProdutoEnum TipoProduto { get; set; }
         public StatusItemEnum StatusItem { get; set; }
         public ItemDoacao? ItemDoacao { get; set; }
+        public int ItemDoacaoId { get; set; }
     }
 }

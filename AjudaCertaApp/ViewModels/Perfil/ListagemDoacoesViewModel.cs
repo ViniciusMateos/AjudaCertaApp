@@ -1,5 +1,6 @@
 ﻿using AjudaCertaApp.Models;
 using AjudaCertaApp.Models.Enuns;
+using AjudaCertaApp.Models.ListagemDoacao;
 using AjudaCertaApp.Services.Agendas;
 using AjudaCertaApp.Services.Doacoes;
 using AjudaCertaApp.Services.ItemDoacao;
@@ -24,6 +25,7 @@ namespace AjudaCertaApp.ViewModels.Perfil
         private PessoaService pService;
         private string _token;
         public ObservableCollection<Models.Doacao> Doacoes { get; set; }
+        public ObservableCollection<Models.ListagemDoacao.ListaDoacao> ListaDoacaos { get; set; }
         public ListagemDoacoesViewModel()
         {
             _token = Preferences.Get("UsuarioToken", string.Empty);
@@ -188,17 +190,18 @@ namespace AjudaCertaApp.ViewModels.Perfil
                             d.ItemDoacaoDoados.Add(await idds.GetPorIdDoacao(d.Id));
 
                             d.ItemDoacaoDoados.First().ItemDoacao = new();
-                            d.ItemDoacaoDoados.First().ItemDoacao.Produtos = new();
-                            d.ItemDoacaoDoados.First().ItemDoacao.Roupas = new();
-                            d.ItemDoacaoDoados.First().ItemDoacao.Mobilias = new();
-                            d.ItemDoacaoDoados.First().ItemDoacao.Eletrodomesticos = new();
+                            
 
                             ItemDoacaoService ids = new(_token);
                             d.ItemDoacaoDoados.First().ItemDoacao = await ids.GetPorId(d.ItemDoacaoDoados.First().ItemDoacaoId);
 
                             if (d.ItemDoacaoDoados.First().ItemDoacao.TipoItem == TipoItemEnum.PRODUTO)
                             {
-                                d.ItemDoacaoDoados.First().ItemDoacao.Produtos.Add(await ids.GetProdutoPorId(d.ItemDoacaoDoados.First().ItemDoacaoId));
+                                Produto produto = new();
+                                produto = await ids.GetProdutoPorId(d.ItemDoacaoDoados.First().ItemDoacaoId);
+
+                                d.ItemDoacaoDoados.First().ItemDoacao.Produtos = new();
+                                d.ItemDoacaoDoados.First().ItemDoacao.Produtos.Add(produto);
                                 Produto = true;
                                 Descricao = true;
                                 Eletrodomestico = false;
@@ -208,7 +211,11 @@ namespace AjudaCertaApp.ViewModels.Perfil
                             }
                             else if (d.ItemDoacaoDoados.First().ItemDoacao.TipoItem == TipoItemEnum.ROUPA)
                             {
-                                d.ItemDoacaoDoados.First().ItemDoacao.Roupas.Add(await ids.GetRoupaPorId(d.ItemDoacaoDoados.First().ItemDoacaoId));
+                                Roupa roupa = new();
+                                roupa = await ids.GetRoupaPorId(d.ItemDoacaoDoados.First().ItemDoacaoId); ;
+
+                                d.ItemDoacaoDoados.First().ItemDoacao.Roupas = new();
+                                d.ItemDoacaoDoados.First().ItemDoacao.Roupas.Add(roupa);
                                 Descricao = true;
                                 Roupa = true;
                                 Produto = false;
@@ -218,7 +225,11 @@ namespace AjudaCertaApp.ViewModels.Perfil
                             }
                             else if (d.ItemDoacaoDoados.First().ItemDoacao.TipoItem == TipoItemEnum.MOBILIA)
                             {
-                                d.ItemDoacaoDoados.First().ItemDoacao.Mobilias.Add(await ids.GetMobiliaPorId(d.ItemDoacaoDoados.First().ItemDoacaoId));
+                                Mobilia mobilia = new();
+                                mobilia = await ids.GetMobiliaPorId(d.ItemDoacaoDoados.First().ItemDoacaoId);
+
+                                d.ItemDoacaoDoados.First().ItemDoacao.Mobilias = new();
+                                d.ItemDoacaoDoados.First().ItemDoacao.Mobilias.Add(mobilia);
                                 Descricao = true;
                                 Mobilia = true;
                                 Produto = false;
@@ -228,7 +239,12 @@ namespace AjudaCertaApp.ViewModels.Perfil
                             }
                             else if (d.ItemDoacaoDoados.First().ItemDoacao.TipoItem == TipoItemEnum.ELETRODOMESTICO)
                             {
-                                d.ItemDoacaoDoados.First().ItemDoacao.Eletrodomesticos.Add(await ids.GetEletrodomesticoPorId(d.ItemDoacaoDoados.First().ItemDoacaoId));
+                                Eletrodomestico e = new();
+                                e = await ids.GetEletrodomesticoPorId(d.ItemDoacaoDoados.First().ItemDoacaoId);
+                                
+                                d.ItemDoacaoDoados.First().ItemDoacao.Eletrodomesticos = new();
+                                d.ItemDoacaoDoados.First().ItemDoacao.Eletrodomesticos.Add(e);
+
                                 Descricao = true;
                                 Eletrodomestico = true;
                                 Produto = false;
@@ -239,6 +255,24 @@ namespace AjudaCertaApp.ViewModels.Perfil
                         }
                     }
                    OnPropertyChanged(nameof(Doacoes));
+
+                    ListaDoacaos = new ObservableCollection<ListaDoacao>();
+                    foreach(Models.Doacao d in Doacoes)
+                    {
+                        ListaDoacao l = new();
+                        
+                        l.Id = d.Id;
+                        l.DataDoacao = d.Data;
+                        l.DataAgenda = d.Agenda.Data;
+                        l.Dinheiro = d.Dinheiro;
+                        if(d.Dinheiro != 0)
+                        {
+
+                        }
+
+                    }
+
+
                 }
                 else if(p.Tipo == TipoPessoaEnum.DOADOR)
                 {
@@ -274,10 +308,7 @@ namespace AjudaCertaApp.ViewModels.Perfil
 
                             ItemDoacaoService ids = new(_token);
                             d.ItemDoacaoDoados.First().ItemDoacao = await ids.GetPorId(d.ItemDoacaoDoados.First().ItemDoacaoId);
-                            d.ItemDoacaoDoados.First().ItemDoacao.Produtos = new();
-                            d.ItemDoacaoDoados.First().ItemDoacao.Roupas = new();
-                            d.ItemDoacaoDoados.First().ItemDoacao.Mobilias = new();
-                            d.ItemDoacaoDoados.First().ItemDoacao.Eletrodomesticos = new();
+      
 
                             if (d.ItemDoacaoDoados.First().ItemDoacao.TipoItem == TipoItemEnum.PRODUTO)
                             {
@@ -320,6 +351,7 @@ namespace AjudaCertaApp.ViewModels.Perfil
                     
                     OnPropertyChanged(nameof(Doacoes));
                 }
+                
                 
             }
             catch (Exception ex)

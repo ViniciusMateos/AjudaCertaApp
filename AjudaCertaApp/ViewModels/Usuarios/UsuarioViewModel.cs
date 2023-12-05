@@ -3,6 +3,7 @@ using AjudaCertaApp.Models.Enuns;
 using AjudaCertaApp.Services;
 using AjudaCertaApp.Services.Pessoas;
 using AjudaCertaApp.Services.Usuarios;
+using AjudaCertaApp.Utils;
 using AjudaCertaApp.Views;
 using System;
 using System.Collections.Generic;
@@ -434,50 +435,63 @@ namespace AjudaCertaApp.ViewModels.Usuarios
                 if(fisicaJuridicaSelecionado.Id == 1)
                 {
                     p.Documento = Cpf;
+                    if(!Validacao.ValidaCPF(Cpf))
+                        await Application.Current.MainPage
+                    .DisplayAlert("Atenção", "O CPF informado não é válido.", "Ok");
                 }
                 else if(fisicaJuridicaSelecionado.Id == 2)
                 {
                     p.Documento = Cnpj;
+                    if(!Validacao.ValidaCNPJ(Cnpj))
+                        await Application.Current.MainPage
+                    .DisplayAlert("Atenção", "O CNPJ informado não é válido.", "Ok");
                 }
+
 
                 Usuario u = new Usuario();
                 u.Email = Email;
+                if(!Validacao.VerificaEmail(Email))
+                    await Application.Current.MainPage
+                    .DisplayAlert("Atenção", "O email informado não é válido.", "Ok");
+                else if(!Validacao.VerificaMaioridade(Datanasc))
+                    await Application.Current.MainPage
+                    .DisplayAlert("Atenção", "O usuário precisa ser maior de idade", "Ok");
 
-                //#region Validações
-                //if (Nome == string.Empty)
-                //{
-                //    await Application.Current.MainPage
-                //    .DisplayAlert("Atenção", "Preencha o campo nome.", "Ok");
-                //}
-                //else if (Username == string.Empty)
-                //{
-                //    await Application.Current.MainPage
-                //    .DisplayAlert("Atenção", "Preencha o campo usuário.", "Ok");
-                //}
-                //else if (Email == string.Empty)
-                //{
-                //    await Application.Current.MainPage
-                //    .DisplayAlert("Atenção", "Preencha o campo email.", "Ok");
-                //}
-                //else if (Telefone == string.Empty)
-                //{
-                //    await Application.Current.MainPage
-                //    .DisplayAlert("Atenção", "Preencha o campo telefone.", "Ok");
-                //}
-                //else if (Datanasc == DateTime.Now)
-                //{
-                //    await Application.Current.MainPage
-                //    .DisplayAlert("Atenção", "Escolha sua data de nascimento.", "Ok");
-                //}
-                //else if (Cpf == string.Empty && Cnpj == string.Empty)
-                //{
-                //    await Application.Current.MainPage
-                //    .DisplayAlert("Atenção", "É necessário informar seu CPF/CNPJ.", "Ok");
-                //}
-                //else
-                //#endregion
+                #region Validações
+                if (Nome == string.Empty)
+                {
+                    await Application.Current.MainPage
+                    .DisplayAlert("Atenção", "Preencha o campo nome.", "Ok");
+                }
+                else if (Username == string.Empty)
+                {
+                    await Application.Current.MainPage
+                    .DisplayAlert("Atenção", "Preencha o campo usuário.", "Ok");
+                }
+                else if (Email == string.Empty)
+                {
+                    await Application.Current.MainPage
+                    .DisplayAlert("Atenção", "Preencha o campo email.", "Ok");
+                }
+                else if (Telefone == string.Empty)
+                {
+                    await Application.Current.MainPage
+                    .DisplayAlert("Atenção", "Preencha o campo telefone.", "Ok");
+                }
+                else if (Datanasc == DateTime.Now)
+                {
+                    await Application.Current.MainPage
+                    .DisplayAlert("Atenção", "Escolha sua data de nascimento.", "Ok");
+                }
+                else if (Cpf == string.Empty && Cnpj == string.Empty)
+                {
+                    await Application.Current.MainPage
+                    .DisplayAlert("Atenção", "É necessário informar seu CPF/CNPJ.", "Ok");
+                }
+                else
+                    #endregion
 
-                await Application.Current.MainPage
+                    await Application.Current.MainPage
                     .Navigation.PushAsync(new Views.DoadorCadastro2(p, u));
             }
             catch (Exception ex)

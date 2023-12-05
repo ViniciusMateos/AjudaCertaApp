@@ -156,7 +156,7 @@
 
             <syncfusion:SfListView
              x:Name="ListView"
-             ItemsSource="logo_minimalista.svg"
+             ItemsSource="{Binding Doacoes}"
              ItemSpacing="5,0,0,0"
              ItemSize="500"
              ScrollBarVisibility="Never">
@@ -203,7 +203,7 @@
                                             />
                                             <Label
                                             Grid.Row="1"
-                                            Text="Cesta básica"
+                                            Text="{Binding }"
                                             FontSize="13"
                                             TextColor="White"
                                             />

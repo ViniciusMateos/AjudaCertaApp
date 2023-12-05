@@ -63,10 +63,23 @@
 
                                 <Label
                                     Grid.Row="1"
-                                    Text="@ong_estreladalva"
+                                    Text="@ong_estreladalva: "
                                     TextColor="white"
                                     Padding="10,5"
                                     FontAttributes="Bold"/>
+
+                                <Grid
+                                    Grid.Row="1"
+                                    HorizontalOptions="End"
+                                    VerticalOptions="Start"
+                                    Padding="0,0,3,0"
+                                    >
+                                    <ImageButton
+                                        HorizontalOptions="End"
+                                        Source="excluirpost.svg"
+                                        HeightRequest="25"
+                                        />
+                                </Grid>
 
                                 <Grid
                                     Grid.Row="2"

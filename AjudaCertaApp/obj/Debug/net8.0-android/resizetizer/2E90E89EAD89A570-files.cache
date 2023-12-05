@@ -1,4 +1,5 @@
-﻿obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\footerchat.png
+﻿obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\excluirpost.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\footerchat.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\footercifrao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\footerhome.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\footermais.png
@@ -17,6 +18,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\lapisperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\logo_minimalista.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\setabotao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\setavoltar.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\excluirpost.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\footerchat.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\footercifrao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\footerhome.png
@@ -36,6 +38,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\lapisperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\logo_minimalista.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\setabotao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\setavoltar.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\excluirpost.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\footerchat.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\footercifrao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\footerhome.png
@@ -55,6 +58,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\lapisperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\logo_minimalista.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\setabotao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\setavoltar.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\excluirpost.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\footerchat.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\footercifrao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\footerhome.png
@@ -74,6 +78,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\lapisperfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\logo_minimalista.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\setabotao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\setavoltar.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\excluirpost.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\footerchat.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\footercifrao.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\footerhome.png

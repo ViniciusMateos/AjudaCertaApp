@@ -108,9 +108,18 @@
               ContentTemplate="{DataTemplate viewsOng:PerfilOng}"/>
     </FlyoutItem>
 
-    <ShellContent>
-
-    </ShellContent>
-
-
+    
+    <Shell.FlyoutFooterTemplate>
+        <DataTemplate>
+            <StackLayout>
+                <Label 
+                    Padding="20"
+                    Text="Sair"
+                    FontSize="Medium"
+                    TextColor="#DF6234"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"/>
+            </StackLayout>
+        </DataTemplate>
+    </Shell.FlyoutFooterTemplate>
 </Shell>

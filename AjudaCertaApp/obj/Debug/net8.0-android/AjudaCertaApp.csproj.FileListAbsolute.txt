@@ -5653,3 +5653,8 @@ G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\re
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\lapisperfil.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\lapisperfil.png
 G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\lapisperfil.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\excluirpost.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\excluirpost.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\excluirpost.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\excluirpost.png
+G:\Vinicin\AjudaCertaTCC\AjudaCertaApp\AjudaCertaApp\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\excluirpost.png

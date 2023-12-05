@@ -32,6 +32,15 @@
     <MauiXaml Update="Views\Doador\AgendarDoacao.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\Doador\AlterarDados1.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\Doador\AlterarDados2.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\Doador\AlterarDados3.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\Doador\Doacao.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

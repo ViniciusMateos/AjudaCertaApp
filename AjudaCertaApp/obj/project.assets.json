@@ -37849,11 +37849,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Vinicin\\AjudaCertaTCC\\ajudacerta1\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
+      "projectUniqueName": "G:\\Vinicin\\AjudaCertaTCC\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
       "projectName": "AjudaCertaApp",
-      "projectPath": "G:\\Vinicin\\AjudaCertaTCC\\ajudacerta1\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
+      "projectPath": "G:\\Vinicin\\AjudaCertaTCC\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
       "packagesPath": "C:\\Users\\Patrick\\.nuget\\packages\\",
-      "outputPath": "G:\\Vinicin\\AjudaCertaTCC\\ajudacerta1\\AjudaCertaApp\\AjudaCertaApp\\obj\\",
+      "outputPath": "G:\\Vinicin\\AjudaCertaTCC\\AjudaCertaApp\\AjudaCertaApp\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

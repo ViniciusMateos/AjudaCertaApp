@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2C2vEVgEiUHG/D9GfOj6ZPcMbivaFbuWSQyZlVAgGE7V0XudJ/AOEbXsQEvp/JuX8CGHmPQHSeJudFoZ2P6foQ==",
+  "dgSpecHash": "gRRoiK4hXyD/LwXwBxirPq5LLvJ0feArAL2ej6GZSU9Fpk6uoCKAdK6bQNm4nPpbV3ooo4ZRBx0VBRi77mLdxg==",
   "success": true,
-  "projectFilePath": "G:\\Vinicin\\AjudaCertaTCC\\ajudacerta1\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
+  "projectFilePath": "G:\\Vinicin\\AjudaCertaTCC\\AjudaCertaApp\\AjudaCertaApp\\AjudaCertaApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Patrick\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\Patrick\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

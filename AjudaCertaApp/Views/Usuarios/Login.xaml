@@ -121,6 +121,7 @@
             </HorizontalStackLayout>
 
             <Button
+                IsEnabled="{Binding BtnEntrar}"
                 Grid.Row="3"
                 Text="ENTRAR"
                 FontSize="24"

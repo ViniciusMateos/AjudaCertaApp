@@ -36,7 +36,7 @@ namespace AjudaCertaApp.Services.Doacoes
             return listaDoacoes;
         }
 
-        public async Task<int> PostDoacaoItens(ItemDoacaoDoado novoIDD) 
+        public async Task<int> PostDoacaoItens(Models.ItemDoacaoDoado novoIDD) 
         {
             string urlComplementar = string.Format("{0}", "/DoacaoItens");
             return await _request.PostReturnIntTokenAsync(apiUrlBase + urlComplementar, novoIDD, _token);

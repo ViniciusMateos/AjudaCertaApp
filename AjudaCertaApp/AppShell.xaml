@@ -9,7 +9,7 @@
     xmlns:conv="clr-namespace:AjudaCertaApp.Converters"
     xmlns:viewsDoador="clr-namespace:AjudaCertaApp.Views.Doador"
     xmlns:viewsUsuarios="clr-namespace:AjudaCertaApp.Views.Usuarios"
-    xmlns:viewsBenefiario="clr-namespace:AjudaCertaApp.Views.Beneficiario"
+    xmlns:viewsBeneficiario="clr-namespace:AjudaCertaApp.Views.Beneficiario"
     xmlns:viewsOng="clr-namespace:AjudaCertaApp.Views.Ong"
     Title="AjudaCertaApp"
     Shell.BackgroundColor="#F5A24A"
@@ -89,7 +89,7 @@
                       x:Name="BtnReservar"
                       Icon="iconreservar.svg"
                       FlyoutIcon="iconreservar.svg"
-                      ContentTemplate="{DataTemplate viewsBenefiario:ReservarDoacao}"/>
+                      ContentTemplate="{DataTemplate viewsBeneficiario:ReservarDoacao}"/>
 
         <ShellContent Title="Postar"
               x:Name="btnPostar"
@@ -103,9 +103,18 @@
               ContentTemplate="{DataTemplate viewsUsuarios:ChatLista}"/>
 
         <ShellContent Title="Perfil"
+                      x:Name="btnPerfilOng"
               Icon="footerperfil.svg"
               FlyoutIcon="footerperfil.svg"
               ContentTemplate="{DataTemplate viewsOng:PerfilOng}"/>
+        <ShellContent Title="Perfil"
+                      x:Name="btnPerfilDoador"
+                      FlyoutIcon="footerperfil.svg"
+                      ContentTemplate="{DataTemplate viewsDoador:PerfilDoador}"/>
+        <ShellContent Title="Perfil"
+                      x:Name="btnPerfilBeneficiario"
+                      FlyoutIcon="footerperfil.svg"
+                      ContentTemplate="{DataTemplate viewsBeneficiario:PerfilBeneficiario}"/>
     </FlyoutItem>
 
     

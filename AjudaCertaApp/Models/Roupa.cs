@@ -15,6 +15,6 @@ namespace AjudaCertaApp.Models
         public GeneroEnum Genero { get; set; }
         public FaixaEtariaEnum FaixaEtaria { get; set; }
         public StatusItemEnum StatusItem { get; set; }
-        public ItemDoacao ItemDoacao { get; set; }
+        public ItemDoacao? ItemDoacao { get; set; }
     }
 }

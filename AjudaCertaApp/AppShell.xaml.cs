@@ -18,16 +18,31 @@ namespace AjudaCertaApp
             {
                 btnPostar.IsVisible = true;
                 BtnDoar.IsVisible = false;
+
+                BtnReservar.IsVisible = false;
+                btnPerfilOng.IsVisible = true;
+                btnPerfilDoador.IsVisible = false;
+                btnPerfilBeneficiario.IsVisible = false;
             }
             else if(pessoaLogada.Tipo == Models.Enuns.TipoPessoaEnum.DOADOR)
             {
                 btnPostar.IsVisible = false;
                 BtnDoar.IsVisible = true;
+                BtnReservar.IsVisible = false;
+
+                btnPerfilOng.IsVisible = false;
+                btnPerfilDoador.IsVisible = true;
+                btnPerfilBeneficiario.IsVisible = false;
             }
             else if(pessoaLogada.Tipo == Models.Enuns.TipoPessoaEnum.BENEFICIARIO)
             {
                 btnPostar.IsVisible = false;
                 BtnDoar.IsVisible = false;
+                BtnReservar.IsVisible = true;
+
+                btnPerfilOng.IsVisible = false;
+                btnPerfilDoador.IsVisible = false;
+                btnPerfilBeneficiario.IsVisible = true;
             }
         }
     }

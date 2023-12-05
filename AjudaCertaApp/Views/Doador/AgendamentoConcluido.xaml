@@ -47,27 +47,13 @@
             HorizontalOptions="Center">
             <Grid>
                 <Button
+                    Command="{Binding VoltarInicioCommand}"
                     CornerRadius="20"
                     HeightRequest="50"
                     WidthRequest="150"
                     BackgroundColor="#D5432A"/>
                 <Label
                     Text="Inicial"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"
-                    FontAttributes="Bold"
-                    TextColor="White"
-                    FontSize="Medium"/>
-            </Grid>
-            <Grid>
-                <Button
-                    CornerRadius="20"
-                    HeightRequest="50"
-                    WidthRequest="150"
-                    BackgroundColor="#D8743B"/>
-                
-                <Label
-                    Text="Pendentes"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     FontAttributes="Bold"

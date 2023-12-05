@@ -21,7 +21,7 @@
 		<Nullable>enable</Nullable>
 
 		<!-- Display name -->
-		<ApplicationTitle>AjudaCertaApp</ApplicationTitle>
+		<ApplicationTitle>AjudaCerta</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.ajudacertaapp</ApplicationId>

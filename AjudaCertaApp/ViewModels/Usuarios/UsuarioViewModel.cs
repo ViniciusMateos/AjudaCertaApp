@@ -87,6 +87,17 @@ namespace AjudaCertaApp.ViewModels.Usuarios
 
         #region AtributosPropriedades
 
+
+        private bool btnEntrar = true;
+        public bool BtnEntrar
+        {
+            get { return btnEntrar; }
+            set 
+            {
+                btnEntrar = value;
+                OnPropertyChanged();
+            }
+        }
         private string nome = string.Empty; // ctrl + r, e
 
         public string Nome
@@ -643,6 +654,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
         {
             try
             {
+                BtnEntrar = false; 
                 Usuario credenciais = new Usuario();
                 credenciais.Senha = Senha;
                 credenciais.Email = Email;
@@ -660,6 +672,7 @@ namespace AjudaCertaApp.ViewModels.Usuarios
                     {
                         await Application.Current.MainPage
                             .DisplayAlert("Erro", "Falha", "Ok");
+                        BtnEntrar = true;
                     }
                     else
                     { 
@@ -670,12 +683,14 @@ namespace AjudaCertaApp.ViewModels.Usuarios
                 {
                     await Application.Current.MainPage
                         .DisplayAlert("Erro", "Dados incorretos. Verifique o email e a senha.", "Ok");
+                    BtnEntrar = true;
                 }
             }
             catch (Exception ex)
             {
                 await Application.Current.MainPage
                     .DisplayAlert("Informação", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+                BtnEntrar = true;
             }
         }
         #endregion

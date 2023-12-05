@@ -14,6 +14,6 @@ namespace AjudaCertaApp.Models
         public string Medida { get; set; }
         public string Condicao { get; set; }
         public StatusItemEnum StatusItem { get; set; }
-        public ItemDoacao ItemDoacao { get; set; }
+        public ItemDoacao? ItemDoacao { get; set; }
     }
 }

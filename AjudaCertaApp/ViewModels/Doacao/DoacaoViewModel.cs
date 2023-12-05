@@ -20,6 +20,7 @@ namespace AjudaCertaApp.ViewModels.Doacao
         private ItemDoacaoDoado idd;
         public ICommand DirecionarAgendamentoCommand { get; set; }
         public ICommand DoarItensCommand { get; set; }
+        public ICommand VoltarInicioCommand { get; set; }
 
         public DoacaoViewModel() 
         {
@@ -44,6 +45,7 @@ namespace AjudaCertaApp.ViewModels.Doacao
         {
             DirecionarAgendamentoCommand = new Command(async () => await DirecionarParaAgendamento());
             DoarItensCommand = new Command(async () => await DoarItens());
+            VoltarInicioCommand = new Command(async () => await VoltarInicio());
         }
 
         #region AtributosPropriedades
@@ -401,6 +403,28 @@ namespace AjudaCertaApp.ViewModels.Doacao
                 if(idDoacao != 0)
                 {
                     await Application.Current.MainPage.Navigation.PushAsync(new AgendamentoConcluido());
+                }
+                else
+                    await Application.Current.MainPage
+                    .DisplayAlert("Erro", "Tente novamente mais tarde.", "Ok");
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage
+                    .DisplayAlert("Informação", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
+            }
+        }
+
+        public async Task VoltarInicio()
+        {
+            try
+            {
+                PessoaService p = new(Preferences.Get("UsuarioToken", string.Empty));
+                Pessoa pessoaLogada = await p.GetPessoaPorUsuarioAsync();
+
+                if(pessoaLogada != null) 
+                {
+                    Application.Current.MainPage = new AppShell(pessoaLogada);
                 }
                 else
                     await Application.Current.MainPage

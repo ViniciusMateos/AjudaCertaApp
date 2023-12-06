@@ -249,7 +249,7 @@
                                             />
                                             <Label
                                             Grid.Row="1"
-                                            Text="12/12/2012"
+                                            Text="{Binding DataAgenda}"
                                             FontSize="13"
                                             TextColor="White"
                                             />
@@ -377,7 +377,7 @@
                                                     <!--TIPO-->
                                                     <Grid
                                         x:Name="lblTipo"
-                                        IsVisible="true"
+                                        IsVisible="{Binding produto}"
                                         Padding="7,10"
                                         RowSpacing="-3">
                                                         <Grid.RowDefinitions>
@@ -403,7 +403,7 @@
                                                     <!--MEDIDA-->
                                                     <Grid
                                         x:Name="lblMedida"
-                                        IsVisible="true"
+                                        IsVisible="{Binding mobilia}"
                                         Padding="7,10"
                                         RowSpacing="-3">
                                                         <Grid.RowDefinitions>
@@ -420,16 +420,40 @@
                                             />
                                                         <Label
                                             Grid.Row="1"
-                                            Text="30x2x5"
+                                            Text="{Binding MedidaM}"
                                             FontSize="13"
                                             TextColor="White"
                                             />
                                                     </Grid>
+                                                    <Grid
+                                                        x:Name="lblMedidaEletro"
+                                                        IsVisible="{Binding eletrodomestico}"
+                                                        Padding="7,10"
+                                                        RowSpacing="-3">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition/>
+                                                            <RowDefinition/>
+                                                        </Grid.RowDefinitions>
+
+                                                        <Label
+                                                            Grid.Row="0"
+                                                            FontAttributes="Bold"
+                                                            Text="Medida:"
+                                                            FontSize="14"
+                                                            TextColor="#CB6554"
+                                                            />
+                                                        <Label
+                                                            Grid.Row="1"
+                                                            Text="{Binding MedidaE}"
+                                                            FontSize="13"
+                                                            TextColor="White"
+                                                            />
+                                                    </Grid>
 
                                                     <!--CONDIÇÃO-->
                                                     <Grid
-                                        x:Name="lblCondicao"
-                                        IsVisible="true"
+                                        x:Name="lblCondicaoMobilia"
+                                        IsVisible="{Binding mobilia}"
                                         Padding="7,10"
                                         RowSpacing="-3">
                                                         <Grid.RowDefinitions>
@@ -439,23 +463,48 @@
 
                                                         <Label
                                             Grid.Row="0"
-                                            Text="Condião:"
+                                            Text="Condição:"
                                             FontSize="14"
                                             FontAttributes="Bold"
                                             TextColor="#CB6554"
                                             />
                                                         <Label
                                             Grid.Row="1"
-                                            Text="9/10"
+                                            Text="{Binding CondicaoM}"
                                             FontSize="13"
                                             TextColor="White"
                                             />
                                                     </Grid>
 
+                                                    <Grid
+                                                        x:Name="lblCondicaoEletro"
+                                                        IsVisible="{Binding eletrodomestico}"
+                                                        Padding="7,10"
+                                                        RowSpacing="-3">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition/>
+                                                            <RowDefinition/>
+                                                        </Grid.RowDefinitions>
+
+                                                        <Label
+                                                            Grid.Row="0"
+                                                            Text="Condição:"
+                                                            FontSize="14"
+                                                            FontAttributes="Bold"
+                                                            TextColor="#CB6554"
+                                                            />
+                                                        <Label
+                                                            Grid.Row="1"
+                                                            Text="{Binding CondicaoE}"
+                                                            FontSize="13"
+                                                            TextColor="White"
+                                                            />
+                                                    </Grid>
+
                                                     <!--TAMANHO-->
                                                     <Grid
                                         x:Name="lblTamanho"
-                                        IsVisible="true"
+                                        IsVisible="{Binding roupa}"
                                         Padding="7,10"
                                         RowSpacing="-3">
                                                         <Grid.RowDefinitions>
@@ -481,7 +530,7 @@
                                                     <!--GÊNERO-->
                                                     <Grid
                                         x:Name="lblGenero"
-                                        IsVisible="true"
+                                        IsVisible="{Binding roupa}"
                                         Padding="7,10"
                                         RowSpacing="-3">
                                                         <Grid.RowDefinitions>
@@ -507,7 +556,7 @@
                                                     <!--FAIXA ETÁRIA-->
                                                     <Grid
                                         x:Name="lblFaixaEtaria"
-                                        IsVisible="true"
+                                        IsVisible="{Binding roupa}"
                                         Padding="7,10,0,5"
                                         RowSpacing="-3">
                                                         <Grid.RowDefinitions>
@@ -533,7 +582,7 @@
                                                     <!--QUANTIDADE-->
                                                     <Grid
                                         x:Name="lblQuantidade"
-                                        IsVisible="false"
+                                        IsVisible="{Binding quantidade}"
                                         Padding="7,10"
                                         RowSpacing="-3">
                                                         <Grid.RowDefinitions>
@@ -550,7 +599,7 @@
                                             />
                                                         <Label
                                             Grid.Row="1"
-                                            Text="2"
+                                            Text="{Binding Quantidade}"
                                             FontSize="13"
                                             TextColor="White"
                                             />
@@ -559,7 +608,7 @@
                                                     <!--DESCRIÇÃO-->
                                                     <Grid
                                         x:Name="lblDescricao"
-                                        IsVisible="false"
+                                        IsVisible="{Binding descricao}"
                                         Padding="7,10"
                                         RowSpacing="-3">
                                                         <Grid.RowDefinitions>
@@ -579,7 +628,7 @@
                                             HeightRequest="40">
                                                             <ScrollView>
                                                                 <Label
-                                                Text="2nsdkjfhdslkfhsljkdlfshfjkshdfjlkdhslfjhsdfhsljkfldshhdsjkfhsdhfjkldslfsjfhsdlkjflhfldjksjdhflsjkh"
+                                                Text="{Binding ItemDoacaoDescricao}"
                                                 FontSize="13"
                                                 TextColor="White"
                                                 />
@@ -607,7 +656,7 @@
 
 
                                     <Grid
-                                        IsVisible="false"
+                                        IsVisible="{Binding pendente}"
                                         Grid.Column="0"
                                         Padding="10,0,0,15"
                                         >
@@ -626,7 +675,7 @@
                                     </Grid>
 
                                     <Grid
-                                        IsVisible="true"
+                                        IsVisible="{Binding cancelada}"
                                         Grid.Column="0"
                                         Padding="10,0,0,15"
                                         >
@@ -646,7 +695,7 @@
                                     </Grid>
 
                                     <Grid
-                                        IsVisible="false"
+                                        IsVisible="{Binding concluida}"
                                         Grid.Column="0"
                                         Padding="10,0,0,15"
                                         >

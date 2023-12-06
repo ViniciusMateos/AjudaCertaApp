@@ -109,9 +109,11 @@
               ContentTemplate="{DataTemplate viewsOng:PerfilOng}"/>
         <ShellContent Title="Perfil"
                       x:Name="btnPerfilDoador"
+                      Icon="footerperfil.svg"
                       FlyoutIcon="footerperfil.svg"
                       ContentTemplate="{DataTemplate viewsDoador:PerfilDoador}"/>
         <ShellContent Title="Perfil"
+                      Icon="footerperfil.svg"
                       x:Name="btnPerfilBeneficiario"
                       FlyoutIcon="footerperfil.svg"
                       ContentTemplate="{DataTemplate viewsBeneficiario:PerfilBeneficiario}"/>

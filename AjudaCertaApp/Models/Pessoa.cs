@@ -20,6 +20,8 @@ namespace AjudaCertaApp.Models
         public FisicaJuridicaEnum fisicaJuridica { get; set; }
         public TipoPessoaEnum Tipo { get; set; }
         public Usuario Usuario { get; set; }
+        public int UsuarioId {  get; set; }
         public Endereco Endereco { get; set; }
+        public int EnderecoId { get; set; }
     }
 }

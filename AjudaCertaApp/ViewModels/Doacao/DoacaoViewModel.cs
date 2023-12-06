@@ -331,6 +331,7 @@ namespace AjudaCertaApp.ViewModels.Doacao
                 novoIdd.Doacao = new();
                 novoIdd.Doacao.Pessoa = new Pessoa();
                 novoIdd.Doacao.Pessoa = await ps.GetPessoaPorUsuarioAsync();
+                novoIdd.Doacao.PessoaId = novoIdd.Doacao.Pessoa.Id;
                 novoIdd.Doacao.Data = DateTime.Now;
                 novoIdd.Doacao.StatusDoacao = StatusDoacaoEnum.PENDENTE;
 

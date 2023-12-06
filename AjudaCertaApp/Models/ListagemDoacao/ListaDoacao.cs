@@ -35,7 +35,9 @@ namespace AjudaCertaApp.Models.ListagemDoacao
         public bool produto { get; set; }
         public bool quantidade { get; set; }
         public bool descricao { get; set; }
-
+        public bool pendente { get; set; }
+        public bool cancelada { get; set; }
+        public bool concluida { get; set; }
 
     }
 }
